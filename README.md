@@ -1,5 +1,64 @@
 # H3 Character Sheet Creator Workflow
 
+**English** | [한국어](#한국어)
+
+A ComfyUI workflow that takes a **face reference** and an **outfit reference** and generates a **3-view character sheet** (front / side / back). Built on MiniMax-H3 Ref2VA.
+
+## Example
+
+| Face reference | Outfit reference |
+|:---:|:---:|
+| <img src="asset/face_ref.png" width="300"> | <img src="asset/clothes_ref.png" width="300"> |
+
+⬇️
+
+![3-view character sheet](asset/H3_2STAGE_STAGE1_3VIEW_00072_.png)
+
+The **identity** (facial features, hair) comes from the face reference and **only the clothing** is taken from the outfit reference, merged into a single character.
+
+## Files
+
+| File | Description |
+|---|---|
+| `260901_H3_character_sheet(sain2d_modfied)_KOR.json` | Workflow (Korean UI) |
+| `260901_H3_character_sheet(sain2d_modfied)_ENG.json` | Workflow (English UI) |
+| `asset/` | Sample reference images and output |
+
+## How it works
+
+**Stage 1 — 3-view sheet**
+- Face image → head isolated with `SAM3Segment`
+- Outfit image → clothing isolated with `ClothesSegment` (SegFormer); the face is removed automatically
+- Both references feed H3 to produce the front / side / back sheet
+
+**Stage 2 — Pose variations (optional)**
+- Stage 1 output + a pose reference to generate 1–4 panels
+- Optional inputs: prop / weapon, background / environment, extra accessory
+
+## Required models
+
+```
+UNET   minimax_h3_ref2va_pruned_int8_convrot.safetensors
+CLIP   qwen3vl_32b_minimax_h3_int8_convrot.safetensors
+       gemma4_e4b_it_fp8_scaled.safetensors
+VAE    minimax_h3_t1_image_vae_step1597.safetensors
+       minimax_h3_audio_vae_fp32.safetensors
+LoRA   h3-realism-people-t2v-i2v-r2v  (trigger: r34l1sm)
+Accel  MiniMax-H3-Ref2VA-Acc-8Step.safetensors
+```
+
+Custom nodes: SAM3Segment, ClothesSegment (SegFormer), rgthree, Toobusy H3 node pack
+
+## Usage
+
+1. Drag the JSON into ComfyUI to load it
+2. Upload a face image to `Stage 1 REQUIRED 1` and an outfit image to `Stage 1 REQUIRED 2`
+3. Run → the 3-view sheet is saved to `output/charsheet/`
+
+---
+
+# 한국어
+
 얼굴 참조 이미지와 의상 참조 이미지를 넣으면 **3-뷰(정면/측면/후면) 캐릭터 시트**를 만들어 주는 ComfyUI 워크플로우입니다. MiniMax-H3 Ref2VA 기반.
 
 ## 결과 예시
