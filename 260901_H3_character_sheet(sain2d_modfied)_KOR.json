@@ -1,8 +1,8 @@
 {
   "id": "9bfe6305-2f75-43b4-a826-77c6979c53ab",
   "revision": 4,
-  "last_node_id": 157,
-  "last_link_id": 297,
+  "last_node_id": 158,
+  "last_link_id": 299,
   "nodes": [
     {
       "id": 27,
@@ -16,7 +16,7 @@
         300
       ],
       "flags": {},
-      "order": 73,
+      "order": 74,
       "mode": 0,
       "inputs": [
         {
@@ -226,7 +226,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 77,
+      "order": 78,
       "mode": 0,
       "inputs": [
         {
@@ -340,10 +340,10 @@
         }
       },
       "widgets_values": [
-        "# 📷 사진 2장만 넣으면 됩니다\n\n- **왼쪽 · 얼굴 사진** → 이 사진에서는 **얼굴과 머리 모양만** 가져갑니다.\n- **오른쪽 · 의상 사진** → 이 사진에서는 **옷과 신발만** 가져갑니다.\n\n### ✂️ 자르는 건 자동입니다\n얼굴 사진에서는 **머리만**, 의상 사진에서는 **옷·신발만** 자동으로 오려냅니다.\n의상 사진의 얼굴·머리·팔다리는 알아서 지워지니까, 예전처럼 **목 아래로 미리 잘라서 넣을 필요가 없습니다.** 얼굴이 크게 나온 사진을 그냥 넣어도 됩니다.\n\n### 👀 잘 됐는지 보는 법\n오른쪽 작은 그림 2개를 보세요. 회색 배경 위에 **얼굴만** / **옷만** 떠 있으면 성공입니다.\n옷이 덜 잘렸으면 가운데 **의상만 추출** 노드에서 윗옷·치마·바지·신발 체크박스를 켜고 끄면 됩니다.\n\n몸매나 분위기를 바꾸고 싶으면 **③ 칸에 한국어로** 적으세요.\n예: `날씬한 성인 여성 체형, 좁은 어깨, 가는 팔다리`"
+        "# 📷 사진 2장만 넣으면 됩니다\n\n- **왼쪽 · 얼굴 사진** → 이 사진에서는 **얼굴과 머리 모양만** 가져갑니다.\n- **오른쪽 · 의상 사진** → 이 사진에서는 **입고 있는 것만** 가져갑니다.\n\n### ✂️ 배경 제거 → 옷 추출, 2단계 자동\n의상 사진은 먼저 **배경이 통째로 지워지고**, 그다음 **옷·신발·양말만** 오려냅니다.\n얼굴·머리·팔다리는 알아서 빠지니 **목 아래로 미리 자를 필요가 없습니다.**\n\n> ⚠️ **의상 사진에 옷 이외의 물건이 찍히지 않게 하세요.**\n> 바닥에 놓인 빨래·가방·신발 같은 게 같이 찍히면 그것도 \"옷\"으로 인식해 결과에 섞입니다.\n> 배경 제거가 대부분 걸러주지만, 인물에 붙어 있는 물건은 남을 수 있습니다.\n\n> ⚠️ **사진은 클수록 좋습니다.** 폭 1000px 이상을 권합니다.\n> 작은 사진은 양말·신발처럼 작은 부분이 뭉개집니다.\n\n### 👀 잘 됐는지 보는 법\n오른쪽 작은 그림 2개를 보세요. 회색 배경 위에 **얼굴만** / **옷만** 떠 있으면 성공입니다.\n옷이 덜 잘렸으면 가운데 **의상만 추출** 노드의 체크박스를 조정하세요.\n참고로 **양말은 `Left-shoe`/`Right-shoe` 항목으로 잡힙니다** — 양말 사진을 쓸 때도 이 두 개를 켜 두세요.\n\n### 👟 신발·양말·맨발을 바꾸고 싶다면\n프롬프트는 발에 대해 **아무 것도 강제하지 않습니다.** 사진에 있는 그대로 따라갑니다.\n바꾸고 싶으면 **③ 칸에 한국어로** 적으세요. ③ 입력이 최우선입니다.\n예: `흰 발목 양말, 신발 없음` / `검은 로퍼` / `맨발`\n\n몸매·분위기도 같은 칸에 적으면 됩니다.\n예: `날씬한 성인 여성 체형, 좁은 어깨, 가는 팔다리`"
       ],
       "widgets_values_named": {
-        "text": "# 📷 사진 2장만 넣으면 됩니다\n\n- **왼쪽 · 얼굴 사진** → 이 사진에서는 **얼굴과 머리 모양만** 가져갑니다.\n- **오른쪽 · 의상 사진** → 이 사진에서는 **옷과 신발만** 가져갑니다.\n\n### ✂️ 자르는 건 자동입니다\n얼굴 사진에서는 **머리만**, 의상 사진에서는 **옷·신발만** 자동으로 오려냅니다.\n의상 사진의 얼굴·머리·팔다리는 알아서 지워지니까, 예전처럼 **목 아래로 미리 잘라서 넣을 필요가 없습니다.** 얼굴이 크게 나온 사진을 그냥 넣어도 됩니다.\n\n### 👀 잘 됐는지 보는 법\n오른쪽 작은 그림 2개를 보세요. 회색 배경 위에 **얼굴만** / **옷만** 떠 있으면 성공입니다.\n옷이 덜 잘렸으면 가운데 **의상만 추출** 노드에서 윗옷·치마·바지·신발 체크박스를 켜고 끄면 됩니다.\n\n몸매나 분위기를 바꾸고 싶으면 **③ 칸에 한국어로** 적으세요.\n예: `날씬한 성인 여성 체형, 좁은 어깨, 가는 팔다리`"
+        "text": "# 📷 사진 2장만 넣으면 됩니다\n\n- **왼쪽 · 얼굴 사진** → 이 사진에서는 **얼굴과 머리 모양만** 가져갑니다.\n- **오른쪽 · 의상 사진** → 이 사진에서는 **입고 있는 것만** 가져갑니다.\n\n### ✂️ 배경 제거 → 옷 추출, 2단계 자동\n의상 사진은 먼저 **배경이 통째로 지워지고**, 그다음 **옷·신발·양말만** 오려냅니다.\n얼굴·머리·팔다리는 알아서 빠지니 **목 아래로 미리 자를 필요가 없습니다.**\n\n> ⚠️ **의상 사진에 옷 이외의 물건이 찍히지 않게 하세요.**\n> 바닥에 놓인 빨래·가방·신발 같은 게 같이 찍히면 그것도 \"옷\"으로 인식해 결과에 섞입니다.\n> 배경 제거가 대부분 걸러주지만, 인물에 붙어 있는 물건은 남을 수 있습니다.\n\n> ⚠️ **사진은 클수록 좋습니다.** 폭 1000px 이상을 권합니다.\n> 작은 사진은 양말·신발처럼 작은 부분이 뭉개집니다.\n\n### 👀 잘 됐는지 보는 법\n오른쪽 작은 그림 2개를 보세요. 회색 배경 위에 **얼굴만** / **옷만** 떠 있으면 성공입니다.\n옷이 덜 잘렸으면 가운데 **의상만 추출** 노드의 체크박스를 조정하세요.\n참고로 **양말은 `Left-shoe`/`Right-shoe` 항목으로 잡힙니다** — 양말 사진을 쓸 때도 이 두 개를 켜 두세요.\n\n### 👟 신발·양말·맨발을 바꾸고 싶다면\n프롬프트는 발에 대해 **아무 것도 강제하지 않습니다.** 사진에 있는 그대로 따라갑니다.\n바꾸고 싶으면 **③ 칸에 한국어로** 적으세요. ③ 입력이 최우선입니다.\n예: `흰 발목 양말, 신발 없음` / `검은 로퍼` / `맨발`\n\n몸매·분위기도 같은 칸에 적으면 됩니다.\n예: `날씬한 성인 여성 체형, 좁은 어깨, 가는 팔다리`"
       },
       "color": "#654b7c",
       "bgcolor": "#382b45"
@@ -631,7 +631,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 71,
+      "order": 72,
       "mode": 0,
       "inputs": [
         {
@@ -701,7 +701,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 75,
+      "order": 76,
       "mode": 0,
       "inputs": [
         {
@@ -989,7 +989,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 68,
+      "order": 69,
       "mode": 0,
       "inputs": [
         {
@@ -1059,7 +1059,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 79,
+      "order": 80,
       "mode": 0,
       "inputs": [
         {
@@ -1467,7 +1467,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 80,
+      "order": 81,
       "mode": 0,
       "inputs": [
         {
@@ -1890,7 +1890,7 @@
         320
       ],
       "flags": {},
-      "order": 84,
+      "order": 85,
       "mode": 0,
       "inputs": [
         {
@@ -1932,7 +1932,7 @@
         384
       ],
       "flags": {},
-      "order": 83,
+      "order": 84,
       "mode": 2,
       "inputs": [
         {
@@ -2698,7 +2698,7 @@
         122
       ],
       "flags": {},
-      "order": 70,
+      "order": 71,
       "mode": 0,
       "inputs": [
         {
@@ -2748,7 +2748,7 @@
         70
       ],
       "flags": {},
-      "order": 69,
+      "order": 70,
       "mode": 0,
       "inputs": [
         {
@@ -3199,7 +3199,7 @@
         320
       ],
       "flags": {},
-      "order": 85,
+      "order": 86,
       "mode": 0,
       "inputs": [
         {
@@ -3608,7 +3608,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 74,
+      "order": 75,
       "mode": 4,
       "inputs": [
         {
@@ -3661,7 +3661,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 72,
+      "order": 73,
       "mode": 0,
       "inputs": [
         {
@@ -3849,7 +3849,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 76,
+      "order": 77,
       "mode": 0,
       "inputs": [
         {
@@ -3968,7 +3968,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 78,
+      "order": 79,
       "mode": 0,
       "inputs": [
         {
@@ -4287,7 +4287,7 @@
         200
       ],
       "flags": {},
-      "order": 81,
+      "order": 82,
       "mode": 0,
       "inputs": [
         {
@@ -4513,7 +4513,7 @@
           "name": "IMAGE",
           "type": "IMAGE",
           "links": [
-            295
+            298
           ]
         },
         {
@@ -4604,7 +4604,7 @@
         246
       ],
       "flags": {},
-      "order": 61,
+      "order": 68,
       "mode": 0,
       "inputs": [
         {
@@ -4638,7 +4638,9 @@
           "input_ue_unconnectable": {},
           "version": "7.8"
         }
-      }
+      },
+      "widgets_values": [],
+      "widgets_values_named": {}
     },
     {
       "id": 106,
@@ -4652,7 +4654,7 @@
         300
       ],
       "flags": {},
-      "order": 82,
+      "order": 83,
       "mode": 0,
       "inputs": [
         {
@@ -4698,13 +4700,13 @@
         652
       ],
       "flags": {},
-      "order": 50,
+      "order": 61,
       "mode": 0,
       "inputs": [
         {
           "name": "images",
           "type": "IMAGE",
-          "link": 295
+          "link": 299
         }
       ],
       "outputs": [
@@ -4767,7 +4769,7 @@
         false,
         1024,
         0,
-        0,
+        2,
         false,
         "Color",
         "#808080"
@@ -4793,7 +4795,7 @@
         "Background": false,
         "process_res": 1024,
         "mask_blur": 0,
-        "mask_offset": 0,
+        "mask_offset": 2,
         "invert_output": false,
         "background": "Color",
         "background_color": "#808080"
@@ -5066,17 +5068,101 @@
         }
       },
       "widgets_values": [
-        "subject_definitions:\n<Subject 1> is the adult woman seen in <Picture 1>. Her reference role is IDENTITY ONLY: face, facial geometry, eyes, nose, lips, skin tone, apparent age and hairstyle, including hair length, colour, texture and parting.\n\n<Subject 2> is the outfit shown in <Picture 2>. Its reference role is WARDROBE ONLY: garment shapes, cut, length, colours, patterns, materials, visible footwear, visible foot-covering state and wearable accessories.\n\nsummary:\n[reference generation] Create one static character turnaround sheet showing <Subject 1> wearing the wardrobe from <Subject 2>. Present exactly three complete full-body photographs — front, strict right-side profile and back — on a neutral light-grey studio background.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1], [Shot 2], [Shot 3]): fully_preserved - the same person from <Picture 1> appears in every shot. Preserve the exact face, facial geometry, eyes, nose, lips, skin tone, apparent age and hairstyle.\n\nThe hairstyle comes exclusively from <Picture 1> and remains identical in all three shots: same length, cut, parting, colour and texture. Only its viewing direction changes. Do not transfer clothing, pose, framing, lighting or background from <Picture 1>.\n\n<Subject 2> (appears in [Shot 1], [Shot 2], [Shot 3]): attribute_transfer - transfer only the garments, colours, patterns, materials, visible footwear, visible foot-covering state and wearable accessories from <Picture 2> onto <Subject 1>.\n\nDo not transfer the outfit donor’s face, hair, hairstyle, age, gender presentation, shoulder width, muscle mass, torso volume, height, limb thickness, body shape, pose or background. <Picture 2> is a wardrobe reference only. <Subject 1> wears the outfit but never inherits the outfit donor’s identity or body.\n\ndetailed_description:\nThe target is one still image, not a video. Use photorealistic studio photography on a neutral light-grey seamless background with even soft lighting.\n\nArrange exactly three equal vertical photographs side by side from left to right. All three photographs must share one ground line, one subject scale, one camera distance, one camera height and one lighting setup.\n\nREFERENCE FOOT STATE — MANDATORY:\nInspect the foot area of <Picture 2> and select exactly one of the following states. Never combine, average or substitute states.\n\nSTATE A — VISIBLE FOOTWEAR:\nIf shoes, sneakers, heels, sandals, boots, slippers or any other footwear are clearly visible in <Picture 2>, reproduce that exact footwear in all three shots.\n\nPreserve its exact type, silhouette, toe shape, sole thickness, heel height, closure, straps, laces, material and colour. Visible footwear must not be omitted, simplified, replaced with bare feet or replaced with a fabric foot covering. Failure to reproduce clearly visible footwear is incorrect.\n\nSTATE B — VISIBLE FABRIC FOOT COVERING WITHOUT FOOTWEAR:\nUse this state only when no footwear is present and fabric covering the feet, such as socks or stockings, is clearly visible in <Picture 2>.\n\nReproduce the exact colour, length, material, thickness and fit of that visible covering. Do not add shoes over it.\n\nSTATE C — BARE FEET:\nIf uncovered toes, heels, insteps, ankles or natural foot skin are clearly visible in <Picture 2>, the subject is barefoot.\n\nShow natural uncovered skin, toes, heels, insteps and ankles. Do not add footwear or any fabric covering to the feet. A fabric foot covering is an opt-in attribute and is forbidden unless it is clearly visible in <Picture 2> or explicitly requested when the foot area is unavailable.\n\nSTATE D — FOOT AREA UNAVAILABLE:\nUse this state only when the entire foot area is cropped, hidden, obscured or outside the frame of <Picture 2>.\n\nWhen the foot area is unavailable, follow an explicit USER STAGE 1 DIRECTION regarding footwear. If no such instruction is supplied, default to bare feet rather than inventing footwear or a fabric covering.\n\nThe selected foot state must remain identical in all three shots. Only its camera angle changes.\n\n[Shot 1] Complete full-body front view in a relaxed A-pose, face looking directly toward the camera. Both feet point forward. Show the selected foot state clearly from the front. If footwear was identified, both items of the exact pair must be fully visible. If the subject is barefoot, show uncovered toes and natural skin.\n\n[Shot 2] Complete full-body strict 90-degree right-side profile view. The head, torso, hips and feet all face directly toward the side of the frame. Show the selected foot state from its true side profile. If footwear was identified, preserve its exact sole, heel, toe shape and closure. If the subject is barefoot, show the natural arch, heel, toes and uncovered skin.\n\n[Shot 3] Complete full-body back view photographed from directly behind. The subject and both feet point away from the viewer. Show the selected foot state from the rear. If footwear was identified, reproduce its correct heel counter, rear seam, straps heel counter, rear seam, or open-back construction. If the subject is barefoot, show uncovered natural heels and skin. Never turn the feet back toward the camera and never reuse the front view.\n\nThe same hairstyle from <Picture 1> must remain visible in all three shots and change only according to the viewing direction. Show the complete head and both complete feet in every shot.\n\nKeep the face uncovered. Do not add a helmet or mask. Do not create an extra panel, action pose, separate product display, inset, duplicate cell, caption, label, logo or text.\n\noverall_soundscape:\nN/A\n\nnon_diegetic_music:\nN/A\n\nCANONICAL BODY LOCK — applies unless the user explicitly requests a different body build:\nAll three photographs are rotations of one unchanged adult body mesh.\n\nKeep identical height, head-to-body ratio, shoulder width, chest volume, waist width, hip width, arm length, leg length, limb thickness, hand size and foot size in all three views.\n\nUse the same relaxed A-pose, stance and weight distribution in every view. Only the viewing direction changes.\n\nUse a fixed orthographic-like 85–105 mm lens, identical camera height, camera distance, ground line and subject scale. Never redraw a wider, shorter, taller, heavier, slimmer or differently proportioned body between views.\n\nUSER STAGE 1 DIRECTION — HIGHEST PRIORITY EXCEPT FOR AN OBSERVABLE FOOT STATE:\nThe translated user instruction may override defaults for body build, skin tone, complexion, presentation, framing and styling while preserving the <Subject 1> identity role and the <Subject 2> wardrobe-transfer role.\n\nWhen a skin tone is specified, apply it consistently to every visible area of skin in all three shots.\n\nA user footwear instruction may override the default only when the foot area of <Picture 2> is cropped, hidden or unavailable.\n\nWhen footwear, a fabric foot covering or bare feet are clearly observable in <Picture 2>, preserve that observable state exactly. Do not replace or reinterpret it:\n",
+        "subject_definitions:\n<Subject 1> is the adult woman seen in <Picture 1>. Her reference role is IDENTITY ONLY: face, facial geometry, eyes, nose, lips, skin tone, apparent age and hairstyle, including hair length, colour, texture and parting.\n\n<Subject 2> is the outfit shown in <Picture 2>. Its reference role is WARDROBE ONLY: garment shapes, cut, length, colours, patterns, materials, whatever is worn on the feet, and wearable accessories.\n\nsummary:\n[reference generation] Create one static character turnaround sheet showing <Subject 1> wearing the wardrobe from <Subject 2>. Present exactly three complete full-body photographs — front, strict right-side profile and back — on a neutral light-grey studio background.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1], [Shot 2], [Shot 3]): fully_preserved - the same person from <Picture 1> appears in every shot. Preserve the exact face, facial geometry, eyes, nose, lips, skin tone, apparent age and hairstyle.\n\nThe hairstyle comes exclusively from <Picture 1> and remains identical in all three shots: same length, cut, parting, colour and texture. Only its viewing direction changes. Do not transfer clothing, pose, framing, lighting or background from <Picture 1>.\n\n<Subject 2> (appears in [Shot 1], [Shot 2], [Shot 3]): attribute_transfer - transfer only the garments, colours, patterns, materials, whatever is worn on the feet, and wearable accessories from <Picture 2> onto <Subject 1>.\n\nDo not transfer the outfit donor’s face, hair, hairstyle, age, gender presentation, shoulder width, muscle mass, torso volume, height, limb thickness, body shape, pose or background. <Picture 2> is a wardrobe reference only. <Subject 1> wears the outfit but never inherits the outfit donor’s identity or body.\n\ndetailed_description:\nThe target is one still image, not a video. Use photorealistic studio photography on a neutral light-grey seamless background with even soft lighting.\n\nArrange exactly three equal vertical photographs side by side from left to right. All three photographs must share one ground line, one subject scale, one camera distance, one camera height and one lighting setup.\n\n[Shot 1] Complete full-body front view in a relaxed A-pose, face looking directly toward the camera. Both feet point forward and are fully visible.\n\n[Shot 2] Complete full-body strict 90-degree right-side profile view. The head, torso, hips and feet all face directly toward the side of the frame. Both feet are fully visible in true side profile.\n\n[Shot 3] Complete full-body back view photographed from directly behind. The subject and both feet point away from the viewer, and both feet are fully visible from the rear. Never turn the feet back toward the camera and never reuse the front view.\n\nThe same hairstyle from <Picture 1> must remain visible in all three shots and change only according to the viewing direction. Show the complete head and both complete feet in every shot.\n\nKeep the face uncovered. Do not add a helmet or mask. Do not create an extra panel, action pose, separate product display, inset, duplicate cell, caption, label, logo or text.\n\noverall_soundscape:\nN/A\n\nnon_diegetic_music:\nN/A\n\nCANONICAL BODY LOCK — applies unless the user explicitly requests a different body build:\nAll three photographs are rotations of one unchanged adult body mesh.\n\nKeep identical height, head-to-body ratio, shoulder width, chest volume, waist width, hip width, arm length, leg length, limb thickness, hand size and foot size in all three views.\n\nUse the same relaxed A-pose, stance and weight distribution in every view. Only the viewing direction changes.\n\nUse a fixed orthographic-like 85–105 mm lens, identical camera height, camera distance, ground line and subject scale. Never redraw a wider, shorter, taller, heavier, slimmer or differently proportioned body between views.\n\nUSER STAGE 1 DIRECTION — HIGHEST PRIORITY:\nThe user instruction that follows outranks every default written above. Follow it literally and in full. It may override body build, skin tone, complexion, presentation, framing, styling, and anything worn, including what is or is not on the feet. Where it conflicts with any line above, the user instruction wins.\n\nThe only things it never changes are the <Subject 1> identity role (face and hair come from <Picture 1>) and the three-shot front / side / back layout.\n\nWhen a skin tone is specified, apply it consistently to every visible area of skin in all three shots.\n\nIf nothing follows this line, there is no user direction: keep every rule above exactly as written.",
         "",
-        "\n\nUSER STAGE 1 DIRECTION — HIGHEST PRIORITY:\nThis translated user instruction overrides conflicting defaults for body build, skin tone and complexion, presentation, framing and styling, while keeping the <Subject 1> identity role and the <Subject 2> attribute_transfer role defined above unchanged. When it specifies a skin tone, apply that tone consistently to every visible area of skin — face, neck, arms, hands, torso, midriff, legs and feet — with the same value in all three shots:\n"
+        "\n\n"
       ],
       "widgets_values_named": {
-        "string_a": "subject_definitions:\n<Subject 1> is the adult woman seen in <Picture 1>. Her reference role is IDENTITY ONLY: face, facial geometry, eyes, nose, lips, skin tone, apparent age and hairstyle, including hair length, colour, texture and parting.\n\n<Subject 2> is the outfit shown in <Picture 2>. Its reference role is WARDROBE ONLY: garment shapes, cut, length, colours, patterns, materials, visible footwear, visible foot-covering state and wearable accessories.\n\nsummary:\n[reference generation] Create one static character turnaround sheet showing <Subject 1> wearing the wardrobe from <Subject 2>. Present exactly three complete full-body photographs — front, strict right-side profile and back — on a neutral light-grey studio background.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1], [Shot 2], [Shot 3]): fully_preserved - the same person from <Picture 1> appears in every shot. Preserve the exact face, facial geometry, eyes, nose, lips, skin tone, apparent age and hairstyle.\n\nThe hairstyle comes exclusively from <Picture 1> and remains identical in all three shots: same length, cut, parting, colour and texture. Only its viewing direction changes. Do not transfer clothing, pose, framing, lighting or background from <Picture 1>.\n\n<Subject 2> (appears in [Shot 1], [Shot 2], [Shot 3]): attribute_transfer - transfer only the garments, colours, patterns, materials, visible footwear, visible foot-covering state and wearable accessories from <Picture 2> onto <Subject 1>.\n\nDo not transfer the outfit donor’s face, hair, hairstyle, age, gender presentation, shoulder width, muscle mass, torso volume, height, limb thickness, body shape, pose or background. <Picture 2> is a wardrobe reference only. <Subject 1> wears the outfit but never inherits the outfit donor’s identity or body.\n\ndetailed_description:\nThe target is one still image, not a video. Use photorealistic studio photography on a neutral light-grey seamless background with even soft lighting.\n\nArrange exactly three equal vertical photographs side by side from left to right. All three photographs must share one ground line, one subject scale, one camera distance, one camera height and one lighting setup.\n\nREFERENCE FOOT STATE — MANDATORY:\nInspect the foot area of <Picture 2> and select exactly one of the following states. Never combine, average or substitute states.\n\nSTATE A — VISIBLE FOOTWEAR:\nIf shoes, sneakers, heels, sandals, boots, slippers or any other footwear are clearly visible in <Picture 2>, reproduce that exact footwear in all three shots.\n\nPreserve its exact type, silhouette, toe shape, sole thickness, heel height, closure, straps, laces, material and colour. Visible footwear must not be omitted, simplified, replaced with bare feet or replaced with a fabric foot covering. Failure to reproduce clearly visible footwear is incorrect.\n\nSTATE B — VISIBLE FABRIC FOOT COVERING WITHOUT FOOTWEAR:\nUse this state only when no footwear is present and fabric covering the feet, such as socks or stockings, is clearly visible in <Picture 2>.\n\nReproduce the exact colour, length, material, thickness and fit of that visible covering. Do not add shoes over it.\n\nSTATE C — BARE FEET:\nIf uncovered toes, heels, insteps, ankles or natural foot skin are clearly visible in <Picture 2>, the subject is barefoot.\n\nShow natural uncovered skin, toes, heels, insteps and ankles. Do not add footwear or any fabric covering to the feet. A fabric foot covering is an opt-in attribute and is forbidden unless it is clearly visible in <Picture 2> or explicitly requested when the foot area is unavailable.\n\nSTATE D — FOOT AREA UNAVAILABLE:\nUse this state only when the entire foot area is cropped, hidden, obscured or outside the frame of <Picture 2>.\n\nWhen the foot area is unavailable, follow an explicit USER STAGE 1 DIRECTION regarding footwear. If no such instruction is supplied, default to bare feet rather than inventing footwear or a fabric covering.\n\nThe selected foot state must remain identical in all three shots. Only its camera angle changes.\n\n[Shot 1] Complete full-body front view in a relaxed A-pose, face looking directly toward the camera. Both feet point forward. Show the selected foot state clearly from the front. If footwear was identified, both items of the exact pair must be fully visible. If the subject is barefoot, show uncovered toes and natural skin.\n\n[Shot 2] Complete full-body strict 90-degree right-side profile view. The head, torso, hips and feet all face directly toward the side of the frame. Show the selected foot state from its true side profile. If footwear was identified, preserve its exact sole, heel, toe shape and closure. If the subject is barefoot, show the natural arch, heel, toes and uncovered skin.\n\n[Shot 3] Complete full-body back view photographed from directly behind. The subject and both feet point away from the viewer. Show the selected foot state from the rear. If footwear was identified, reproduce its correct heel counter, rear seam, straps heel counter, rear seam, or open-back construction. If the subject is barefoot, show uncovered natural heels and skin. Never turn the feet back toward the camera and never reuse the front view.\n\nThe same hairstyle from <Picture 1> must remain visible in all three shots and change only according to the viewing direction. Show the complete head and both complete feet in every shot.\n\nKeep the face uncovered. Do not add a helmet or mask. Do not create an extra panel, action pose, separate product display, inset, duplicate cell, caption, label, logo or text.\n\noverall_soundscape:\nN/A\n\nnon_diegetic_music:\nN/A\n\nCANONICAL BODY LOCK — applies unless the user explicitly requests a different body build:\nAll three photographs are rotations of one unchanged adult body mesh.\n\nKeep identical height, head-to-body ratio, shoulder width, chest volume, waist width, hip width, arm length, leg length, limb thickness, hand size and foot size in all three views.\n\nUse the same relaxed A-pose, stance and weight distribution in every view. Only the viewing direction changes.\n\nUse a fixed orthographic-like 85–105 mm lens, identical camera height, camera distance, ground line and subject scale. Never redraw a wider, shorter, taller, heavier, slimmer or differently proportioned body between views.\n\nUSER STAGE 1 DIRECTION — HIGHEST PRIORITY EXCEPT FOR AN OBSERVABLE FOOT STATE:\nThe translated user instruction may override defaults for body build, skin tone, complexion, presentation, framing and styling while preserving the <Subject 1> identity role and the <Subject 2> wardrobe-transfer role.\n\nWhen a skin tone is specified, apply it consistently to every visible area of skin in all three shots.\n\nA user footwear instruction may override the default only when the foot area of <Picture 2> is cropped, hidden or unavailable.\n\nWhen footwear, a fabric foot covering or bare feet are clearly observable in <Picture 2>, preserve that observable state exactly. Do not replace or reinterpret it:\n",
+        "string_a": "subject_definitions:\n<Subject 1> is the adult woman seen in <Picture 1>. Her reference role is IDENTITY ONLY: face, facial geometry, eyes, nose, lips, skin tone, apparent age and hairstyle, including hair length, colour, texture and parting.\n\n<Subject 2> is the outfit shown in <Picture 2>. Its reference role is WARDROBE ONLY: garment shapes, cut, length, colours, patterns, materials, whatever is worn on the feet, and wearable accessories.\n\nsummary:\n[reference generation] Create one static character turnaround sheet showing <Subject 1> wearing the wardrobe from <Subject 2>. Present exactly three complete full-body photographs — front, strict right-side profile and back — on a neutral light-grey studio background.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1], [Shot 2], [Shot 3]): fully_preserved - the same person from <Picture 1> appears in every shot. Preserve the exact face, facial geometry, eyes, nose, lips, skin tone, apparent age and hairstyle.\n\nThe hairstyle comes exclusively from <Picture 1> and remains identical in all three shots: same length, cut, parting, colour and texture. Only its viewing direction changes. Do not transfer clothing, pose, framing, lighting or background from <Picture 1>.\n\n<Subject 2> (appears in [Shot 1], [Shot 2], [Shot 3]): attribute_transfer - transfer only the garments, colours, patterns, materials, whatever is worn on the feet, and wearable accessories from <Picture 2> onto <Subject 1>.\n\nDo not transfer the outfit donor’s face, hair, hairstyle, age, gender presentation, shoulder width, muscle mass, torso volume, height, limb thickness, body shape, pose or background. <Picture 2> is a wardrobe reference only. <Subject 1> wears the outfit but never inherits the outfit donor’s identity or body.\n\ndetailed_description:\nThe target is one still image, not a video. Use photorealistic studio photography on a neutral light-grey seamless background with even soft lighting.\n\nArrange exactly three equal vertical photographs side by side from left to right. All three photographs must share one ground line, one subject scale, one camera distance, one camera height and one lighting setup.\n\n[Shot 1] Complete full-body front view in a relaxed A-pose, face looking directly toward the camera. Both feet point forward and are fully visible.\n\n[Shot 2] Complete full-body strict 90-degree right-side profile view. The head, torso, hips and feet all face directly toward the side of the frame. Both feet are fully visible in true side profile.\n\n[Shot 3] Complete full-body back view photographed from directly behind. The subject and both feet point away from the viewer, and both feet are fully visible from the rear. Never turn the feet back toward the camera and never reuse the front view.\n\nThe same hairstyle from <Picture 1> must remain visible in all three shots and change only according to the viewing direction. Show the complete head and both complete feet in every shot.\n\nKeep the face uncovered. Do not add a helmet or mask. Do not create an extra panel, action pose, separate product display, inset, duplicate cell, caption, label, logo or text.\n\noverall_soundscape:\nN/A\n\nnon_diegetic_music:\nN/A\n\nCANONICAL BODY LOCK — applies unless the user explicitly requests a different body build:\nAll three photographs are rotations of one unchanged adult body mesh.\n\nKeep identical height, head-to-body ratio, shoulder width, chest volume, waist width, hip width, arm length, leg length, limb thickness, hand size and foot size in all three views.\n\nUse the same relaxed A-pose, stance and weight distribution in every view. Only the viewing direction changes.\n\nUse a fixed orthographic-like 85–105 mm lens, identical camera height, camera distance, ground line and subject scale. Never redraw a wider, shorter, taller, heavier, slimmer or differently proportioned body between views.\n\nUSER STAGE 1 DIRECTION — HIGHEST PRIORITY:\nThe user instruction that follows outranks every default written above. Follow it literally and in full. It may override body build, skin tone, complexion, presentation, framing, styling, and anything worn, including what is or is not on the feet. Where it conflicts with any line above, the user instruction wins.\n\nThe only things it never changes are the <Subject 1> identity role (face and hair come from <Picture 1>) and the three-shot front / side / back layout.\n\nWhen a skin tone is specified, apply it consistently to every visible area of skin in all three shots.\n\nIf nothing follows this line, there is no user direction: keep every rule above exactly as written.",
         "string_b": "",
-        "delimiter": "\n\nUSER STAGE 1 DIRECTION — HIGHEST PRIORITY:\nThis translated user instruction overrides conflicting defaults for body build, skin tone and complexion, presentation, framing and styling, while keeping the <Subject 1> identity role and the <Subject 2> attribute_transfer role defined above unchanged. When it specifies a skin tone, apply that tone consistently to every visible area of skin — face, neck, arms, hands, torso, midriff, legs and feet — with the same value in all three shots:\n"
+        "delimiter": "\n\n"
       },
       "color": "#343b48",
       "bgcolor": "#202631"
+    },
+    {
+      "id": 158,
+      "type": "RMBG",
+      "pos": [
+        2020,
+        1158
+      ],
+      "size": [
+        340,
+        292
+      ],
+      "flags": {},
+      "order": 50,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 298
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            299
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        },
+        {
+          "name": "MASK_IMAGE",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "title": "1) 배경 제거 (바닥 잡동사니 제거)",
+      "properties": {
+        "cnr_id": "comfyui-workflow-encrypt",
+        "ver": "1.0.0",
+        "Node name for S&R": "RMBG",
+        "__ultra_h3_dynamic_preferences_v1": {
+          "turnSpeakers": {},
+          "cameraTargets": {},
+          "cameraFramings": {},
+          "profilePresets": {},
+          "compactView": true
+        },
+        "ultra_h3_r2v_basic_view": true,
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "RMBG-2.0",
+        1,
+        1024,
+        0,
+        0,
+        false,
+        true,
+        "Color",
+        "#808080"
+      ],
+      "widgets_values_named": {
+        "model": "RMBG-2.0",
+        "sensitivity": 1,
+        "process_res": 1024,
+        "mask_blur": 0,
+        "mask_offset": 0,
+        "invert_output": false,
+        "refine_foreground": true,
+        "background": "Color",
+        "background_color": "#808080"
+      },
+      "color": "#222e40",
+      "bgcolor": "#364254"
     }
   ],
   "links": [
@@ -5865,14 +5951,6 @@
       "IMAGE"
     ],
     [
-      295,
-      21,
-      0,
-      157,
-      0,
-      "IMAGE"
-    ],
-    [
       296,
       157,
       0,
@@ -5885,6 +5963,22 @@
       157,
       0,
       154,
+      0,
+      "IMAGE"
+    ],
+    [
+      298,
+      21,
+      0,
+      158,
+      0,
+      "IMAGE"
+    ],
+    [
+      299,
+      158,
+      0,
+      157,
       0,
       "IMAGE"
     ]
@@ -6066,8 +6160,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 19,
-          "lastNodeId": 157,
-          "lastLinkId": 297,
+          "lastNodeId": 158,
+          "lastLinkId": 299,
           "lastRerouteId": 0
         },
         "revision": 4,
@@ -7657,15 +7751,15 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 1.4641000000000006,
+      "scale": 0.33601036806185036,
       "offset": [
-        -711.9083054723903,
-        -2840.5068975377344
+        371.57316865622255,
+        -557.8952667909731
       ]
     },
     "comfyui_mcp": {
-      "workflow_uuid": "2d6b3cdb-f7c1-4656-a231-a74d3f2c10ab",
-      "workflow_path": "workflows/260831_Toobusy_2BZ_H3_character_sheet_2stage_v1 (sain2d_modfied).json"
+      "workflow_uuid": "04fc1434-1b26-4bc4-890f-c22b0981d8b5",
+      "workflow_path": "workflows/260901_H3_character_sheet(sain2d_modfied)_KOR_v2.json"
     },
     "toobusy_layout_contract": {
       "effective_height": "collapsed ? 30 : size[1] + 30",
@@ -7691,7 +7785,7 @@
     "VHS_KeepIntermediate": true,
     "ue_links": [],
     "links_added_by_ue": [],
-    "workflow_name": "260901_H3_character_sheet(sain2d_modfied)_KOR"
+    "workflow_name": "260901_H3_character_sheet(sain2d_modfied)_KOR_v2"
   },
   "version": 0.4
 }
