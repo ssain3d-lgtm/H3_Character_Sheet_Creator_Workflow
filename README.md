@@ -4,6 +4,9 @@
 
 A ComfyUI workflow that takes a **face reference** and an **outfit reference** and generates a **3-view character sheet** (front / side / back). Built on MiniMax-H3 Ref2VA.
 
+> Original workflow by **너바베** — [로컬 일관성 끝판왕 · 미니맥스 H3로 캐릭터 시트 만들기 | ComfyUI 워크플로우](https://www.youtube.com/watch?v=nsvAbax4jng)  
+> This repository is a modified version (sain2d).
+
 ## Example
 
 | Face reference | Outfit reference |
@@ -60,6 +63,9 @@ Custom nodes: SAM3Segment, ClothesSegment (SegFormer), rgthree, Toobusy H3 node 
 # 한국어
 
 얼굴 참조 이미지와 의상 참조 이미지를 넣으면 **3-뷰(정면/측면/후면) 캐릭터 시트**를 만들어 주는 ComfyUI 워크플로우입니다. MiniMax-H3 Ref2VA 기반.
+
+> 원작 워크플로우: **너바베** — [로컬 일관성 끝판왕 · 미니맥스 H3로 캐릭터 시트 만들기 | ComfyUI 워크플로우](https://www.youtube.com/watch?v=nsvAbax4jng)  
+> 이 레포는 수정본입니다 (sain2d).
 
 ## 결과 예시
 
