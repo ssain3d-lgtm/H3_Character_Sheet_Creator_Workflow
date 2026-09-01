@@ -3496,12 +3496,12 @@
         }
       },
       "widgets_values": [
-        "subject_definitions:\n<Subject 1> is the adult woman seen in <Picture 1>. Her reference role is IDENTITY ONLY: face, facial geometry, eyes, nose, lips, skin tone, apparent age, and hairstyle including hair length, color, texture and parting.\n<Subject 2> is the outfit worn in <Picture 2>. Its reference role is WARDROBE ONLY: garment shapes, cut, length, colors, patterns, materials, footwear and wearable accessories.\n\nsummary:\n[reference generation] One static character turnaround sheet showing <Subject 1> wearing <Subject 2>, presented as three full-body photographs — front, right side, and back — on a neutral light-grey studio background.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1], [Shot 2], [Shot 3]): fully_preserved - remains the same person from <Picture 1> in every shot, preserving the exact face, facial geometry, eyes, nose, lips, apparent age and hairstyle. The hairstyle comes exclusively from <Picture 1> and is identical in all three shots: same length, same cut, same parting, same colour, neither tied up nor let down differently between shots. Take only face and hair from <Picture 1>; its clothing, pose, framing, lighting and background do not carry over.\n<Subject 2> (appears in [Shot 1], [Shot 2], [Shot 3]): attribute_transfer - the garments, colors, patterns, materials, footwear and wearable accessories of <Subject 2> are transferred onto the body of <Subject 1>. Nothing else from <Picture 2> transfers: not its wearer's face, hair, hairstyle, hair length, age, gender presentation, shoulder width, muscle mass, torso volume, height, limb thickness, body shape, pose or background. <Picture 2> is a wardrobe swatch only and has no bearing on how <Subject 1>'s hair looks. <Subject 1> wears the outfit; <Subject 1> does not inherit the outfit donor's body.\n\ndetailed_description:\nThe target is one still image, not a video. Photorealistic studio photography on a neutral light-grey seamless background with even soft lighting.\nArrange exactly three equal vertical photographs side by side from left to right, sharing one ground line, one scale, one camera distance and one lighting setup.\nThe footwear in every shot is one single pair taken from <Subject 2>: strappy STILETTO SANDALS — open toe, open back, thin narrow straps over the toes, a thin strap around the ankle fastened with a small buckle, and a slim bare high heel post. The foot is NEVER enclosed: bare skin shows at the toes, along the top of the foot, and at the back of the heel in every view. Never render closed pumps, court shoes, pointed-toe shoes, ballet flats, boots or any shoe that wraps the toes or the heel.\n[Shot 1] Complete full-body front view in a relaxed A-pose, face toward the camera. The toes of both sandals point toward the camera and the bare toes are visible through the front straps.\n[Shot 2] Complete full-body strict 90-degree right-side profile view. The sandals are seen edge-on: the thin heel post stands behind the ankle, the toe points to the side of the frame, and the open back of the shoe is visible as a gap between the heel of the foot and the heel post.\n[Shot 3] Complete full-body back view, photographed from directly behind. The subject faces away from the camera, so both feet point AWAY from the viewer. Because the sandals are OPEN-BACKED, the wearer's BARE HEEL and the back of the foot are plainly visible from behind, sitting on the sole, with the thin ankle strap crossing above them and the slim heel post descending to the floor below. Do not draw toes or toe openings in this shot, do not turn the feet back toward the camera, and above all do not render a closed pointed-toe pump silhouette here — a closed shoe back is wrong for this footwear.\nThe same hairstyle from <Picture 1> is visible in all three shots, only rotated with the head. Show the complete head and both feet in every shot. Keep the face uncovered and do not add a helmet or mask. No extra panel, no action pose, no separate product display, no inset, no duplicate cell, and no text.\n\noverall_soundscape:\nN/A\n\nnon_diegetic_music:\nN/A",
+        "subject_definitions:\n<Subject 1> is the adult woman seen in <Picture 1>. Her reference role is IDENTITY ONLY: face, facial geometry, eyes, nose, lips, skin tone, apparent age, and hairstyle including hair length, color, texture and parting.\n<Subject 2> is the outfit worn in <Picture 2>. Its reference role is WARDROBE ONLY: garment shapes, cut, length, colors, patterns, materials, footwear and wearable accessories.\n\nsummary:\n[reference generation] One static character turnaround sheet showing <Subject 1> wearing <Subject 2>, presented as three full-body photographs — front, right side, and back — on a neutral light-grey studio background.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1], [Shot 2], [Shot 3]): fully_preserved - remains the same person from <Picture 1> in every shot, preserving the exact face, facial geometry, eyes, nose, lips, apparent age and hairstyle. The hairstyle comes exclusively from <Picture 1> and is identical in all three shots: same length, same cut, same parting, same colour, neither tied up nor let down differently between shots. Take only face and hair from <Picture 1>; its clothing, pose, framing, lighting and background do not carry over.\n<Subject 2> (appears in [Shot 1], [Shot 2], [Shot 3]): attribute_transfer - the garments, colors, patterns, materials, footwear and wearable accessories of <Subject 2> are transferred onto the body of <Subject 1>. Nothing else from <Picture 2> transfers: not its wearer's face, hair, hairstyle, hair length, age, gender presentation, shoulder width, muscle mass, torso volume, height, limb thickness, body shape, pose or background. <Picture 2> is a wardrobe swatch only and has no bearing on how <Subject 1>'s hair looks. <Subject 1> wears the outfit; <Subject 1> does not inherit the outfit donor's body.\n\ndetailed_description:\nThe target is one still image, not a video. Photorealistic studio photography on a neutral light-grey seamless background with even soft lighting.\nArrange exactly three equal vertical photographs side by side from left to right, sharing one ground line, one scale, one camera distance and one lighting setup.\nFOOTWEAR: read the shoes directly from <Picture 2> and reproduce that exact pair — same shoe type, silhouette, toe shape, sole, heel height, closure, straps or laces, material and colour. Do not assume a style and do not fall back on a familiar one: if <Picture 2> shows flat shoes, sneakers, loafers or boots, keep them flat and closed; if it shows open sandals, keep them open; if the feet are bare, leave them bare. It is the same single pair in all three shots and never changes type between shots — only the camera angle changes.\n[Shot 1] Complete full-body front view in a relaxed A-pose, face toward the camera. Both shoes are seen from the front, toes pointing toward the camera.\n[Shot 2] Complete full-body strict 90-degree right-side profile view. The shoes are seen edge-on from the side, showing their true side profile — sole line, heel height and closure — with the toe pointing to the side of the frame, not toward the camera.\n[Shot 3] Complete full-body back view, photographed from directly behind. The subject faces away from the camera, so both feet point AWAY from the viewer and you see the REAR of the shoes exactly as that shoe type would genuinely look from behind: a closed shoe shows its heel counter and back seam, an open-backed shoe shows the wearer's bare heel resting on the sole. Do not draw toes or the front of the shoes in this shot, do not turn the feet back toward the camera, and never reuse the front view of the shoes for this back view.\nThe same hairstyle from <Picture 1> is visible in all three shots, only rotated with the head. Show the complete head and both feet in every shot. Keep the face uncovered and do not add a helmet or mask. No extra panel, no action pose, no separate product display, no inset, no duplicate cell, and no text.\n\noverall_soundscape:\nN/A\n\nnon_diegetic_music:\nN/A",
         "",
         "\n\nUSER STAGE 1 DIRECTION — HIGHEST PRIORITY:\nThis translated user instruction overrides conflicting defaults for body build, skin tone and complexion, presentation, framing and styling, while keeping the <Subject 1> identity role and the <Subject 2> attribute_transfer role defined above unchanged. When it specifies a skin tone, apply that tone consistently to every visible area of skin — face, neck, arms, hands, torso, midriff, legs and feet — with the same value in all three shots:\n"
       ],
       "widgets_values_named": {
-        "string_a": "subject_definitions:\n<Subject 1> is the adult woman seen in <Picture 1>. Her reference role is IDENTITY ONLY: face, facial geometry, eyes, nose, lips, skin tone, apparent age, and hairstyle including hair length, color, texture and parting.\n<Subject 2> is the outfit worn in <Picture 2>. Its reference role is WARDROBE ONLY: garment shapes, cut, length, colors, patterns, materials, footwear and wearable accessories.\n\nsummary:\n[reference generation] One static character turnaround sheet showing <Subject 1> wearing <Subject 2>, presented as three full-body photographs — front, right side, and back — on a neutral light-grey studio background.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1], [Shot 2], [Shot 3]): fully_preserved - remains the same person from <Picture 1> in every shot, preserving the exact face, facial geometry, eyes, nose, lips, apparent age and hairstyle. The hairstyle comes exclusively from <Picture 1> and is identical in all three shots: same length, same cut, same parting, same colour, neither tied up nor let down differently between shots. Take only face and hair from <Picture 1>; its clothing, pose, framing, lighting and background do not carry over.\n<Subject 2> (appears in [Shot 1], [Shot 2], [Shot 3]): attribute_transfer - the garments, colors, patterns, materials, footwear and wearable accessories of <Subject 2> are transferred onto the body of <Subject 1>. Nothing else from <Picture 2> transfers: not its wearer's face, hair, hairstyle, hair length, age, gender presentation, shoulder width, muscle mass, torso volume, height, limb thickness, body shape, pose or background. <Picture 2> is a wardrobe swatch only and has no bearing on how <Subject 1>'s hair looks. <Subject 1> wears the outfit; <Subject 1> does not inherit the outfit donor's body.\n\ndetailed_description:\nThe target is one still image, not a video. Photorealistic studio photography on a neutral light-grey seamless background with even soft lighting.\nArrange exactly three equal vertical photographs side by side from left to right, sharing one ground line, one scale, one camera distance and one lighting setup.\nThe footwear in every shot is one single pair taken from <Subject 2>: strappy STILETTO SANDALS — open toe, open back, thin narrow straps over the toes, a thin strap around the ankle fastened with a small buckle, and a slim bare high heel post. The foot is NEVER enclosed: bare skin shows at the toes, along the top of the foot, and at the back of the heel in every view. Never render closed pumps, court shoes, pointed-toe shoes, ballet flats, boots or any shoe that wraps the toes or the heel.\n[Shot 1] Complete full-body front view in a relaxed A-pose, face toward the camera. The toes of both sandals point toward the camera and the bare toes are visible through the front straps.\n[Shot 2] Complete full-body strict 90-degree right-side profile view. The sandals are seen edge-on: the thin heel post stands behind the ankle, the toe points to the side of the frame, and the open back of the shoe is visible as a gap between the heel of the foot and the heel post.\n[Shot 3] Complete full-body back view, photographed from directly behind. The subject faces away from the camera, so both feet point AWAY from the viewer. Because the sandals are OPEN-BACKED, the wearer's BARE HEEL and the back of the foot are plainly visible from behind, sitting on the sole, with the thin ankle strap crossing above them and the slim heel post descending to the floor below. Do not draw toes or toe openings in this shot, do not turn the feet back toward the camera, and above all do not render a closed pointed-toe pump silhouette here — a closed shoe back is wrong for this footwear.\nThe same hairstyle from <Picture 1> is visible in all three shots, only rotated with the head. Show the complete head and both feet in every shot. Keep the face uncovered and do not add a helmet or mask. No extra panel, no action pose, no separate product display, no inset, no duplicate cell, and no text.\n\noverall_soundscape:\nN/A\n\nnon_diegetic_music:\nN/A",
+        "string_a": "subject_definitions:\n<Subject 1> is the adult woman seen in <Picture 1>. Her reference role is IDENTITY ONLY: face, facial geometry, eyes, nose, lips, skin tone, apparent age, and hairstyle including hair length, color, texture and parting.\n<Subject 2> is the outfit worn in <Picture 2>. Its reference role is WARDROBE ONLY: garment shapes, cut, length, colors, patterns, materials, footwear and wearable accessories.\n\nsummary:\n[reference generation] One static character turnaround sheet showing <Subject 1> wearing <Subject 2>, presented as three full-body photographs — front, right side, and back — on a neutral light-grey studio background.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1], [Shot 2], [Shot 3]): fully_preserved - remains the same person from <Picture 1> in every shot, preserving the exact face, facial geometry, eyes, nose, lips, apparent age and hairstyle. The hairstyle comes exclusively from <Picture 1> and is identical in all three shots: same length, same cut, same parting, same colour, neither tied up nor let down differently between shots. Take only face and hair from <Picture 1>; its clothing, pose, framing, lighting and background do not carry over.\n<Subject 2> (appears in [Shot 1], [Shot 2], [Shot 3]): attribute_transfer - the garments, colors, patterns, materials, footwear and wearable accessories of <Subject 2> are transferred onto the body of <Subject 1>. Nothing else from <Picture 2> transfers: not its wearer's face, hair, hairstyle, hair length, age, gender presentation, shoulder width, muscle mass, torso volume, height, limb thickness, body shape, pose or background. <Picture 2> is a wardrobe swatch only and has no bearing on how <Subject 1>'s hair looks. <Subject 1> wears the outfit; <Subject 1> does not inherit the outfit donor's body.\n\ndetailed_description:\nThe target is one still image, not a video. Photorealistic studio photography on a neutral light-grey seamless background with even soft lighting.\nArrange exactly three equal vertical photographs side by side from left to right, sharing one ground line, one scale, one camera distance and one lighting setup.\nFOOTWEAR: read the shoes directly from <Picture 2> and reproduce that exact pair — same shoe type, silhouette, toe shape, sole, heel height, closure, straps or laces, material and colour. Do not assume a style and do not fall back on a familiar one: if <Picture 2> shows flat shoes, sneakers, loafers or boots, keep them flat and closed; if it shows open sandals, keep them open; if the feet are bare, leave them bare. It is the same single pair in all three shots and never changes type between shots — only the camera angle changes.\n[Shot 1] Complete full-body front view in a relaxed A-pose, face toward the camera. Both shoes are seen from the front, toes pointing toward the camera.\n[Shot 2] Complete full-body strict 90-degree right-side profile view. The shoes are seen edge-on from the side, showing their true side profile — sole line, heel height and closure — with the toe pointing to the side of the frame, not toward the camera.\n[Shot 3] Complete full-body back view, photographed from directly behind. The subject faces away from the camera, so both feet point AWAY from the viewer and you see the REAR of the shoes exactly as that shoe type would genuinely look from behind: a closed shoe shows its heel counter and back seam, an open-backed shoe shows the wearer's bare heel resting on the sole. Do not draw toes or the front of the shoes in this shot, do not turn the feet back toward the camera, and never reuse the front view of the shoes for this back view.\nThe same hairstyle from <Picture 1> is visible in all three shots, only rotated with the head. Show the complete head and both feet in every shot. Keep the face uncovered and do not add a helmet or mask. No extra panel, no action pose, no separate product display, no inset, no duplicate cell, and no text.\n\noverall_soundscape:\nN/A\n\nnon_diegetic_music:\nN/A",
         "string_b": "",
         "delimiter": "\n\nUSER STAGE 1 DIRECTION — HIGHEST PRIORITY:\nThis translated user instruction overrides conflicting defaults for body build, skin tone and complexion, presentation, framing and styling, while keeping the <Subject 1> identity role and the <Subject 2> attribute_transfer role defined above unchanged. When it specifies a skin tone, apply that tone consistently to every visible area of skin — face, neck, arms, hands, torso, midriff, legs and feet — with the same value in all three shots:\n"
       },
@@ -4295,7 +4295,7 @@
         3700
       ],
       "size": [
-        270,
+        298.3524536132812,
         58
       ],
       "flags": {},
@@ -4313,6 +4313,9 @@
       ],
       "title": "R2V 필수 오디오 섹션 (정지 이미지 → N/A)",
       "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "Node name for S&R": "PrimitiveString",
         "__ultra_h3_dynamic_preferences_v1": {
           "turnSpeakers": {},
           "cameraTargets": {},
@@ -4323,11 +4326,9 @@
         "ultra_h3_r2v_basic_view": true,
         "ue_properties": {
           "widget_ue_connectable": {},
-          "input_ue_unconnectable": {}
-        },
-        "cnr_id": "comfy-core",
-        "ver": "0.34.0",
-        "Node name for S&R": "PrimitiveString"
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
       },
       "widgets_values": [
         "N/A"
@@ -4379,6 +4380,9 @@
       ],
       "title": "2단계 프롬프트 + R2V 오디오 섹션 (최종)",
       "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "Node name for S&R": "StringConcatenate",
         "__ultra_h3_dynamic_preferences_v1": {
           "turnSpeakers": {},
           "cameraTargets": {},
@@ -4389,11 +4393,9 @@
         "ultra_h3_r2v_basic_view": true,
         "ue_properties": {
           "widget_ue_connectable": {},
-          "input_ue_unconnectable": {}
-        },
-        "cnr_id": "comfy-core",
-        "ver": "0.34.0",
-        "Node name for S&R": "StringConcatenate"
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
       },
       "widgets_values": [
         "",
@@ -4612,7 +4614,7 @@
         390
       ],
       "size": [
-        140,
+        216.90117492675782,
         246
       ],
       "flags": {},
@@ -4634,6 +4636,9 @@
       ],
       "title": "추출 확인 · 정체성(얼굴+머리)",
       "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "Node name for S&R": "PreviewImage",
         "__ultra_h3_dynamic_preferences_v1": {
           "turnSpeakers": {},
           "cameraTargets": {},
@@ -4644,11 +4649,9 @@
         "ultra_h3_r2v_basic_view": true,
         "ue_properties": {
           "widget_ue_connectable": {},
-          "input_ue_unconnectable": {}
-        },
-        "cnr_id": "comfy-core",
-        "ver": "0.34.0",
-        "Node name for S&R": "PreviewImage"
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
       },
       "widgets_values": [],
       "widgets_values_named": {}
@@ -4661,7 +4664,7 @@
         854
       ],
       "size": [
-        140,
+        198.69598999023438,
         246
       ],
       "flags": {},
@@ -4683,6 +4686,9 @@
       ],
       "title": "추출 확인 · 의상(머리 제거)",
       "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "Node name for S&R": "PreviewImage",
         "__ultra_h3_dynamic_preferences_v1": {
           "turnSpeakers": {},
           "cameraTargets": {},
@@ -4693,11 +4699,9 @@
         "ultra_h3_r2v_basic_view": true,
         "ue_properties": {
           "widget_ue_connectable": {},
-          "input_ue_unconnectable": {}
-        },
-        "cnr_id": "comfy-core",
-        "ver": "0.34.0",
-        "Node name for S&R": "PreviewImage"
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
       },
       "widgets_values": [],
       "widgets_values_named": {}
@@ -4791,6 +4795,9 @@
       ],
       "title": "의상만 추출 (SegFormer clothes)",
       "properties": {
+        "cnr_id": "comfyui-workflow-encrypt",
+        "ver": "1.0.0",
+        "Node name for S&R": "ClothesSegment",
         "__ultra_h3_dynamic_preferences_v1": {
           "turnSpeakers": {},
           "cameraTargets": {},
@@ -4801,11 +4808,9 @@
         "ultra_h3_r2v_basic_view": true,
         "ue_properties": {
           "widget_ue_connectable": {},
-          "input_ue_unconnectable": {}
-        },
-        "cnr_id": "comfyui-workflow-encrypt",
-        "ver": "1.0.0",
-        "Node name for S&R": "ClothesSegment"
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
       },
       "widgets_values": [
         false,
@@ -4996,6 +5001,9 @@
       ],
       "title": "얼굴만 추출 (SAM3 head)",
       "properties": {
+        "cnr_id": "comfyui-workflow-encrypt",
+        "ver": "1.0.0",
+        "Node name for S&R": "SAM3Segment",
         "__ultra_h3_dynamic_preferences_v1": {
           "turnSpeakers": {},
           "cameraTargets": {},
@@ -5006,11 +5014,9 @@
         "ultra_h3_r2v_basic_view": true,
         "ue_properties": {
           "widget_ue_connectable": {},
-          "input_ue_unconnectable": {}
-        },
-        "cnr_id": "comfyui-workflow-encrypt",
-        "ver": "1.0.0",
-        "Node name for S&R": "SAM3Segment"
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
       },
       "widgets_values": [
         "head",
@@ -7655,15 +7661,15 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.8264462809917354,
+      "scale": 0.219330110733589,
       "offset": [
-        -2058.4699316863603,
-        -1760.094609468505
+        4022.258909022439,
+        658.333333333333
       ]
     },
     "comfyui_mcp": {
       "workflow_uuid": "6d7e0822-af87-4ed2-af51-278e581a273d",
-      "workflow_path": "2BZ_H3_캐릭터시트_3+3_v1.json"
+      "workflow_path": "workflows/260831_Toobusy_2BZ_H3_character_sheet_2stage_v1 (sain2d_modfied).json"
     },
     "toobusy_layout_contract": {
       "effective_height": "collapsed ? 30 : size[1] + 30",

@@ -89,7 +89,7 @@
         3280
       ],
       "size": [
-        220,
+        256.98203125,
         70
       ],
       "flags": {
@@ -150,7 +150,7 @@
         3280
       ],
       "size": [
-        231.94815673828126,
+        277.230078125,
         70
       ],
       "flags": {
@@ -220,7 +220,7 @@
         3350
       ],
       "size": [
-        231.94815673828126,
+        289.8423828125,
         70
       ],
       "flags": {
@@ -316,39 +316,6 @@
       "bgcolor": "#163b39"
     },
     {
-      "id": 67,
-      "type": "MarkdownNote",
-      "pos": [
-        2020,
-        60
-      ],
-      "size": [
-        960,
-        280
-      ],
-      "flags": {},
-      "order": 2,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "How To Use · What Each Image Does",
-      "properties": {
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "version": "7.8",
-          "input_ue_unconnectable": {}
-        }
-      },
-      "widgets_values": [
-        "# 📷 You only need 2 photos\n\n- **Left · Face photo** → only the **face and hairstyle** are taken from it.\n- **Right · Outfit photo** → only the **clothes and shoes** are taken from it.\n\n### ✂️ Cropping is automatic\nThe face photo is cut down to the **head only**, and the outfit photo to **clothes and shoes only**.\nThe face, hair, arms and legs in the outfit photo are removed for you, so **you do NOT need to crop it below the neck first.** A photo with a large visible face is fine.\n\n### 👀 How to check it worked\nLook at the two small previews on the right. If you see **only a head** / **only clothes** floating on grey, it worked.\nIf part of the outfit is missing, toggle the checkboxes (Upper Clothes / Skirt / Pants / Shoes …) on the **Extract Clothes Only** node in the middle.\n\nTo change body type or styling, type into **③** — plain English is fine.\ne.g. `slim adult female build, narrow shoulders, slender arms and legs`"
-      ],
-      "widgets_values_named": {
-        "text": "# 📷 You only need 2 photos\n\n- **Left · Face photo** → only the **face and hairstyle** are taken from it.\n- **Right · Outfit photo** → only the **clothes and shoes** are taken from it.\n\n### ✂️ Cropping is automatic\nThe face photo is cut down to the **head only**, and the outfit photo to **clothes and shoes only**.\nThe face, hair, arms and legs in the outfit photo are removed for you, so **you do NOT need to crop it below the neck first.** A photo with a large visible face is fine.\n\n### 👀 How to check it worked\nLook at the two small previews on the right. If you see **only a head** / **only clothes** floating on grey, it worked.\nIf part of the outfit is missing, toggle the checkboxes (Upper Clothes / Skirt / Pants / Shoes …) on the **Extract Clothes Only** node in the middle.\n\nTo change body type or styling, type into **③** — plain English is fine.\ne.g. `slim adult female build, narrow shoulders, slender arms and legs`"
-      },
-      "color": "#654b7c",
-      "bgcolor": "#382b45"
-    },
-    {
       "id": 68,
       "type": "MarkdownNote",
       "pos": [
@@ -360,7 +327,7 @@
         220
       ],
       "flags": {},
-      "order": 3,
+      "order": 2,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -477,7 +444,7 @@
         58
       ],
       "flags": {},
-      "order": 4,
+      "order": 3,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -515,13 +482,13 @@
         530
       ],
       "size": [
-        250,
+        259.3404296875,
         110
       ],
       "flags": {
         "collapsed": false
       },
-      "order": 5,
+      "order": 4,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -841,7 +808,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 6,
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -887,7 +854,7 @@
         250
       ],
       "flags": {},
-      "order": 7,
+      "order": 6,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -983,7 +950,7 @@
         3510
       ],
       "size": [
-        220,
+        232.140234375,
         70
       ],
       "flags": {
@@ -1182,13 +1149,13 @@
         3960
       ],
       "size": [
-        271.07814636230466,
+        285.870703125,
         58
       ],
       "flags": {
         "collapsed": true
       },
-      "order": 8,
+      "order": 7,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1228,13 +1195,13 @@
         3960
       ],
       "size": [
-        270,
+        303.151953125,
         58
       ],
       "flags": {
         "collapsed": true
       },
-      "order": 9,
+      "order": 8,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1417,7 +1384,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 10,
+      "order": 9,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1513,7 +1480,7 @@
         3280
       ],
       "size": [
-        240.6924041748047,
+        373.316015625,
         70
       ],
       "flags": {
@@ -1574,7 +1541,7 @@
         3280.2846041303274
       ],
       "size": [
-        220,
+        274.6119140625,
         143
       ],
       "flags": {
@@ -1650,7 +1617,7 @@
         3280.2846041303274
       ],
       "size": [
-        220,
+        273.8736328125,
         143
       ],
       "flags": {
@@ -1730,7 +1697,7 @@
         220
       ],
       "flags": {},
-      "order": 11,
+      "order": 10,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1839,7 +1806,7 @@
         314
       ],
       "flags": {},
-      "order": 12,
+      "order": 11,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -2089,7 +2056,7 @@
         3350.2846041303274
       ],
       "size": [
-        220,
+        274.249609375,
         143
       ],
       "flags": {
@@ -2249,11 +2216,11 @@
         2760.8444691445916
       ],
       "size": [
-        270,
+        302.4478515625,
         58
       ],
       "flags": {},
-      "order": 13,
+      "order": 12,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -2295,7 +2262,7 @@
         314.0000000000001
       ],
       "flags": {},
-      "order": 14,
+      "order": 13,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -2351,11 +2318,11 @@
         2850
       ],
       "size": [
-        327.1720488654636,
+        348.55625,
         58
       ],
       "flags": {},
-      "order": 15,
+      "order": 14,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -2399,7 +2366,7 @@
         100
       ],
       "flags": {},
-      "order": 16,
+      "order": 15,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -2439,11 +2406,11 @@
         2850
       ],
       "size": [
-        347.48964142785945,
+        451.8267578125,
         58
       ],
       "flags": {},
-      "order": 17,
+      "order": 16,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -2487,7 +2454,7 @@
         198
       ],
       "flags": {},
-      "order": 18,
+      "order": 17,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -2550,7 +2517,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 19,
+      "order": 18,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -2590,13 +2557,13 @@
         3420
       ],
       "size": [
-        220,
+        269.5396484375,
         58
       ],
       "flags": {
         "collapsed": true
       },
-      "order": 20,
+      "order": 19,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -2744,7 +2711,7 @@
         1750
       ],
       "size": [
-        398.4870361328125,
+        416.0474609375,
         70
       ],
       "flags": {},
@@ -2796,11 +2763,11 @@
         2410
       ],
       "size": [
-        340,
+        349.2740234375,
         314.0000000000001
       ],
       "flags": {},
-      "order": 21,
+      "order": 20,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -2904,7 +2871,7 @@
         100
       ],
       "flags": {},
-      "order": 22,
+      "order": 21,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -3037,7 +3004,7 @@
         58
       ],
       "flags": {},
-      "order": 23,
+      "order": 22,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -3083,7 +3050,7 @@
         3750
       ],
       "size": [
-        270,
+        306.5630859375,
         78
       ],
       "flags": {},
@@ -3156,7 +3123,7 @@
         58
       ],
       "flags": {},
-      "order": 24,
+      "order": 23,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -3365,7 +3332,7 @@
         3358.0309992161656
       ],
       "size": [
-        265.9285186767578,
+        320.1392578125,
         143
       ],
       "flags": {
@@ -3454,7 +3421,7 @@
         3280
       ],
       "size": [
-        298.3647216796875,
+        391.034765625,
         70
       ],
       "flags": {
@@ -3496,12 +3463,12 @@
         }
       },
       "widgets_values": [
-        "subject_definitions:\n<Subject 1> is the adult woman seen in <Picture 1>. Her reference role is IDENTITY ONLY: face, facial geometry, eyes, nose, lips, skin tone, apparent age, and hairstyle including hair length, color, texture and parting.\n<Subject 2> is the outfit worn in <Picture 2>. Its reference role is WARDROBE ONLY: garment shapes, cut, length, colors, patterns, materials, footwear and wearable accessories.\n\nsummary:\n[reference generation] One static character turnaround sheet showing <Subject 1> wearing <Subject 2>, presented as three full-body photographs — front, right side, and back — on a neutral light-grey studio background.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1], [Shot 2], [Shot 3]): fully_preserved - remains the same person from <Picture 1> in every shot, preserving the exact face, facial geometry, eyes, nose, lips, apparent age and hairstyle. The hairstyle comes exclusively from <Picture 1> and is identical in all three shots: same length, same cut, same parting, same colour, neither tied up nor let down differently between shots. Take only face and hair from <Picture 1>; its clothing, pose, framing, lighting and background do not carry over.\n<Subject 2> (appears in [Shot 1], [Shot 2], [Shot 3]): attribute_transfer - the garments, colors, patterns, materials, footwear and wearable accessories of <Subject 2> are transferred onto the body of <Subject 1>. Nothing else from <Picture 2> transfers: not its wearer's face, hair, hairstyle, hair length, age, gender presentation, shoulder width, muscle mass, torso volume, height, limb thickness, body shape, pose or background. <Picture 2> is a wardrobe swatch only and has no bearing on how <Subject 1>'s hair looks. <Subject 1> wears the outfit; <Subject 1> does not inherit the outfit donor's body.\n\ndetailed_description:\nThe target is one still image, not a video. Photorealistic studio photography on a neutral light-grey seamless background with even soft lighting.\nArrange exactly three equal vertical photographs side by side from left to right, sharing one ground line, one scale, one camera distance and one lighting setup.\nThe footwear in every shot is one single pair taken from <Subject 2>: strappy STILETTO SANDALS — open toe, open back, thin narrow straps over the toes, a thin strap around the ankle fastened with a small buckle, and a slim bare high heel post. The foot is NEVER enclosed: bare skin shows at the toes, along the top of the foot, and at the back of the heel in every view. Never render closed pumps, court shoes, pointed-toe shoes, ballet flats, boots or any shoe that wraps the toes or the heel.\n[Shot 1] Complete full-body front view in a relaxed A-pose, face toward the camera. The toes of both sandals point toward the camera and the bare toes are visible through the front straps.\n[Shot 2] Complete full-body strict 90-degree right-side profile view. The sandals are seen edge-on: the thin heel post stands behind the ankle, the toe points to the side of the frame, and the open back of the shoe is visible as a gap between the heel of the foot and the heel post.\n[Shot 3] Complete full-body back view, photographed from directly behind. The subject faces away from the camera, so both feet point AWAY from the viewer. Because the sandals are OPEN-BACKED, the wearer's BARE HEEL and the back of the foot are plainly visible from behind, sitting on the sole, with the thin ankle strap crossing above them and the slim heel post descending to the floor below. Do not draw toes or toe openings in this shot, do not turn the feet back toward the camera, and above all do not render a closed pointed-toe pump silhouette here — a closed shoe back is wrong for this footwear.\nThe same hairstyle from <Picture 1> is visible in all three shots, only rotated with the head. Show the complete head and both feet in every shot. Keep the face uncovered and do not add a helmet or mask. No extra panel, no action pose, no separate product display, no inset, no duplicate cell, and no text.\n\noverall_soundscape:\nN/A\n\nnon_diegetic_music:\nN/A",
+        "subject_definitions:\n<Subject 1> is the adult woman seen in <Picture 1>. Her reference role is IDENTITY ONLY: face, facial geometry, eyes, nose, lips, skin tone, apparent age, and hairstyle including hair length, color, texture and parting.\n<Subject 2> is the outfit worn in <Picture 2>. Its reference role is WARDROBE ONLY: garment shapes, cut, length, colors, patterns, materials, footwear and wearable accessories.\n\nsummary:\n[reference generation] One static character turnaround sheet showing <Subject 1> wearing <Subject 2>, presented as three full-body photographs — front, right side, and back — on a neutral light-grey studio background.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1], [Shot 2], [Shot 3]): fully_preserved - remains the same person from <Picture 1> in every shot, preserving the exact face, facial geometry, eyes, nose, lips, apparent age and hairstyle. The hairstyle comes exclusively from <Picture 1> and is identical in all three shots: same length, same cut, same parting, same colour, neither tied up nor let down differently between shots. Take only face and hair from <Picture 1>; its clothing, pose, framing, lighting and background do not carry over.\n<Subject 2> (appears in [Shot 1], [Shot 2], [Shot 3]): attribute_transfer - the garments, colors, patterns, materials, footwear and wearable accessories of <Subject 2> are transferred onto the body of <Subject 1>. Nothing else from <Picture 2> transfers: not its wearer's face, hair, hairstyle, hair length, age, gender presentation, shoulder width, muscle mass, torso volume, height, limb thickness, body shape, pose or background. <Picture 2> is a wardrobe swatch only and has no bearing on how <Subject 1>'s hair looks. <Subject 1> wears the outfit; <Subject 1> does not inherit the outfit donor's body.\n\ndetailed_description:\nThe target is one still image, not a video. Photorealistic studio photography on a neutral light-grey seamless background with even soft lighting.\nArrange exactly three equal vertical photographs side by side from left to right, sharing one ground line, one scale, one camera distance and one lighting setup.\nFOOTWEAR: read the shoes directly from <Picture 2> and reproduce that exact pair — same shoe type, silhouette, toe shape, sole, heel height, closure, straps or laces, material and colour. Do not assume a style and do not fall back on a familiar one: if <Picture 2> shows flat shoes, sneakers, loafers or boots, keep them flat and closed; if it shows open sandals, keep them open; if the feet are bare, leave them bare. It is the same single pair in all three shots and never changes type between shots — only the camera angle changes.\n[Shot 1] Complete full-body front view in a relaxed A-pose, face toward the camera. Both shoes are seen from the front, toes pointing toward the camera.\n[Shot 2] Complete full-body strict 90-degree right-side profile view. The shoes are seen edge-on from the side, showing their true side profile — sole line, heel height and closure — with the toe pointing to the side of the frame, not toward the camera.\n[Shot 3] Complete full-body back view, photographed from directly behind. The subject faces away from the camera, so both feet point AWAY from the viewer and you see the REAR of the shoes exactly as that shoe type would genuinely look from behind: a closed shoe shows its heel counter and back seam, an open-backed shoe shows the wearer's bare heel resting on the sole. Do not draw toes or the front of the shoes in this shot, do not turn the feet back toward the camera, and never reuse the front view of the shoes for this back view.\nThe same hairstyle from <Picture 1> is visible in all three shots, only rotated with the head. Show the complete head and both feet in every shot. Keep the face uncovered and do not add a helmet or mask. No extra panel, no action pose, no separate product display, no inset, no duplicate cell, and no text.\n\noverall_soundscape:\nN/A\n\nnon_diegetic_music:\nN/A",
         "",
         "\n\nUSER STAGE 1 DIRECTION — HIGHEST PRIORITY:\nThis translated user instruction overrides conflicting defaults for body build, skin tone and complexion, presentation, framing and styling, while keeping the <Subject 1> identity role and the <Subject 2> attribute_transfer role defined above unchanged. When it specifies a skin tone, apply that tone consistently to every visible area of skin — face, neck, arms, hands, torso, midriff, legs and feet — with the same value in all three shots:\n"
       ],
       "widgets_values_named": {
-        "string_a": "subject_definitions:\n<Subject 1> is the adult woman seen in <Picture 1>. Her reference role is IDENTITY ONLY: face, facial geometry, eyes, nose, lips, skin tone, apparent age, and hairstyle including hair length, color, texture and parting.\n<Subject 2> is the outfit worn in <Picture 2>. Its reference role is WARDROBE ONLY: garment shapes, cut, length, colors, patterns, materials, footwear and wearable accessories.\n\nsummary:\n[reference generation] One static character turnaround sheet showing <Subject 1> wearing <Subject 2>, presented as three full-body photographs — front, right side, and back — on a neutral light-grey studio background.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1], [Shot 2], [Shot 3]): fully_preserved - remains the same person from <Picture 1> in every shot, preserving the exact face, facial geometry, eyes, nose, lips, apparent age and hairstyle. The hairstyle comes exclusively from <Picture 1> and is identical in all three shots: same length, same cut, same parting, same colour, neither tied up nor let down differently between shots. Take only face and hair from <Picture 1>; its clothing, pose, framing, lighting and background do not carry over.\n<Subject 2> (appears in [Shot 1], [Shot 2], [Shot 3]): attribute_transfer - the garments, colors, patterns, materials, footwear and wearable accessories of <Subject 2> are transferred onto the body of <Subject 1>. Nothing else from <Picture 2> transfers: not its wearer's face, hair, hairstyle, hair length, age, gender presentation, shoulder width, muscle mass, torso volume, height, limb thickness, body shape, pose or background. <Picture 2> is a wardrobe swatch only and has no bearing on how <Subject 1>'s hair looks. <Subject 1> wears the outfit; <Subject 1> does not inherit the outfit donor's body.\n\ndetailed_description:\nThe target is one still image, not a video. Photorealistic studio photography on a neutral light-grey seamless background with even soft lighting.\nArrange exactly three equal vertical photographs side by side from left to right, sharing one ground line, one scale, one camera distance and one lighting setup.\nThe footwear in every shot is one single pair taken from <Subject 2>: strappy STILETTO SANDALS — open toe, open back, thin narrow straps over the toes, a thin strap around the ankle fastened with a small buckle, and a slim bare high heel post. The foot is NEVER enclosed: bare skin shows at the toes, along the top of the foot, and at the back of the heel in every view. Never render closed pumps, court shoes, pointed-toe shoes, ballet flats, boots or any shoe that wraps the toes or the heel.\n[Shot 1] Complete full-body front view in a relaxed A-pose, face toward the camera. The toes of both sandals point toward the camera and the bare toes are visible through the front straps.\n[Shot 2] Complete full-body strict 90-degree right-side profile view. The sandals are seen edge-on: the thin heel post stands behind the ankle, the toe points to the side of the frame, and the open back of the shoe is visible as a gap between the heel of the foot and the heel post.\n[Shot 3] Complete full-body back view, photographed from directly behind. The subject faces away from the camera, so both feet point AWAY from the viewer. Because the sandals are OPEN-BACKED, the wearer's BARE HEEL and the back of the foot are plainly visible from behind, sitting on the sole, with the thin ankle strap crossing above them and the slim heel post descending to the floor below. Do not draw toes or toe openings in this shot, do not turn the feet back toward the camera, and above all do not render a closed pointed-toe pump silhouette here — a closed shoe back is wrong for this footwear.\nThe same hairstyle from <Picture 1> is visible in all three shots, only rotated with the head. Show the complete head and both feet in every shot. Keep the face uncovered and do not add a helmet or mask. No extra panel, no action pose, no separate product display, no inset, no duplicate cell, and no text.\n\noverall_soundscape:\nN/A\n\nnon_diegetic_music:\nN/A",
+        "string_a": "subject_definitions:\n<Subject 1> is the adult woman seen in <Picture 1>. Her reference role is IDENTITY ONLY: face, facial geometry, eyes, nose, lips, skin tone, apparent age, and hairstyle including hair length, color, texture and parting.\n<Subject 2> is the outfit worn in <Picture 2>. Its reference role is WARDROBE ONLY: garment shapes, cut, length, colors, patterns, materials, footwear and wearable accessories.\n\nsummary:\n[reference generation] One static character turnaround sheet showing <Subject 1> wearing <Subject 2>, presented as three full-body photographs — front, right side, and back — on a neutral light-grey studio background.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1], [Shot 2], [Shot 3]): fully_preserved - remains the same person from <Picture 1> in every shot, preserving the exact face, facial geometry, eyes, nose, lips, apparent age and hairstyle. The hairstyle comes exclusively from <Picture 1> and is identical in all three shots: same length, same cut, same parting, same colour, neither tied up nor let down differently between shots. Take only face and hair from <Picture 1>; its clothing, pose, framing, lighting and background do not carry over.\n<Subject 2> (appears in [Shot 1], [Shot 2], [Shot 3]): attribute_transfer - the garments, colors, patterns, materials, footwear and wearable accessories of <Subject 2> are transferred onto the body of <Subject 1>. Nothing else from <Picture 2> transfers: not its wearer's face, hair, hairstyle, hair length, age, gender presentation, shoulder width, muscle mass, torso volume, height, limb thickness, body shape, pose or background. <Picture 2> is a wardrobe swatch only and has no bearing on how <Subject 1>'s hair looks. <Subject 1> wears the outfit; <Subject 1> does not inherit the outfit donor's body.\n\ndetailed_description:\nThe target is one still image, not a video. Photorealistic studio photography on a neutral light-grey seamless background with even soft lighting.\nArrange exactly three equal vertical photographs side by side from left to right, sharing one ground line, one scale, one camera distance and one lighting setup.\nFOOTWEAR: read the shoes directly from <Picture 2> and reproduce that exact pair — same shoe type, silhouette, toe shape, sole, heel height, closure, straps or laces, material and colour. Do not assume a style and do not fall back on a familiar one: if <Picture 2> shows flat shoes, sneakers, loafers or boots, keep them flat and closed; if it shows open sandals, keep them open; if the feet are bare, leave them bare. It is the same single pair in all three shots and never changes type between shots — only the camera angle changes.\n[Shot 1] Complete full-body front view in a relaxed A-pose, face toward the camera. Both shoes are seen from the front, toes pointing toward the camera.\n[Shot 2] Complete full-body strict 90-degree right-side profile view. The shoes are seen edge-on from the side, showing their true side profile — sole line, heel height and closure — with the toe pointing to the side of the frame, not toward the camera.\n[Shot 3] Complete full-body back view, photographed from directly behind. The subject faces away from the camera, so both feet point AWAY from the viewer and you see the REAR of the shoes exactly as that shoe type would genuinely look from behind: a closed shoe shows its heel counter and back seam, an open-backed shoe shows the wearer's bare heel resting on the sole. Do not draw toes or the front of the shoes in this shot, do not turn the feet back toward the camera, and never reuse the front view of the shoes for this back view.\nThe same hairstyle from <Picture 1> is visible in all three shots, only rotated with the head. Show the complete head and both feet in every shot. Keep the face uncovered and do not add a helmet or mask. No extra panel, no action pose, no separate product display, no inset, no duplicate cell, and no text.\n\noverall_soundscape:\nN/A\n\nnon_diegetic_music:\nN/A",
         "string_b": "",
         "delimiter": "\n\nUSER STAGE 1 DIRECTION — HIGHEST PRIORITY:\nThis translated user instruction overrides conflicting defaults for body build, skin tone and complexion, presentation, framing and styling, while keeping the <Subject 1> identity role and the <Subject 2> attribute_transfer role defined above unchanged. When it specifies a skin tone, apply that tone consistently to every visible area of skin — face, neck, arms, hands, torso, midriff, legs and feet — with the same value in all three shots:\n"
       },
@@ -3520,7 +3487,7 @@
         298
       ],
       "flags": {},
-      "order": 25,
+      "order": 24,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -3554,13 +3521,13 @@
         80
       ],
       "size": [
-        296.7452758789062,
+        357.265234375,
         110
       ],
       "flags": {
         "collapsed": false
       },
-      "order": 26,
+      "order": 25,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -3607,13 +3574,13 @@
         230
       ],
       "size": [
-        358.77997436523435,
+        374.5806640625,
         110
       ],
       "flags": {
         "collapsed": false
       },
-      "order": 27,
+      "order": 26,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -3717,7 +3684,7 @@
         1960
       ],
       "size": [
-        249.1001953125,
+        258.855078125,
         332
       ],
       "flags": {
@@ -3865,7 +3832,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 28,
+      "order": 27,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -4095,13 +4062,13 @@
         80
       ],
       "size": [
-        313.7109741210937,
+        373.19296875,
         110
       ],
       "flags": {
         "collapsed": false
       },
-      "order": 29,
+      "order": 28,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -4207,7 +4174,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 30,
+      "order": 29,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -4240,7 +4207,7 @@
         132
       ],
       "flags": {},
-      "order": 31,
+      "order": 30,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -4295,11 +4262,11 @@
         3700
       ],
       "size": [
-        298.3524536132812,
+        353.2525390625,
         58
       ],
       "flags": {},
-      "order": 32,
+      "order": 31,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -4420,7 +4387,7 @@
         314.0000000000001
       ],
       "flags": {},
-      "order": 33,
+      "order": 32,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -4472,7 +4439,7 @@
         250
       ],
       "flags": {},
-      "order": 34,
+      "order": 33,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -4505,108 +4472,6 @@
       "bgcolor": "#44321d"
     },
     {
-      "id": 16,
-      "type": "LoadImage",
-      "pos": [
-        2020,
-        390
-      ],
-      "size": [
-        340,
-        314
-      ],
-      "flags": {},
-      "order": 35,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            289
-          ]
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": null
-        }
-      ],
-      "title": "Stage 1 REQUIRED 1 · Face / Identity Image",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.34.0",
-        "Node name for S&R": "LoadImage",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "version": "7.8",
-          "input_ue_unconnectable": {}
-        }
-      },
-      "widgets_values": [
-        "pasted/image (27).png",
-        "image"
-      ],
-      "widgets_values_named": {
-        "image": "pasted/image (27).png",
-        "upload": "image"
-      },
-      "color": "#6d3653",
-      "bgcolor": "#3b2230"
-    },
-    {
-      "id": 21,
-      "type": "LoadImage",
-      "pos": [
-        2020,
-        774
-      ],
-      "size": [
-        340,
-        314
-      ],
-      "flags": {},
-      "order": 36,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            295
-          ]
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": null
-        }
-      ],
-      "title": "Stage 1 REQUIRED 2 · Outfit Image (face auto-removed)",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.34.0",
-        "Node name for S&R": "LoadImage",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "version": "7.8",
-          "input_ue_unconnectable": {}
-        }
-      },
-      "widgets_values": [
-        "HeadSwap_HiRes_Seamless_00005_.png",
-        "image"
-      ],
-      "widgets_values_named": {
-        "image": "HeadSwap_HiRes_Seamless_00005_.png",
-        "upload": "image"
-      },
-      "color": "#766026",
-      "bgcolor": "#40351c"
-    },
-    {
       "id": 153,
       "type": "PreviewImage",
       "pos": [
@@ -4614,7 +4479,7 @@
         390
       ],
       "size": [
-        216.90117492675782,
+        299.3033203125,
         246
       ],
       "flags": {},
@@ -4652,9 +4517,7 @@
           "input_ue_unconnectable": {},
           "version": "7.8"
         }
-      },
-      "widgets_values": [],
-      "widgets_values_named": {}
+      }
     },
     {
       "id": 154,
@@ -4664,7 +4527,7 @@
         854
       ],
       "size": [
-        198.69598999023438,
+        310.1587890625,
         246
       ],
       "flags": {},
@@ -4702,9 +4565,7 @@
           "input_ue_unconnectable": {},
           "version": "7.8"
         }
-      },
-      "widgets_values": [],
-      "widgets_values_named": {}
+      }
     },
     {
       "id": 106,
@@ -5061,7 +4922,7 @@
         260
       ],
       "flags": {},
-      "order": 37,
+      "order": 34,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -5081,6 +4942,141 @@
       },
       "color": "#286878",
       "bgcolor": "#183f49"
+    },
+    {
+      "id": 67,
+      "type": "MarkdownNote",
+      "pos": [
+        2020,
+        60
+      ],
+      "size": [
+        960,
+        280
+      ],
+      "flags": {},
+      "order": 35,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "How To Use · What Each Image Does",
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "# 📷 You only need 2 photos\n\n- **Left · Face photo** → only the **face and hairstyle** are taken from it.\n- **Right · Outfit photo** → only the **clothes and shoes** are taken from it.\n\n### ✂️ Cropping is automatic\nThe face photo is cut down to the **head only**, and the outfit photo to **clothes and shoes only**.\nThe face, hair, arms and legs in the outfit photo are removed for you, so **you do NOT need to crop it below the neck first.** A photo with a large visible face is fine.\n\n### 👀 How to check it worked\nLook at the two small previews on the right. If you see **only a head** / **only clothes** floating on grey, it worked.\nIf part of the outfit is missing, toggle the checkboxes (Upper Clothes / Skirt / Pants / Shoes …) on the **Extract Clothes Only** node in the middle.\n\nTo change body type or styling, type into **③** — plain English is fine.\ne.g. `slim adult female build, narrow shoulders, slender arms and legs`"
+      ],
+      "widgets_values_named": {
+        "text": "# 📷 You only need 2 photos\n\n- **Left · Face photo** → only the **face and hairstyle** are taken from it.\n- **Right · Outfit photo** → only the **clothes and shoes** are taken from it.\n\n### ✂️ Cropping is automatic\nThe face photo is cut down to the **head only**, and the outfit photo to **clothes and shoes only**.\nThe face, hair, arms and legs in the outfit photo are removed for you, so **you do NOT need to crop it below the neck first.** A photo with a large visible face is fine.\n\n### 👀 How to check it worked\nLook at the two small previews on the right. If you see **only a head** / **only clothes** floating on grey, it worked.\nIf part of the outfit is missing, toggle the checkboxes (Upper Clothes / Skirt / Pants / Shoes …) on the **Extract Clothes Only** node in the middle.\n\nTo change body type or styling, type into **③** — plain English is fine.\ne.g. `slim adult female build, narrow shoulders, slender arms and legs`"
+      },
+      "color": "#654b7c",
+      "bgcolor": "#382b45"
+    },
+    {
+      "id": 16,
+      "type": "LoadImage",
+      "pos": [
+        2020,
+        390
+      ],
+      "size": [
+        340,
+        314
+      ],
+      "flags": {},
+      "order": 36,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            289
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "title": "Stage 1 REQUIRED 1 · Face / Identity Image",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "Node name for S&R": "LoadImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "pasted/image (29).png",
+        "image"
+      ],
+      "widgets_values_named": {
+        "image": "pasted/image (29).png",
+        "upload": "image"
+      },
+      "color": "#6d3653",
+      "bgcolor": "#3b2230"
+    },
+    {
+      "id": 21,
+      "type": "LoadImage",
+      "pos": [
+        2020,
+        774
+      ],
+      "size": [
+        407.276953125,
+        314
+      ],
+      "flags": {},
+      "order": 37,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            295
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "title": "Stage 1 REQUIRED 2 · Outfit Image (face auto-removed)",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "Node name for S&R": "LoadImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "pasted/image (32).png",
+        "image"
+      ],
+      "widgets_values_named": {
+        "image": "pasted/image (32).png",
+        "upload": "image"
+      },
+      "color": "#766026",
+      "bgcolor": "#40351c"
     }
   ],
   "links": [
@@ -6915,7 +6911,7 @@
               1830
             ],
             "size": [
-              140,
+              145.9458984375,
               46
             ],
             "flags": {
@@ -7070,7 +7066,7 @@
               180
             ],
             "size": [
-              270,
+              332.8404296875,
               102
             ],
             "flags": {},
@@ -7661,10 +7657,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.6257744030869598,
+      "scale": 3.797498335832417,
       "offset": [
-        313.2418235251311,
-        -1166.9119966541975
+        -2501.7366635684466,
+        -1817.8245665357115
       ]
     },
     "comfyui_mcp": {
