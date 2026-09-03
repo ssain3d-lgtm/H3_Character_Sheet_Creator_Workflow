@@ -69,7 +69,19 @@ Optional (bypassed by default)
 LoRA   any H3 style LoRA, e.g. h3-realism-people-t2v-i2v-r2v (trigger: r34l1sm) — photo references only
 ```
 
-Custom nodes: ComfyUI-RMBG (RMBG, SAM3Segment, ClothesSegment), rgthree, Toobusy H3 node pack
+## Custom nodes
+
+Everything else is ComfyUI core (**0.34 or newer** — the MiniMax H3, TextGenerate, Switch and Resolution Selector nodes are core nodes and do not exist in older builds).
+
+| Node pack | Nodes used | Where |
+|---|---|---|
+| ComfyUI-RMBG (1038lab) | `RMBG`, `SAM3Segment`, `ClothesSegment` | Stage 1 face / outfit cut-out |
+| rgthree-comfy | `Fast Groups Muter` | Stage 2 ON/OFF switch |
+| Toobusy H3 node pack (2BZ) | `ToobusyMiniMaxH3ImageLatent`, `ToobusyMiniMaxH3SemanticReference`, `MiniMaxH3PDDAccApply` | H3 latent, optional-reference gates, 8-step accelerator |
+| ComfyUI-KJNodes | `ImageConcanate` | Stage 2 final composite only |
+| ComfyUI-Custom-Scripts (pysssss) | `MathExpression` | Stage 2 final composite only |
+
+Note: the JSON tags a few of these nodes with the pack id `comfyui-workflow-encrypt`. That is a leftover label from the original author's setup, not a real dependency — ignore it if ComfyUI-Manager offers to install it, and install the packs above instead.
 
 ## Usage
 
@@ -148,7 +160,19 @@ Accel  MiniMax-H3-Ref2VA-Acc-8Step.safetensors  (PDD Acc Apply 노드)
 LoRA   H3 스타일 LoRA, 예: h3-realism-people-t2v-i2v-r2v (trigger: r34l1sm) — 실사 참조 전용
 ```
 
-커스텀 노드: ComfyUI-RMBG (RMBG, SAM3Segment, ClothesSegment), rgthree, Toobusy H3 노드팩
+## 커스텀 노드
+
+나머지는 모두 ComfyUI 코어 노드입니다 (**0.34 이상** 필요 — MiniMax H3, TextGenerate, Switch, Resolution Selector 노드가 코어에 포함된 버전).
+
+| 노드팩 | 사용 노드 | 위치 |
+|---|---|---|
+| ComfyUI-RMBG (1038lab) | `RMBG`, `SAM3Segment`, `ClothesSegment` | 1단계 얼굴/의상 추출 |
+| rgthree-comfy | `Fast Groups Muter` | 2단계 ON/OFF 스위치 |
+| Toobusy H3 노드팩 (2BZ) | `ToobusyMiniMaxH3ImageLatent`, `ToobusyMiniMaxH3SemanticReference`, `MiniMaxH3PDDAccApply` | H3 latent, 선택 참조 게이트, 8-step 가속기 |
+| ComfyUI-KJNodes | `ImageConcanate` | 2단계 최종 합성 전용 |
+| ComfyUI-Custom-Scripts (pysssss) | `MathExpression` | 2단계 최종 합성 전용 |
+
+참고: JSON에 일부 노드가 `comfyui-workflow-encrypt` 팩 id로 표기되어 있는데, 원작자 환경에서 남은 라벨일 뿐 실제 의존성이 아닙니다. ComfyUI-Manager가 설치를 권해도 무시하고 위 팩들을 설치하세요.
 
 ## 사용법
 
