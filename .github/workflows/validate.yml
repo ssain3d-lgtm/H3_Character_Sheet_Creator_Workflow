@@ -1,0 +1,28 @@
+name: validate workflows
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: KOR must be reproducible from ENG + overlay
+        run: |
+          set -e
+          ENG=$(ls *_ENG.json | head -1); KOR=$(ls *_KOR.json | head -1)
+          python tools/build_kor.py "$ENG" /tmp/kor_rebuilt.json
+          python - "$KOR" /tmp/kor_rebuilt.json <<'EOF'
+          import json,sys
+          a=json.load(open(sys.argv[1],encoding='utf-8')); b=json.load(open(sys.argv[2],encoding='utf-8'))
+          assert a==b, "committed KOR differs from ENG + overlay; run tools/build_kor.py"
+          EOF
+      - name: static checks
+        run: |
+          ENG=$(ls *_ENG.json | head -1); KOR=$(ls *_KOR.json | head -1)
+          python tools/validate_workflow.py "$ENG" "$KOR" README.md
