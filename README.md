@@ -90,6 +90,23 @@ Note: the JSON tags a few of these nodes with the pack id `comfyui-workflow-encr
 2. Upload a face image to `Stage 1 REQUIRED 1` and an outfit image to `Stage 1 REQUIRED 2`
 3. Run → the 3-view sheet is saved to `output/charsheet/`
 
+## FAQ
+
+**Can I give it a pose reference (photo or OpenPose) and generate the character in that pose?**
+Yes, that is what Stage 2 does. Drop the pose image into `Stage 2 Pose Reference Source` (group ⑦) and flip `STAGE2_SWITCH` on. Gemma reads the pose and writes a `POSE TRANSFER` block (torso lean, arm / leg angles, head direction, which limb is closer to the camera), and Panel 1 reproduces it. The pose image itself is never fed to H3, so the pose photo's face, body and outfit cannot leak into your character.
+
+- An OpenPose skeleton works, since Gemma just describes what it sees, but a photo, a 3D mannequin render or a posed figure usually gives a more accurate description than a stick figure.
+- H3 Ref2VA has no ControlNet, so this is prompt-guided pose transfer, not pixel-exact. If it drifts, type a correction into `Stage 2 Pose Request · Manual Override`; that text outranks the automatic analysis.
+- One pose reference per run, applied to Panel 1. Panels 2–4 are defined by text in group ⑧ (e.g. `Panel 2: crouching, weapon in both hands`).
+- For a sprite sheet with many poses, run Stage 2 once per pose. Seeds are fixed and the same Stage 1 sheet is the reference every time, so the character stays consistent across runs. Assemble the frames outside ComfyUI. This makes stills, not pixel-registered animation frames.
+- The Stage 2 subgraph has an unused `pose_or_extra_ref` input if you want to try feeding the pose image to H3 directly. It ships disconnected because identity bleed from the pose photo is a real risk.
+
+**Nodes show up red / Manager wants to install something odd.**
+- Update ComfyUI first. `MiniMaxH3ReferenceToVideo`, `TextGenerate`, `Switch`, `Resolution Selector` and subgraphs are core nodes that need 0.34 or newer; a "missing node" on those is a version problem, not a missing pack.
+- Install the six packs in the table above. Ignore `comfyui-workflow-encrypt` if Manager offers it; it is a leftover label in the JSON, not a dependency.
+- The SAM3 and SegFormer weights for the cut-out nodes download themselves on the first Queue.
+- The PDD accelerator LoRA goes in `models/pdd_acc/` (see the table). Without it you can still run Stage 1: bypass `PDD Acc Apply`, un-bypass the `BasicScheduler` next to it, set about 25–30 steps and feed its sigmas to the Stage 1 sampler.
+
 ---
 
 # 한국어
@@ -181,3 +198,20 @@ LoRA   H3 스타일 LoRA, 예: h3-realism-people-t2v-i2v-r2v (trigger: r34l1sm) 
 1. ComfyUI에 JSON을 드래그해서 로드
 2. `1단계 필수 1` 에 얼굴 이미지, `1단계 필수 2` 에 의상 이미지 업로드
 3. 실행 → `output/charsheet/` 에 3-뷰 시트 저장
+
+## 자주 묻는 질문
+
+**포즈 참조(사진이나 OpenPose)를 넣고 그 포즈로 생성할 수 있나요?**
+네, 2단계가 그 역할입니다. `2단계 포즈 분석 원본`(⑦ 그룹)에 포즈 이미지를 넣고 `STAGE2_SWITCH`를 ON으로 켜세요. Gemma가 포즈를 읽어 `POSE TRANSFER` 블록(상체 기울기, 팔·다리 각도, 머리 방향, 카메라에 가까운 팔다리)을 쓰고, 패널 1이 그 포즈를 재현합니다. 포즈 이미지 자체는 H3에 들어가지 않으므로 포즈 사진의 얼굴·몸·옷이 캐릭터에 섞이지 않습니다.
+
+- OpenPose 스켈레톤도 됩니다. Gemma가 보이는 대로 설명하기 때문입니다. 다만 사진, 3D 마네킹 렌더, 포즈 잡은 피규어가 막대 그림보다 정확하게 읽힙니다.
+- H3 Ref2VA에는 ControlNet이 없어서 프롬프트 기반 포즈 전달입니다. 픽셀 단위로 맞지는 않습니다. 틀어지면 `2단계 포즈 요청 · 수동 덮어쓰기` 칸에 수정 문구를 적으세요. 그 텍스트가 자동 분석보다 우선합니다.
+- 실행 1회에 포즈 참조 1개, 패널 1에 적용됩니다. 패널 2~4는 ⑧ 그룹에 텍스트로 지정합니다 (예: `패널 2: 웅크린 자세, 양손으로 무기`).
+- 포즈가 많은 스프라이트 시트는 포즈마다 2단계를 한 번씩 돌리세요. 시드가 고정이고 매번 같은 1단계 시트를 참조하므로 실행 간 캐릭터가 유지됩니다. 프레임 조립은 ComfyUI 밖에서 하세요. 정지 이미지를 만드는 도구이지 픽셀 정렬된 애니메이션 프레임을 만들지는 않습니다.
+- 포즈 이미지를 H3에 직접 넣어 보고 싶다면 2단계 서브그래프의 비어 있는 `pose_or_extra_ref` 입력을 쓰면 됩니다. 포즈 사진의 정체성이 섞일 위험이 있어 기본은 연결하지 않았습니다.
+
+**노드가 빨갛게 뜨거나 Manager가 이상한 팩을 설치하려고 합니다.**
+- ComfyUI부터 업데이트하세요. `MiniMaxH3ReferenceToVideo`, `TextGenerate`, `Switch`, `Resolution Selector`, 서브그래프는 0.34 이상이 필요한 코어 노드입니다. 이 노드들의 "missing node"는 버전 문제이지 팩 누락이 아닙니다.
+- 위 표의 팩 6개를 설치하세요. Manager가 `comfyui-workflow-encrypt`를 권하면 무시하세요. JSON에 남은 라벨일 뿐 의존성이 아닙니다.
+- 추출 노드용 SAM3·SegFormer 가중치는 첫 Queue 때 자동으로 받습니다.
+- PDD 가속기 LoRA는 `models/pdd_acc/`에 넣습니다 (표 참고). 없어도 1단계는 돌릴 수 있습니다. `PDD Acc Apply`를 바이패스하고 옆의 `BasicScheduler` 바이패스를 풀어 25~30 스텝으로 맞춘 뒤 sigmas를 1단계 샘플러에 연결하세요.
