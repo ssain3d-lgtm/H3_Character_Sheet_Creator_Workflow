@@ -109,6 +109,9 @@ def build(src, dst):
     g.link(n_osw, 0, 13, "ref_images.ref_image_1", IMG)
     g.link(n_osw, 0, 154, "images", IMG)
     N(154)["pos"] = [2820, 900]
+    # SAM3 head mask: offset 8 px bled background / shoulders into the identity crop; 2 px is enough to keep hair edges
+    assert N(155)["type"] == "SAM3Segment" and N(155)["widgets_values"][6] == 8
+    N(155)["widgets_values"][6] = 2
     N(153)["title"] = "Extraction Check · Identity (what H3 receives)"
     N(154)["title"] = "Extraction Check · Outfit (what H3 receives)"
 
