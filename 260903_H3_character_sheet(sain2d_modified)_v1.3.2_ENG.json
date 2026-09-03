@@ -1,8 +1,8 @@
 {
-  "id": "9bfe6305-2f75-43b4-a826-77c6979c53ab",
-  "revision": 6,
-  "last_node_id": 189,
-  "last_link_id": 359,
+  "id": "207c7bd6-3b0b-4c61-913b-ecf0bd2e0224",
+  "revision": 7,
+  "last_node_id": 206,
+  "last_link_id": 397,
   "nodes": [
     {
       "id": 27,
@@ -32,7 +32,7 @@
           "links": null
         }
       ],
-      "title": "1단계 완성 프롬프트 확인",
+      "title": "Stage 1 Final Prompt Check",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -64,7 +64,7 @@
       "mode": 0,
       "inputs": [],
       "outputs": [],
-      "title": "2단계 입력 설명 · 패널 수/3패널 배치/소품",
+      "title": "Stage 2 Input Guide · Panel Count / 3-Panel Layout / Props",
       "properties": {
         "ue_properties": {
           "widget_ue_connectable": {},
@@ -73,10 +73,10 @@
         }
       },
       "widgets_values": [
-        "# 2단계 입력 · 몇 장, 어떻게 배치할까\n\n1. **패널 수** — 1~4장 중에서 고릅니다.\n2. **3패널 배치** — 3장을 골랐을 때만 씁니다.\n   - `OFF` : 왼쪽에 세로로 긴 1칸 + 오른쪽에 위아래 2칸\n   - `ON` : 위에 가로로 긴 1칸 + 아래에 좌우 2칸\n3. **포즈 사진** — 패널 1의 동작을 잡는 데 씁니다.\n4. **소품 방식 `OFF`** — 패널 2에 소품만 따로 보여줍니다.\n5. **소품 방식 `ON`** — 패널 1·2에서 캐릭터가 소품을 직접 씁니다.\n6. 더 원하는 게 있으면 **⑧**에 한국어로 적으세요.\n\n소품 스위치를 끄면 소품 문구는 프롬프트에서 자동으로 빠집니다."
+        "# Stage 2 input · how many panels, and how to arrange them\n\n1. **Panel Count** — pick 1 to 4.\n2. **3-Panel Layout** — only used when you picked 3.\n   - `OFF` : one tall panel on the left + two stacked on the right\n   - `ON` : one wide panel on top + two side by side below\n3. **Pose photo** — used to set the action in Panel 1.\n4. **Prop Mode `OFF`** — Panel 2 just displays the prop on its own.\n5. **Prop Mode `ON`** — the character actually uses the prop in Panels 1 and 2.\n6. Anything else you want goes into **⑧**.\n\nWhen a prop switch is OFF, its prompt text is removed automatically."
       ],
       "widgets_values_named": {
-        "text": "# 2단계 입력 · 몇 장, 어떻게 배치할까\n\n1. **패널 수** — 1~4장 중에서 고릅니다.\n2. **3패널 배치** — 3장을 골랐을 때만 씁니다.\n   - `OFF` : 왼쪽에 세로로 긴 1칸 + 오른쪽에 위아래 2칸\n   - `ON` : 위에 가로로 긴 1칸 + 아래에 좌우 2칸\n3. **포즈 사진** — 패널 1의 동작을 잡는 데 씁니다.\n4. **소품 방식 `OFF`** — 패널 2에 소품만 따로 보여줍니다.\n5. **소품 방식 `ON`** — 패널 1·2에서 캐릭터가 소품을 직접 씁니다.\n6. 더 원하는 게 있으면 **⑧**에 한국어로 적으세요.\n\n소품 스위치를 끄면 소품 문구는 프롬프트에서 자동으로 빠집니다."
+        "text": "# Stage 2 input · how many panels, and how to arrange them\n\n1. **Panel Count** — pick 1 to 4.\n2. **3-Panel Layout** — only used when you picked 3.\n   - `OFF` : one tall panel on the left + two stacked on the right\n   - `ON` : one wide panel on top + two side by side below\n3. **Pose photo** — used to set the action in Panel 1.\n4. **Prop Mode `OFF`** — Panel 2 just displays the prop on its own.\n5. **Prop Mode `ON`** — the character actually uses the prop in Panels 1 and 2.\n6. Anything else you want goes into **⑧**.\n\nWhen a prop switch is OFF, its prompt text is removed automatically."
       },
       "color": "#24324a",
       "bgcolor": "#35496b"
@@ -116,7 +116,7 @@
           ]
         }
       ],
-      "title": "2단계 패널 수 + 기본 계획",
+      "title": "Stage 2 Panel Count + Base Plan",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -185,7 +185,7 @@
           ]
         }
       ],
-      "title": "2단계 프롬프트 + 직접 포즈 역할",
+      "title": "Stage 2 Prompt + Manual Pose Role",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -255,7 +255,7 @@
           ]
         }
       ],
-      "title": "2단계 최종 프롬프트 + 선택 역할",
+      "title": "Stage 2 Final Prompt + Optional Roles",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -298,7 +298,7 @@
       "mode": 0,
       "inputs": [],
       "outputs": [],
-      "title": "처음 읽기 · 전체 사용 순서",
+      "title": "Read First · How To Use This Workflow",
       "properties": {
         "ue_properties": {
           "widget_ue_connectable": {},
@@ -307,10 +307,10 @@
         }
       },
       "widgets_values": [
-        "# 🚀 이 순서대로만 하면 됩니다\n\n1. **① 모델 장착** — 로더에 `MISSING`이 있는지만 확인하세요.\n2. **② 1단계 입력** — 얼굴 사진 1장, 의상 사진 1장을 넣습니다.\n   자르기는 **자동**이라 옆의 작은 미리보기로 확인만 하면 됩니다.\n3. **③** — 몸매·분위기를 바꾸고 싶을 때만 한국어로 적으세요. 실험적인 4패널 구성 스위치도 여기 있습니다. (안 적어도 됩니다)\n4. **Queue** 를 누르면 **전면·측면·후면 3뷰**가 나옵니다 → **⑤**에서 확인.\n\n**보통은 여기서 끝입니다. 2단계는 기본 OFF입니다.**\n\n### 포즈·소품 시트도 만들고 싶다면\n5. **⑥** 설명을 읽습니다.\n6. **⑦**에 포즈 사진을 넣고, 필요하면 **⑧**에 한국어로 적습니다.\n7. 스위치를 **ON**으로 바꾸고 다시 Queue."
+        "# 🚀 Just follow this order\n\n1. **① LOAD MODELS** — only check that no loader says `MISSING`. No PDD file? Turn **Sigmas Source** ON in ④.\n2. **② STAGE 1 INPUT** — drop in one face photo and one outfit photo.\n   Cropping is **automatic**; just glance at the two small previews.\n3. **③** — only if you want to change body type or styling, or switch to the experimental 4-panel layout. (Optional)\n4. Press **Queue** → you get **front / side / back** in one sheet → check it in **⑤**.\n\n**Most of the time you are done here. Stage 2 is OFF by default.**\n\n### If you also want a pose / prop sheet\n5. Read **⑥**.\n6. Put a pose photo in **⑦**, and type into **⑧** if you want.\n7. Flip the switch to **ON** and Queue again."
       ],
       "widgets_values_named": {
-        "text": "# 🚀 이 순서대로만 하면 됩니다\n\n1. **① 모델 장착** — 로더에 `MISSING`이 있는지만 확인하세요.\n2. **② 1단계 입력** — 얼굴 사진 1장, 의상 사진 1장을 넣습니다.\n   자르기는 **자동**이라 옆의 작은 미리보기로 확인만 하면 됩니다.\n3. **③** — 몸매·분위기를 바꾸고 싶을 때만 한국어로 적으세요. 실험적인 4패널 구성 스위치도 여기 있습니다. (안 적어도 됩니다)\n4. **Queue** 를 누르면 **전면·측면·후면 3뷰**가 나옵니다 → **⑤**에서 확인.\n\n**보통은 여기서 끝입니다. 2단계는 기본 OFF입니다.**\n\n### 포즈·소품 시트도 만들고 싶다면\n5. **⑥** 설명을 읽습니다.\n6. **⑦**에 포즈 사진을 넣고, 필요하면 **⑧**에 한국어로 적습니다.\n7. 스위치를 **ON**으로 바꾸고 다시 Queue."
+        "text": "# 🚀 Just follow this order\n\n1. **① LOAD MODELS** — only check that no loader says `MISSING`. No PDD file? Turn **Sigmas Source** ON in ④.\n2. **② STAGE 1 INPUT** — drop in one face photo and one outfit photo.\n   Cropping is **automatic**; just glance at the two small previews.\n3. **③** — only if you want to change body type or styling, or switch to the experimental 4-panel layout. (Optional)\n4. Press **Queue** → you get **front / side / back** in one sheet → check it in **⑤**.\n\n**Most of the time you are done here. Stage 2 is OFF by default.**\n\n### If you also want a pose / prop sheet\n5. Read **⑥**.\n6. Put a pose photo in **⑦**, and type into **⑧** if you want.\n7. Flip the switch to **ON** and Queue again."
       },
       "color": "#1f5b58",
       "bgcolor": "#163b39"
@@ -331,7 +331,7 @@
       "mode": 0,
       "inputs": [],
       "outputs": [],
-      "title": "출력 구조 · 1단계 기본 / 2단계 선택",
+      "title": "Outputs · Stage 1 Default / Stage 2 Optional",
       "properties": {
         "ue_properties": {
           "widget_ue_connectable": {},
@@ -340,10 +340,10 @@
         }
       },
       "widgets_values": [
-        "# 결과물이 어디에 나오나요\n\n**2단계 OFF (기본값)**\n전·측·후면 3뷰가 한 장으로 나옵니다. → **⑤ 1단계 결과**에서 확인\n\n**2단계 ON**\n위의 3뷰에 더해서, 고른 패널 1~4장과 최종 16:9 한 장이 추가로 나옵니다.\n→ 오른쪽 **⑫**의 초록색 미리보기 2개에서 확인\n\n저장 파일은 `charsheet/` 폴더에 쌓입니다."
+        "# Where the results appear\n\n**Stage 2 OFF (default)**\nOne sheet with front / side / back. → check it in **⑤ STAGE 1 RESULT**\n\n**Stage 2 ON**\nOn top of that you also get your 1–4 chosen panels and one final 16:9 sheet.\n→ check them in the two green previews in **⑫**\n\nFiles are saved into the `charsheet/` folder."
       ],
       "widgets_values_named": {
-        "text": "# 결과물이 어디에 나오나요\n\n**2단계 OFF (기본값)**\n전·측·후면 3뷰가 한 장으로 나옵니다. → **⑤ 1단계 결과**에서 확인\n\n**2단계 ON**\n위의 3뷰에 더해서, 고른 패널 1~4장과 최종 16:9 한 장이 추가로 나옵니다.\n→ 오른쪽 **⑫**의 초록색 미리보기 2개에서 확인\n\n저장 파일은 `charsheet/` 폴더에 쌓입니다."
+        "text": "# Where the results appear\n\n**Stage 2 OFF (default)**\nOne sheet with front / side / back. → check it in **⑤ STAGE 1 RESULT**\n\n**Stage 2 ON**\nOn top of that you also get your 1–4 chosen panels and one final 16:9 sheet.\n→ check them in the two green previews in **⑫**\n\nFiles are saved into the `charsheet/` folder."
       },
       "color": "#285d86",
       "bgcolor": "#193850"
@@ -406,10 +406,10 @@
           ]
         }
       ],
-      "title": "③ 자동 게이트 · 선택 5",
+      "title": "Auto Gate · Optional 5",
       "properties": {
         "cnr_id": "toobusy",
-        "ver": "a7fefb0c32813dd00e0717b7bf98867d5ea8b0c8",
+        "ver": "bdbed64499d9351cf400c520e8824e33ad9b9702",
         "Node name for S&R": "ToobusyMiniMaxH3SemanticReference",
         "ue_properties": {
           "widget_ue_connectable": {
@@ -459,7 +459,7 @@
           ]
         }
       ],
-      "title": "추가 소품 사용 ON/OFF",
+      "title": "Use Extra Prop ON/OFF",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -504,7 +504,7 @@
           ]
         }
       ],
-      "title": "필수 ⑤ H3 오디오 VAE · vae",
+      "title": "REQUIRED ⑤ H3 Audio VAE · vae",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -561,7 +561,7 @@
           ]
         }
       ],
-      "title": "선택 4 역할 연결",
+      "title": "Optional 4 Role Join",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -630,7 +630,7 @@
           ]
         }
       ],
-      "title": "선택 5 역할 연결",
+      "title": "Optional 5 Role Join",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -700,7 +700,7 @@
           ]
         }
       ],
-      "title": "선택 6 역할 연결",
+      "title": "Optional 6 Role Join",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -770,7 +770,7 @@
           ]
         }
       ],
-      "title": "2단계 정밀 포즈 분석 + 수동 요청",
+      "title": "Stage 2 Pose Analysis + Manual Request",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -823,7 +823,7 @@
           ]
         }
       ],
-      "title": "1단계 Noise",
+      "title": "Stage 1 Noise",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -861,7 +861,7 @@
       "mode": 0,
       "inputs": [],
       "outputs": [],
-      "title": "2단계 ON/OFF · 사용법",
+      "title": "Stage 2 ON/OFF · How To",
       "properties": {
         "ue_properties": {
           "widget_ue_connectable": {},
@@ -870,10 +870,10 @@
         }
       },
       "widgets_values": [
-        "# 2단계, 쓸까 말까?\n\n**그냥 두면 OFF입니다.** Queue를 누르면 1단계 전·측·후면 3뷰만 나옵니다.\n대부분 여기서 끝내면 됩니다.\n\n### 2단계를 쓰고 싶다면\n1. 아래 **⑦ 2단계 입력**에 포즈 사진을 넣습니다.\n2. 필요한 소품·배경 스위치만 ON으로 켭니다.\n3. 하고 싶은 말이 있으면 **⑧**에 한국어로 적습니다.\n4. 아래 `Enable STAGE2_SWITCH`를 **ON**으로 바꾸고 Queue.\n\n다시 1단계만 쓸 땐 같은 스위치를 OFF로 돌리세요.\n\n> ⚠️ **2단계를 쓰려면 ④의 해상도가 `1:1 (Square)` 여야 합니다.**\n> 2단계의 16:9 합성이 정사각형 3뷰를 전제로 크기를 계산하기 때문입니다."
+        "# Stage 2 — use it or not?\n\n**Leave it alone and it stays OFF.** Press Queue and you get just the Stage 1 front / side / back sheet. That is enough for most people.\n\n### If you want Stage 2\n1. Put a pose photo into **⑦ STAGE 2 INPUT** below.\n2. Turn ON only the prop / background switches you actually need.\n3. Type anything extra into **⑧**.\n4. Flip `Enable STAGE2_SWITCH` below to **ON**, then Queue.\n\nTo go back to Stage 1 only, flip the same switch OFF.\n\n> ⚠️ **Stage 2 needs the resolution in ④ set to `1:1 (Square)`.**\n> The final 16:9 composite computes its size assuming a square 3-view input."
       ],
       "widgets_values_named": {
-        "text": "# 2단계, 쓸까 말까?\n\n**그냥 두면 OFF입니다.** Queue를 누르면 1단계 전·측·후면 3뷰만 나옵니다.\n대부분 여기서 끝내면 됩니다.\n\n### 2단계를 쓰고 싶다면\n1. 아래 **⑦ 2단계 입력**에 포즈 사진을 넣습니다.\n2. 필요한 소품·배경 스위치만 ON으로 켭니다.\n3. 하고 싶은 말이 있으면 **⑧**에 한국어로 적습니다.\n4. 아래 `Enable STAGE2_SWITCH`를 **ON**으로 바꾸고 Queue.\n\n다시 1단계만 쓸 땐 같은 스위치를 OFF로 돌리세요.\n\n> ⚠️ **2단계를 쓰려면 ④의 해상도가 `1:1 (Square)` 여야 합니다.**\n> 2단계의 16:9 합성이 정사각형 3뷰를 전제로 크기를 계산하기 때문입니다."
+        "text": "# Stage 2 — use it or not?\n\n**Leave it alone and it stays OFF.** Press Queue and you get just the Stage 1 front / side / back sheet. That is enough for most people.\n\n### If you want Stage 2\n1. Put a pose photo into **⑦ STAGE 2 INPUT** below.\n2. Turn ON only the prop / background switches you actually need.\n3. Type anything extra into **⑧**.\n4. Flip `Enable STAGE2_SWITCH` below to **ON**, then Queue.\n\nTo go back to Stage 1 only, flip the same switch OFF.\n\n> ⚠️ **Stage 2 needs the resolution in ④ set to `1:1 (Square)`.**\n> The final 16:9 composite computes its size assuming a square 3-view input."
       },
       "color": "#432",
       "bgcolor": "#653"
@@ -923,7 +923,7 @@
           ]
         }
       ],
-      "title": "소품 사용 방식 선택",
+      "title": "Prop Mode Select",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -988,7 +988,7 @@
           ]
         }
       ],
-      "title": "2단계 프롬프트 + 소품 방식",
+      "title": "Stage 2 Prompt + Prop Mode",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -1046,7 +1046,7 @@
           "widget": {
             "name": "string_b"
           },
-          "link": 244
+          "link": 383
         }
       ],
       "outputs": [
@@ -1058,7 +1058,7 @@
           ]
         }
       ],
-      "title": "2단계 최종 사용자 요청 · 최우선",
+      "title": "Stage 2 Final User Request · Highest Priority",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -1118,7 +1118,7 @@
           ]
         }
       ],
-      "title": "한국어 패널 요청 · 번역 지시 조립",
+      "title": "Panel Request · Translation Instruction Assembly",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -1132,14 +1132,14 @@
         }
       },
       "widgets_values": [
-        "You are a deterministic translator for MiniMax H3 image-generation panel instructions.\n\nTranslate the user's Korean panel requests into concise English commands.\nNormalize every Korean panel label to exactly \"Panel N:\" where N is 1, 2, 3, or 4.\nExamples of labels that mean the same thing: \"패널3\", \"패널 3\", \"3번 패널\", \"세 번째 패널\".\nPreserve all requested expression, pose, framing, camera, prop, action, and composition details.\nFor a wink, translate explicitly as one eye fully closed and the other eye open.\nOutput only the translated \"Panel N:\" lines. Do not explain, summarize, add headings, or invent requests.\nIf the user input is empty, output nothing.",
+        "You are a deterministic translator for MiniMax H3 image-generation panel instructions.\n\nTurn the user's panel requests into concise English commands. The requests may be written in any language; if they are already English, keep their meaning and only tighten them.\nNormalize every panel label to exactly \"Panel N:\" where N is 1, 2, 3, or 4.\nLabels that mean the same thing include: \"Panel 3\", \"panel3\", \"3rd panel\", \"third panel\".\nPreserve all requested expression, pose, framing, camera, prop, action, and composition details.\nFor a wink, translate explicitly as one eye fully closed and the other eye open.\nOutput only the translated \"Panel N:\" lines. Do not explain, summarize, add headings, or invent requests.\nIf the user input is empty, output nothing.",
         "",
-        "\n\nKOREAN USER INPUT:\n"
+        "\n\nUSER INPUT:\n"
       ],
       "widgets_values_named": {
-        "string_a": "You are a deterministic translator for MiniMax H3 image-generation panel instructions.\n\nTranslate the user's Korean panel requests into concise English commands.\nNormalize every Korean panel label to exactly \"Panel N:\" where N is 1, 2, 3, or 4.\nExamples of labels that mean the same thing: \"패널3\", \"패널 3\", \"3번 패널\", \"세 번째 패널\".\nPreserve all requested expression, pose, framing, camera, prop, action, and composition details.\nFor a wink, translate explicitly as one eye fully closed and the other eye open.\nOutput only the translated \"Panel N:\" lines. Do not explain, summarize, add headings, or invent requests.\nIf the user input is empty, output nothing.",
+        "string_a": "You are a deterministic translator for MiniMax H3 image-generation panel instructions.\n\nTurn the user's panel requests into concise English commands. The requests may be written in any language; if they are already English, keep their meaning and only tighten them.\nNormalize every panel label to exactly \"Panel N:\" where N is 1, 2, 3, or 4.\nLabels that mean the same thing include: \"Panel 3\", \"panel3\", \"3rd panel\", \"third panel\".\nPreserve all requested expression, pose, framing, camera, prop, action, and composition details.\nFor a wink, translate explicitly as one eye fully closed and the other eye open.\nOutput only the translated \"Panel N:\" lines. Do not explain, summarize, add headings, or invent requests.\nIf the user input is empty, output nothing.",
         "string_b": "",
-        "delimiter": "\n\nKOREAN USER INPUT:\n"
+        "delimiter": "\n\nUSER INPUT:\n"
       },
       "color": "#343b48",
       "bgcolor": "#202631"
@@ -1170,7 +1170,7 @@
           ]
         }
       ],
-      "title": "자동 문구 · 3패널 왼쪽 세로1 + 오른쪽2",
+      "title": "Auto Text · 3-Panel Tall Left + 2 Right",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -1216,7 +1216,7 @@
           ]
         }
       ],
-      "title": "자동 문구 · 3패널 위 가로1 + 아래2",
+      "title": "Auto Text · 3-Panel Wide Top + 2 Below",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -1281,7 +1281,7 @@
           ]
         }
       ],
-      "title": "3패널 레이아웃 선택",
+      "title": "3-Panel Layout Select",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -1346,7 +1346,7 @@
           ]
         }
       ],
-      "title": "2단계 기본 계획 + 3패널 고정 레이아웃",
+      "title": "Stage 2 Base Plan + 3-Panel Layout",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -1401,7 +1401,7 @@
           ]
         }
       ],
-      "title": "필수 ④ T=1 이미지 VAE · vae",
+      "title": "REQUIRED ④ T=1 Image VAE · vae",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -1461,7 +1461,7 @@
           ]
         }
       ],
-      "title": "1단계 Decode",
+      "title": "Stage 1 Decode",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -1510,7 +1510,7 @@
           ]
         }
       ],
-      "title": "1단계 한국어 요청 · 번역 지시 조립",
+      "title": "Stage 1 Request · Translation Instruction Assembly",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -1524,14 +1524,14 @@
         }
       },
       "widgets_values": [
-        "You are a deterministic translator for MiniMax H3 Stage 1 character-turnaround instructions.\n\nTranslate the user's Korean request into one concise English instruction paragraph.\nPreserve every requested body build, gender presentation, silhouette, age, hairstyle, styling, framing, and mood detail.\nWhen the user requests a slender or feminine body, express it explicitly with practical visual anatomy such as a smaller adult frame, narrower shoulders, a slimmer torso and limbs, and natural adult feminine proportions.\nDo not change the facial identity role of Picture 1 or the outfit-only role of Picture 2.\nDo not add a new person, pose sequence, panel count, explanation, heading, or commentary.\nIf the input is empty, output nothing.",
+        "You are a deterministic translator for MiniMax H3 Stage 1 character-turnaround instructions.\n\nTurn the user's request into one concise English instruction paragraph. The request may be written in any language; if it is already English, keep its meaning and only tighten it into that form.\nPreserve every requested body build, gender presentation, silhouette, age, hairstyle, styling, framing, and mood detail.\nWhen the user requests a slender or feminine body, express it explicitly with practical visual anatomy such as a smaller adult frame, narrower shoulders, a slimmer torso and limbs, and natural adult feminine proportions.\nDo not change the facial identity role of Picture 1 or the outfit-only role of Picture 2.\nDo not add a new person, pose sequence, panel count, explanation, heading, or commentary.\nIf the input is empty, output nothing.",
         "",
-        "\n\nKOREAN USER INPUT:\n"
+        "\n\nUSER INPUT:\n"
       ],
       "widgets_values_named": {
-        "string_a": "You are a deterministic translator for MiniMax H3 Stage 1 character-turnaround instructions.\n\nTranslate the user's Korean request into one concise English instruction paragraph.\nPreserve every requested body build, gender presentation, silhouette, age, hairstyle, styling, framing, and mood detail.\nWhen the user requests a slender or feminine body, express it explicitly with practical visual anatomy such as a smaller adult frame, narrower shoulders, a slimmer torso and limbs, and natural adult feminine proportions.\nDo not change the facial identity role of Picture 1 or the outfit-only role of Picture 2.\nDo not add a new person, pose sequence, panel count, explanation, heading, or commentary.\nIf the input is empty, output nothing.",
+        "string_a": "You are a deterministic translator for MiniMax H3 Stage 1 character-turnaround instructions.\n\nTurn the user's request into one concise English instruction paragraph. The request may be written in any language; if it is already English, keep its meaning and only tighten it into that form.\nPreserve every requested body build, gender presentation, silhouette, age, hairstyle, styling, framing, and mood detail.\nWhen the user requests a slender or feminine body, express it explicitly with practical visual anatomy such as a smaller adult frame, narrower shoulders, a slimmer torso and limbs, and natural adult feminine proportions.\nDo not change the facial identity role of Picture 1 or the outfit-only role of Picture 2.\nDo not add a new person, pose sequence, panel count, explanation, heading, or commentary.\nIf the input is empty, output nothing.",
         "string_b": "",
-        "delimiter": "\n\nKOREAN USER INPUT:\n"
+        "delimiter": "\n\nUSER INPUT:\n"
       },
       "color": "#222",
       "bgcolor": "#000"
@@ -1587,7 +1587,7 @@
           ]
         }
       ],
-      "title": "③ Gemma 비전 · 선택 4 분석",
+      "title": "Gemma Vision · Optional 4 Analysis",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -1664,7 +1664,7 @@
           ]
         }
       ],
-      "title": "③ Gemma 비전 · 선택 5 분석",
+      "title": "Gemma Vision · Optional 5 Analysis",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -1706,7 +1706,7 @@
       "mode": 0,
       "inputs": [],
       "outputs": [],
-      "title": "③ 기본은 자동 · 필요할 때만 수동 입력",
+      "title": "③ Automatic by Default · Type Only If Needed",
       "properties": {
         "ue_properties": {
           "widget_ue_connectable": {},
@@ -1715,10 +1715,10 @@
         }
       },
       "widgets_values": [
-        "# 2단계 패널 요청 · 한국어로 그냥 쓰세요\n\n아래 칸에 **한국어 그대로** 적으면 됩니다. 영어로 바꿀 필요 없습니다.\n\n**이렇게 적으면 됩니다**\n- `패널1: 점프하며 물총을 조준`\n- `패널2: 무기를 양손으로 든 낮은 자세`\n- `패널3: 한쪽 눈을 감고 웃는 상반신 클로즈업`\n\n- `3번 패널:`, `세 번째 패널:` 처럼 적어도 알아듣습니다.\n- 실행 직전에 Gemma가 알아서 영어로 바꿔 줍니다.\n- 바뀐 문장은 **⑨ 자동 번역 확인**에서 볼 수 있습니다.\n- 안 적은 패널은 기본값으로 나옵니다. **다 안 채워도 됩니다.**"
+        "# Stage 2 panel requests — just type normally\n\nType into the box below in plain language. Gemma converts it before the run, so you do not have to phrase it carefully.\n\n**Examples**\n- `Panel 1: jumping while aiming a water gun`\n- `Panel 2: low stance, holding the weapon with both hands`\n- `Panel 3: upper-body close-up, winking and smiling`\n\n- `panel 3:`, `third panel:` and similar forms are recognised too.\n- The converted English text shows up in **⑨ Translated Panel Request Check**.\n- Panels you leave blank use the default. **You do not have to fill them all in.**"
       ],
       "widgets_values_named": {
-        "text": "# 2단계 패널 요청 · 한국어로 그냥 쓰세요\n\n아래 칸에 **한국어 그대로** 적으면 됩니다. 영어로 바꿀 필요 없습니다.\n\n**이렇게 적으면 됩니다**\n- `패널1: 점프하며 물총을 조준`\n- `패널2: 무기를 양손으로 든 낮은 자세`\n- `패널3: 한쪽 눈을 감고 웃는 상반신 클로즈업`\n\n- `3번 패널:`, `세 번째 패널:` 처럼 적어도 알아듣습니다.\n- 실행 직전에 Gemma가 알아서 영어로 바꿔 줍니다.\n- 바뀐 문장은 **⑨ 자동 번역 확인**에서 볼 수 있습니다.\n- 안 적은 패널은 기본값으로 나옵니다. **다 안 채워도 됩니다.**"
+        "text": "# Stage 2 panel requests — just type normally\n\nType into the box below in plain language. Gemma converts it before the run, so you do not have to phrase it carefully.\n\n**Examples**\n- `Panel 1: jumping while aiming a water gun`\n- `Panel 2: low stance, holding the weapon with both hands`\n- `Panel 3: upper-body close-up, winking and smiling`\n\n- `panel 3:`, `third panel:` and similar forms are recognised too.\n- The converted English text shows up in **⑨ Translated Panel Request Check**.\n- Panels you leave blank use the default. **You do not have to fill them all in.**"
       },
       "color": "#24324a",
       "bgcolor": "#35496b"
@@ -1773,7 +1773,7 @@
           ]
         }
       ],
-      "title": "2단계 Gemma · 정밀 포즈 분석",
+      "title": "Stage 2 Gemma · Detailed Pose Analysis",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -1828,7 +1828,7 @@
           "links": null
         }
       ],
-      "title": "2단계 포즈 분석 원본",
+      "title": "Stage 2 Pose Reference Source",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -1878,7 +1878,7 @@
           "links": null
         }
       ],
-      "title": "2단계 선택 패널 결과 확인",
+      "title": "Stage 2 Panel Result Check",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -1985,14 +1985,7 @@
         {
           "name": "sigmas",
           "type": "SIGMAS",
-          "link": 275
-        },
-        {
-          "name": "pose_or_extra_ref",
-          "shape": 7,
-          "type": "IMAGE",
-          "link": null,
-          "label": "실험적 · 포즈 이미지 직접 입력 (미연결)"
+          "link": 389
         }
       ],
       "outputs": [
@@ -2011,7 +2004,7 @@
           ]
         }
       ],
-      "title": "2단계 전체 · 패널 1~4 선택 · 클릭 ON/OFF",
+      "title": "Stage 2 Full · Panels 1-4 · Click ON/OFF",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -2105,7 +2098,7 @@
           ]
         }
       ],
-      "title": "③ Gemma 비전 · 선택 6 분석",
+      "title": "Gemma Vision · Optional 6 Analysis",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -2189,10 +2182,10 @@
           ]
         }
       ],
-      "title": "③ 자동 게이트 · 선택 6",
+      "title": "Auto Gate · Optional 6",
       "properties": {
         "cnr_id": "toobusy",
-        "ver": "a7fefb0c32813dd00e0717b7bf98867d5ea8b0c8",
+        "ver": "bdbed64499d9351cf400c520e8824e33ad9b9702",
         "Node name for S&R": "ToobusyMiniMaxH3SemanticReference",
         "ue_properties": {
           "widget_ue_connectable": {
@@ -2242,7 +2235,7 @@
           ]
         }
       ],
-      "title": "배경/환경 사용 ON/OFF",
+      "title": "Use Background / Environment ON/OFF",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -2290,7 +2283,7 @@
           "links": null
         }
       ],
-      "title": "2단계 선택 3 · 추가 소품/액세서리",
+      "title": "Stage 2 Optional 3 · Extra Prop / Accessory",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -2344,7 +2337,7 @@
           ]
         }
       ],
-      "title": "3패널 배치 · OFF=왼쪽 세로1 / ON=위 가로1",
+      "title": "3-Panel Layout · OFF = tall left / ON = wide top",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -2388,7 +2381,7 @@
           ]
         }
       ],
-      "title": "2단계 포즈 요청 · 직접 참조 보정",
+      "title": "Stage 2 Pose Request · Manual Override",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -2432,7 +2425,7 @@
           ]
         }
       ],
-      "title": "소품 방식 · OFF=따로 나열 / ON=캐릭터가 들기",
+      "title": "Prop Mode · OFF = shown separately / ON = character holds it",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -2481,7 +2474,7 @@
           "links": null
         }
       ],
-      "title": "2단계 패널 수 · 1~4장",
+      "title": "Stage 2 Panel Count · 1-4",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -2539,7 +2532,7 @@
           ]
         }
       ],
-      "title": "자동 문구 · 캐릭터가 소품 들기",
+      "title": "Auto Text · Character Holds Prop",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -2585,7 +2578,7 @@
           ]
         }
       ],
-      "title": "자동 문구 · 소품 따로 나열",
+      "title": "Auto Text · Prop Shown Separately",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -2631,11 +2624,12 @@
           "name": "MODEL",
           "type": "MODEL",
           "links": [
-            271
+            271,
+            391
           ]
         }
       ],
-      "title": "SigmaShift 12/3 (H3 학습 그리드)",
+      "title": "SigmaShift 12/3 (H3 training grid)",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -2681,7 +2675,7 @@
         {
           "name": "source",
           "type": "*",
-          "link": 274
+          "link": 397
         }
       ],
       "outputs": [
@@ -2691,7 +2685,7 @@
           "links": null
         }
       ],
-      "title": "PDD info · 적용 확인",
+      "title": "PDD info · applied check",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -2731,7 +2725,7 @@
         {
           "name": "model",
           "type": "MODEL",
-          "link": 272
+          "link": 393
         }
       ],
       "outputs": [
@@ -2745,7 +2739,7 @@
           ]
         }
       ],
-      "title": "MiniMax H3 · Comfy Kitchen Attention · PDD 가속 뒤",
+      "title": "MiniMax H3 · Comfy Kitchen Attention · after PDD Acc",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -2795,7 +2789,7 @@
           "links": null
         }
       ],
-      "title": "2단계 선택 2 · 배경/환경",
+      "title": "Stage 2 Optional 2 · Background / Environment",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -2843,7 +2837,7 @@
         {
           "name": "source",
           "type": "*",
-          "link": 245
+          "link": 384
         }
       ],
       "outputs": [
@@ -2853,7 +2847,7 @@
           "links": null
         }
       ],
-      "title": "한국어 요청 자동 번역 확인",
+      "title": "Translated Panel Request Check",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -2889,11 +2883,12 @@
           "name": "STRING",
           "type": "STRING",
           "links": [
-            241
+            241,
+            379
           ]
         }
       ],
-      "title": "2단계 패널별 요청 · 한국어로 입력",
+      "title": "Stage 2 Per-Panel Request (free text)",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -2967,12 +2962,11 @@
           "name": "generated_text",
           "type": "STRING",
           "links": [
-            244,
-            245
+            381
           ]
         }
       ],
-      "title": "Gemma · 한국어 패널 요청 자동 번역",
+      "title": "Gemma · Panel Request Auto Translation",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -3025,11 +3019,15 @@
             276,
             318,
             327,
-            339
+            339,
+            362,
+            364,
+            374,
+            380
           ]
         }
       ],
-      "title": "빈 문구 (소품 OFF)",
+      "title": "Empty Text (prop OFF)",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -3098,7 +3096,7 @@
           ]
         }
       ],
-      "title": "소품 문구 게이트 · OFF면 문구 제거",
+      "title": "Prop Text Gate · removes text when OFF",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -3150,7 +3148,7 @@
           ]
         }
       ],
-      "title": "소품/무기 사용 ON/OFF",
+      "title": "Use Prop / Weapon ON/OFF",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -3196,7 +3194,7 @@
           "links": null
         }
       ],
-      "title": "최종 16:9 캐릭터 시트 확인",
+      "title": "Final 16:9 Character Sheet Check",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -3228,7 +3226,7 @@
         {
           "name": "source",
           "type": "*",
-          "link": 260
+          "link": 378
         }
       ],
       "outputs": [
@@ -3238,7 +3236,7 @@
           "links": null
         }
       ],
-      "title": "1단계 요청 · 영어 변환 확인",
+      "title": "Stage 1 Request · Translated Output Check",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -3312,10 +3310,10 @@
           ]
         }
       ],
-      "title": "③ 자동 게이트 · 선택 4",
+      "title": "Auto Gate · Optional 4",
       "properties": {
         "cnr_id": "toobusy",
-        "ver": "a7fefb0c32813dd00e0717b7bf98867d5ea8b0c8",
+        "ver": "bdbed64499d9351cf400c520e8824e33ad9b9702",
         "Node name for S&R": "ToobusyMiniMaxH3SemanticReference",
         "ue_properties": {
           "widget_ue_connectable": {
@@ -3394,12 +3392,11 @@
           "name": "generated_text",
           "type": "STRING",
           "links": [
-            259,
-            260
+            375
           ]
         }
       ],
-      "title": "Gemma · 1단계 한국어 요청 자동 번역",
+      "title": "Gemma · Stage 1 Request Auto Translation",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -3451,7 +3448,7 @@
           "links": null
         }
       ],
-      "title": "2단계 ON/OFF · 클릭 스위치",
+      "title": "Stage 2 ON/OFF · Click Switch",
       "properties": {
         "matchColors": "",
         "matchTitle": "^STAGE2_SWITCH",
@@ -3497,7 +3494,7 @@
           ]
         }
       ],
-      "title": "필수 ③ H3 Qwen 인코더 · text_encoders",
+      "title": "REQUIRED ③ H3 Qwen Encoder · text_encoders",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -3550,11 +3547,12 @@
             90,
             233,
             242,
-            258
+            258,
+            360
           ]
         }
       ],
-      "title": "필수 ⑥ Gemma 분석·한국어 자동 번역",
+      "title": "REQUIRED ⑥ Gemma · Analysis + Auto Translation",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -3595,7 +3593,7 @@
         "collapsed": true
       },
       "order": 75,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "name": "model",
@@ -3607,7 +3605,9 @@
         {
           "name": "SIGMAS",
           "type": "SIGMAS",
-          "links": []
+          "links": [
+            386
+          ]
         }
       ],
       "properties": {
@@ -3622,17 +3622,17 @@
       },
       "widgets_values": [
         "sgm_uniform",
-        8,
+        30,
         1
       ],
       "widgets_values_named": {
         "scheduler": "sgm_uniform",
-        "steps": 8,
+        "steps": 30,
         "denoise": 1
       },
       "color": "#414e5d",
       "bgcolor": "#252e38",
-      "title": "선택 · BasicScheduler (PDD 가속기 없을 때 대체 · 바이패스)"
+      "title": "BasicScheduler · 30-step fallback (used only when Sigmas Source is ON)"
     },
     {
       "id": 13,
@@ -3744,7 +3744,7 @@
           "links": null
         }
       ],
-      "title": "1단계 H3 · 얼굴+의상 3뷰",
+      "title": "Stage 1 H3 · Face + Outfit 3-View",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -3859,7 +3859,7 @@
           ]
         }
       ],
-      "title": "1단계 Guider",
+      "title": "Stage 1 Guider",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -3916,10 +3916,10 @@
           ]
         }
       ],
-      "title": "1단계 Image Latent",
+      "title": "Stage 1 Image Latent",
       "properties": {
         "cnr_id": "toobusy",
-        "ver": "a7fefb0c32813dd00e0717b7bf98867d5ea8b0c8",
+        "ver": "bdbed64499d9351cf400c520e8824e33ad9b9702",
         "Node name for S&R": "ToobusyMiniMaxH3ImageLatent",
         "ue_properties": {
           "widget_ue_connectable": {
@@ -3977,7 +3977,7 @@
         {
           "name": "sigmas",
           "type": "SIGMAS",
-          "link": 273
+          "link": 388
         },
         {
           "name": "latent_image",
@@ -3999,7 +3999,7 @@
           "links": null
         }
       ],
-      "title": "1단계 Sampler",
+      "title": "Stage 1 Sampler",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -4039,7 +4039,7 @@
           ]
         }
       ],
-      "title": "필수 ① H3 Ref2VA 모델 · diffusion_models",
+      "title": "REQUIRED ① H3 Ref2VA Model · diffusion_models",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -4095,7 +4095,7 @@
           ]
         }
       ],
-      "title": "선택 · 스타일 LoRA · loras (기본 바이패스 · 실사 참조 전용 · 트리거 r34l1sm)",
+      "title": "OPTIONAL · Style LoRA · loras (bypassed by default · photo refs only · trigger r34l1sm)",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -4137,7 +4137,7 @@
       "mode": 0,
       "inputs": [],
       "outputs": [],
-      "title": "📦 필수 모델 · 다운로드",
+      "title": "📦 Required Models · Downloads",
       "properties": {
         "ue_properties": {
           "widget_ue_connectable": {},
@@ -4146,10 +4146,10 @@
         }
       },
       "widgets_values": [
-        "# 📦 직접 받아야 하는 모델 (필수 5개 + 가속기 1개)\n\n왼쪽 로더에 `MISSING`이 떠 있는 것만 받으면 됩니다.\n링크를 눌러 받은 뒤 **아래 적힌 폴더에 파일명 그대로** 넣으세요.\n\n## ① H3 Ref2VA 본체 · `models/diffusion_models/`\n[minimax_h3_ref2va_pruned_int8_convrot.safetensors](https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/diffusion_models/minimax_h3_ref2va_pruned_int8_convrot.safetensors)\n\n## ② 스타일 LoRA · `models/loras/` — 선택 사항, 필수 아님\n로더는 **기본 바이패스**이고 이 워크플로우는 Turbo LoRA를 **쓰지 않습니다.** 속도는 아래 ⑦ 8-step PDD 가속기가 담당합니다.\nLoRA는 **실사 참조**에만 켜세요. 예: [h3-realism-people-t2v-i2v-r2v.safetensors](https://huggingface.co/fal/MiniMax-H3-Realism-People-LoRA) (트리거 `r34l1sm`, 강도 1.0, 약하게는 0.6~0.8). 애니/일러스트 참조에 켜면 결과가 참조에서 멀어져 일관성이 깨집니다.\n\n## ③ H3 Qwen 텍스트 인코더 · `models/text_encoders/`\n기본값 (로더와 동일): [qwen3vl_32b_minimax_h3_int8_convrot.safetensors](https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/text_encoders/qwen3vl_32b_minimax_h3_int8_convrot.safetensors) · 약 27 GB\n24~32 GB 카드용 경량 대안: [qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors](https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/text_encoders/qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors) · 약 16 GB — 받은 뒤 로더에서 선택하세요.\n\n## ④ 캐릭터시트용 T=1 이미지 VAE · `models/vae/`\n[minimax_h3_t1_image_vae_step1597.safetensors](https://huggingface.co/Mamad8/MiniMax-H3-Image-VAE/resolve/main/minimax_h3_t1_image_vae_step1597.safetensors)\n\n## ⑤ H3 오디오 VAE · `models/vae/`\n[minimax_h3_audio_vae_fp32.safetensors](https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/vae/minimax_h3_audio_vae_fp32.safetensors)\n\n## ⑥ Gemma 이미지 분석 · `models/text_encoders/`\n[gemma4_e4b_it_fp8_scaled.safetensors](https://huggingface.co/Comfy-Org/Gemma4/resolve/main/text_encoders/gemma4_e4b_it_fp8_scaled.safetensors)\n\n## ⑦ 8-step PDD 가속기 · `PDD Acc Apply` 노드에서 로드\n[MiniMax-H3-Ref2VA-Acc-8Step.safetensors](https://huggingface.co/alibaba-pai/MiniMax-H3-Acc-LoRAs) → `models/pdd_acc/`\n노드팩: [ComfyUI-MiniMax-H3-PDD-Acc](https://github.com/Jalen-Brunson/ComfyUI-MiniMax-H3-PDD-Acc)\n\nGemma는 포즈 사진을 짧게 설명하고, 켜 놓은 선택 이미지의 역할을 분석합니다. 얼굴·의상 설명에는 쓰지 않습니다.\n\n---\n\n## 🤖 이건 안 받아도 됩니다 (자동)\n**② 1단계 입력**의 얼굴·의상 자동 오려내기에 쓰는 모델은\n처음 Queue를 누를 때 **알아서 내려받습니다.**\n\n- 얼굴 오려내기 → SAM3\n- 의상 오려내기 → SegFormer clothes (`models/RMBG/segformer_clothes/`)\n\n첫 실행만 조금 느리고, 그 다음부터는 바로 돌아갑니다.\n\n---\n모델을 넣은 뒤 목록을 새로고침하고, 그래도 안 보일 때만 ComfyUI를 재시작하세요.\n\n> 이 워크플로는 **정지 이미지용 T=1 VAE**를 씁니다.\n> 일반 H3 영상 제작에는 Video VAE를 쓰세요."
+        "# 📦 Models you download yourself (5 required + 1 accelerator)\n\nOnly grab the ones whose loader on the left says `MISSING`.\nClick the link, then put the file in the folder shown, **keeping the original filename**.\n\n## ① H3 Ref2VA base · `models/diffusion_models/`\n[minimax_h3_ref2va_pruned_int8_convrot.safetensors](https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/diffusion_models/minimax_h3_ref2va_pruned_int8_convrot.safetensors)\n\n## ② Style LoRA · `models/loras/` — OPTIONAL, not required\nThe loader is **bypassed by default** and the workflow does **not** use a turbo LoRA: speed comes from the 8-step PDD accelerator in ⑦ below.\nOnly enable a LoRA for **photographic** references, e.g. [h3-realism-people-t2v-i2v-r2v.safetensors](https://huggingface.co/fal/MiniMax-H3-Realism-People-LoRA) (trigger word `r34l1sm`, strength 1.0; 0.6–0.8 for a lighter touch). With illustrated / anime references it pulls the result away from the reference and breaks consistency.\n\n## ③ H3 Qwen text encoder · `models/text_encoders/`\nDefault (matches the loader): [qwen3vl_32b_minimax_h3_int8_convrot.safetensors](https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/text_encoders/qwen3vl_32b_minimax_h3_int8_convrot.safetensors) · ~27 GB\nSmaller alternative for 24–32 GB cards: [qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors](https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/text_encoders/qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors) · ~16 GB — pick it in the loader after downloading.\n\n## ④ T=1 still-image VAE (for character sheets) · `models/vae/`\n[minimax_h3_t1_image_vae_step1597.safetensors](https://huggingface.co/Mamad8/MiniMax-H3-Image-VAE/resolve/main/minimax_h3_t1_image_vae_step1597.safetensors)\n\n## ⑤ H3 audio VAE · `models/vae/`\n[minimax_h3_audio_vae_fp32.safetensors](https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/vae/minimax_h3_audio_vae_fp32.safetensors)\n\n## ⑥ Gemma image analysis · `models/text_encoders/`\n[gemma4_e4b_it_fp8_scaled.safetensors](https://huggingface.co/Comfy-Org/Gemma4/resolve/main/text_encoders/gemma4_e4b_it_fp8_scaled.safetensors)\n\n## ⑦ 8-step PDD accelerator · loaded by the `PDD Acc Apply` node\nCannot get the file? Flip **Sigmas Source** in ④ to ON: the PDD node is skipped and a 30-step BasicScheduler runs instead (slower, no extra file).\n[MiniMax-H3-Ref2VA-Acc-8Step.safetensors](https://huggingface.co/alibaba-pai/MiniMax-H3-Acc-LoRAs) → `models/pdd_acc/`\nNode pack: [ComfyUI-MiniMax-H3-PDD-Acc](https://github.com/Jalen-Brunson/ComfyUI-MiniMax-H3-PDD-Acc)\n\nGemma writes a short description of the pose photo and analyses whichever optional images are switched on. It is **not** used to describe the face or the outfit.\n\n---\n\n## 🤖 These download themselves — do nothing\nThe models behind the automatic face / outfit cut-out in **② STAGE 1 INPUT**\nare **fetched automatically the first time you press Queue.**\n\n- toobusy node pack: tested static build 0.4.10, commit `bdbed644`\n- Face cut-out → SAM3\n- Outfit cut-out → SegFormer clothes (`models/RMBG/segformer_clothes/`)\n\nOnly the first run is slow; after that it is instant.\n\n---\nAfter adding models, refresh the model list. Restart ComfyUI only if they still do not show up.\n\n> This workflow uses the **T=1 still-image VAE**.\n> For normal H3 video, use the Video VAE instead."
       ],
       "widgets_values_named": {
-        "text": "# 📦 직접 받아야 하는 모델 (필수 5개 + 가속기 1개)\n\n왼쪽 로더에 `MISSING`이 떠 있는 것만 받으면 됩니다.\n링크를 눌러 받은 뒤 **아래 적힌 폴더에 파일명 그대로** 넣으세요.\n\n## ① H3 Ref2VA 본체 · `models/diffusion_models/`\n[minimax_h3_ref2va_pruned_int8_convrot.safetensors](https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/diffusion_models/minimax_h3_ref2va_pruned_int8_convrot.safetensors)\n\n## ② 스타일 LoRA · `models/loras/` — 선택 사항, 필수 아님\n로더는 **기본 바이패스**이고 이 워크플로우는 Turbo LoRA를 **쓰지 않습니다.** 속도는 아래 ⑦ 8-step PDD 가속기가 담당합니다.\nLoRA는 **실사 참조**에만 켜세요. 예: [h3-realism-people-t2v-i2v-r2v.safetensors](https://huggingface.co/fal/MiniMax-H3-Realism-People-LoRA) (트리거 `r34l1sm`, 강도 1.0, 약하게는 0.6~0.8). 애니/일러스트 참조에 켜면 결과가 참조에서 멀어져 일관성이 깨집니다.\n\n## ③ H3 Qwen 텍스트 인코더 · `models/text_encoders/`\n기본값 (로더와 동일): [qwen3vl_32b_minimax_h3_int8_convrot.safetensors](https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/text_encoders/qwen3vl_32b_minimax_h3_int8_convrot.safetensors) · 약 27 GB\n24~32 GB 카드용 경량 대안: [qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors](https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/text_encoders/qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors) · 약 16 GB — 받은 뒤 로더에서 선택하세요.\n\n## ④ 캐릭터시트용 T=1 이미지 VAE · `models/vae/`\n[minimax_h3_t1_image_vae_step1597.safetensors](https://huggingface.co/Mamad8/MiniMax-H3-Image-VAE/resolve/main/minimax_h3_t1_image_vae_step1597.safetensors)\n\n## ⑤ H3 오디오 VAE · `models/vae/`\n[minimax_h3_audio_vae_fp32.safetensors](https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/vae/minimax_h3_audio_vae_fp32.safetensors)\n\n## ⑥ Gemma 이미지 분석 · `models/text_encoders/`\n[gemma4_e4b_it_fp8_scaled.safetensors](https://huggingface.co/Comfy-Org/Gemma4/resolve/main/text_encoders/gemma4_e4b_it_fp8_scaled.safetensors)\n\n## ⑦ 8-step PDD 가속기 · `PDD Acc Apply` 노드에서 로드\n[MiniMax-H3-Ref2VA-Acc-8Step.safetensors](https://huggingface.co/alibaba-pai/MiniMax-H3-Acc-LoRAs) → `models/pdd_acc/`\n노드팩: [ComfyUI-MiniMax-H3-PDD-Acc](https://github.com/Jalen-Brunson/ComfyUI-MiniMax-H3-PDD-Acc)\n\nGemma는 포즈 사진을 짧게 설명하고, 켜 놓은 선택 이미지의 역할을 분석합니다. 얼굴·의상 설명에는 쓰지 않습니다.\n\n---\n\n## 🤖 이건 안 받아도 됩니다 (자동)\n**② 1단계 입력**의 얼굴·의상 자동 오려내기에 쓰는 모델은\n처음 Queue를 누를 때 **알아서 내려받습니다.**\n\n- 얼굴 오려내기 → SAM3\n- 의상 오려내기 → SegFormer clothes (`models/RMBG/segformer_clothes/`)\n\n첫 실행만 조금 느리고, 그 다음부터는 바로 돌아갑니다.\n\n---\n모델을 넣은 뒤 목록을 새로고침하고, 그래도 안 보일 때만 ComfyUI를 재시작하세요.\n\n> 이 워크플로는 **정지 이미지용 T=1 VAE**를 씁니다.\n> 일반 H3 영상 제작에는 Video VAE를 쓰세요."
+        "text": "# 📦 Models you download yourself (5 required + 1 accelerator)\n\nOnly grab the ones whose loader on the left says `MISSING`.\nClick the link, then put the file in the folder shown, **keeping the original filename**.\n\n## ① H3 Ref2VA base · `models/diffusion_models/`\n[minimax_h3_ref2va_pruned_int8_convrot.safetensors](https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/diffusion_models/minimax_h3_ref2va_pruned_int8_convrot.safetensors)\n\n## ② Style LoRA · `models/loras/` — OPTIONAL, not required\nThe loader is **bypassed by default** and the workflow does **not** use a turbo LoRA: speed comes from the 8-step PDD accelerator in ⑦ below.\nOnly enable a LoRA for **photographic** references, e.g. [h3-realism-people-t2v-i2v-r2v.safetensors](https://huggingface.co/fal/MiniMax-H3-Realism-People-LoRA) (trigger word `r34l1sm`, strength 1.0; 0.6–0.8 for a lighter touch). With illustrated / anime references it pulls the result away from the reference and breaks consistency.\n\n## ③ H3 Qwen text encoder · `models/text_encoders/`\nDefault (matches the loader): [qwen3vl_32b_minimax_h3_int8_convrot.safetensors](https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/text_encoders/qwen3vl_32b_minimax_h3_int8_convrot.safetensors) · ~27 GB\nSmaller alternative for 24–32 GB cards: [qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors](https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/text_encoders/qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors) · ~16 GB — pick it in the loader after downloading.\n\n## ④ T=1 still-image VAE (for character sheets) · `models/vae/`\n[minimax_h3_t1_image_vae_step1597.safetensors](https://huggingface.co/Mamad8/MiniMax-H3-Image-VAE/resolve/main/minimax_h3_t1_image_vae_step1597.safetensors)\n\n## ⑤ H3 audio VAE · `models/vae/`\n[minimax_h3_audio_vae_fp32.safetensors](https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/vae/minimax_h3_audio_vae_fp32.safetensors)\n\n## ⑥ Gemma image analysis · `models/text_encoders/`\n[gemma4_e4b_it_fp8_scaled.safetensors](https://huggingface.co/Comfy-Org/Gemma4/resolve/main/text_encoders/gemma4_e4b_it_fp8_scaled.safetensors)\n\n## ⑦ 8-step PDD accelerator · loaded by the `PDD Acc Apply` node\nCannot get the file? Flip **Sigmas Source** in ④ to ON: the PDD node is skipped and a 30-step BasicScheduler runs instead (slower, no extra file).\n[MiniMax-H3-Ref2VA-Acc-8Step.safetensors](https://huggingface.co/alibaba-pai/MiniMax-H3-Acc-LoRAs) → `models/pdd_acc/`\nNode pack: [ComfyUI-MiniMax-H3-PDD-Acc](https://github.com/Jalen-Brunson/ComfyUI-MiniMax-H3-PDD-Acc)\n\nGemma writes a short description of the pose photo and analyses whichever optional images are switched on. It is **not** used to describe the face or the outfit.\n\n---\n\n## 🤖 These download themselves — do nothing\nThe models behind the automatic face / outfit cut-out in **② STAGE 1 INPUT**\nare **fetched automatically the first time you press Queue.**\n\n- toobusy node pack: tested static build 0.4.10, commit `bdbed644`\n- Face cut-out → SAM3\n- Outfit cut-out → SegFormer clothes (`models/RMBG/segformer_clothes/`)\n\nOnly the first run is slow; after that it is instant.\n\n---\nAfter adding models, refresh the model list. Restart ComfyUI only if they still do not show up.\n\n> This workflow uses the **T=1 still-image VAE**.\n> For normal H3 video, use the Video VAE instead."
       },
       "color": "#432",
       "bgcolor": "#653"
@@ -4238,7 +4238,7 @@
           ]
         }
       ],
-      "title": "R2V 필수 오디오 섹션 (정지 이미지 → N/A)",
+      "title": "R2V Required Audio Section (still image → N/A)",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -4305,7 +4305,7 @@
           ]
         }
       ],
-      "title": "2단계 프롬프트 + R2V 오디오 섹션 (최종)",
+      "title": "Stage 2 Prompt + R2V Audio Section (final)",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -4365,7 +4365,7 @@
           "links": null
         }
       ],
-      "title": "2단계 선택 1 · 소품/무기",
+      "title": "Stage 2 Optional 1 · Prop / Weapon",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -4415,7 +4415,7 @@
           "links": null
         }
       ],
-      "title": "추출 확인 · 정체성 (H3에 실제 입력되는 이미지)",
+      "title": "Extraction Check · Identity (what H3 receives)",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -4463,7 +4463,7 @@
           "links": null
         }
       ],
-      "title": "추출 확인 · 의상 (H3에 실제 입력되는 이미지)",
+      "title": "Extraction Check · Outfit (what H3 receives)",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -4513,7 +4513,7 @@
           "links": null
         }
       ],
-      "title": "1단계 3뷰 저장",
+      "title": "Stage 1 · Save 3-View Sheet",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -4563,26 +4563,25 @@
           "name": "model",
           "type": "MODEL",
           "links": [
-            272
+            390
           ]
         },
         {
           "name": "sigmas",
           "type": "SIGMAS",
           "links": [
-            273,
-            275
+            385
           ]
         },
         {
           "name": "info",
           "type": "STRING",
           "links": [
-            274
+            394
           ]
         }
       ],
-      "title": "PDD Acc Apply (헤드 뱅크 + adaln 리베이스)",
+      "title": "PDD Acc Apply (head bank + adaln rebase)",
       "properties": {
         "Node name for S&R": "MiniMaxH3PDDAccApply",
         "ultra_h3_r2v_basic_view": true,
@@ -4661,7 +4660,7 @@
           "links": null
         }
       ],
-      "title": "얼굴만 추출 (SAM3 head)",
+      "title": "Extract Face Only (SAM3 head)",
       "properties": {
         "cnr_id": "comfyui-rmbg",
         "Node name for S&R": "SAM3Segment",
@@ -4727,7 +4726,7 @@
       "mode": 0,
       "inputs": [],
       "outputs": [],
-      "title": "⑬ 제작자·배포 정보",
+      "title": "⑬ Credits & Distribution",
       "properties": {
         "ue_properties": {
           "widget_ue_connectable": {},
@@ -4736,10 +4735,10 @@
         }
       },
       "widgets_values": [
-        "# 🎬 sain2d 수정 워크플로우\n\n**버전:** v1.3.1 · 2026-09-03\n\n**v1.3.1 변경점**\n- 2단계 선택 참조의 `<Picture N>` 번호를 동적으로 부여 (슬롯이 OFF이거나 거부되면 H3가 번호를 당겨 붙임)\n- 얼굴/의상 대체 스위치, 3뷰/4패널 시트 구성 스위치 추가 (4패널은 실험적)\n- named 위젯값 재동기화, Qwen INT8 기본값 명시, LoRA 파일명 수정, 노드팩 id 교정\n\n**v1.3 변경점**\n- 1단계 프롬프트: 성별 중립 정체성 역할, 얼굴 참조의 그림체를 그대로 따르도록 수정, 오디오 섹션을 프롬프트 맨 끝으로 이동\n- 2단계: 정면 크롭 대신 전/측/후면 시트 전체를 캐릭터 참조로 사용\n- 스타일 LoRA를 선택 사항(바이패스)으로 표기, 테스트 입력값 제거\n\n---\n\n### 원본\n**기획·제작:** 너무바쁜베짱이 (2BZ)\n**YouTube:** [@toobusyAI](https://www.youtube.com/@toobusyAI)\n**원글:** [Reddit · MiniMax H3 as image editor](https://www.reddit.com/r/StableDiffusion/comments/1vr1i18/minimax_h3_as_image_editor_6_edits_in_one_shot_at/)\n\n### 수정판\n**수정제작:** sain2d\n**AI 협업:** Claude\n\n> 이 워크플로우는 원작자 **너무바쁜베짱이(2BZ)님의 동의 하에** 수정했습니다.\n\n---\n\n기반 모델과 커스텀 노드의 권리는 각 제작자에게 있습니다."
+        "# 🎬 sain2d Modified Workflow\n\n**Version:** v1.3.2 · 2026-09-03\n\n**v1.3.2 changes**\n- Gemma wardrobe description (socks / shoes / garments) inserted into the Stage 1 prompt\n- Gemma translators are skipped when the ③ / ⑧ boxes are empty\n- Sigmas Source switch: PDD 8-step (default) or BasicScheduler 30-step fallback, feeding Stage 1 and Stage 2\n- Experimental direct pose input removed from the Stage 2 subgraph; 4-panel body-lock wording fixed\n- toobusy pinned to 0.4.10, `comfyui_mcp` metadata removed\n\n**v1.3.1 changes**\n- Stage 2 optional references get their `<Picture N>` numbers dynamically (H3 renumbers when a slot is OFF or rejected)\n- Face / outfit fallback switches, 3-view / 4-panel sheet layout switch (4-panel is experimental)\n- Named widget values re-synced, Qwen INT8 default documented, LoRA file name fixed, node pack ids corrected\n\n**v1.3 changes**\n- Stage 1 prompt: gender-neutral identity role, rendering style matched to the face reference, audio section moved to the end of the prompt\n- Stage 2: the full front / side / back sheet is used as the character reference instead of a front-view crop\n- Style LoRA marked optional (bypassed); leftover test inputs cleared\n\n---\n\n### Original\n**Created by:** 너무바쁜베짱이 / Toobusy (2BZ)\n**YouTube:** [@toobusyAI](https://www.youtube.com/@toobusyAI)\n**Source post:** [Reddit · MiniMax H3 as image editor](https://www.reddit.com/r/StableDiffusion/comments/1vr1i18/minimax_h3_as_image_editor_6_edits_in_one_shot_at/)\n\n### Modified version\n**Modified by:** sain2d\n**AI collaboration:** Claude\n\n> Modified **with the permission of the original author, 너무바쁜베짱이 (2BZ).**\n\n---\n\nAll base models and custom nodes remain the property of their respective creators."
       ],
       "widgets_values_named": {
-        "text": "# 🎬 sain2d 수정 워크플로우\n\n**버전:** v1.3.1 · 2026-09-03\n\n**v1.3.1 변경점**\n- 2단계 선택 참조의 `<Picture N>` 번호를 동적으로 부여 (슬롯이 OFF이거나 거부되면 H3가 번호를 당겨 붙임)\n- 얼굴/의상 대체 스위치, 3뷰/4패널 시트 구성 스위치 추가 (4패널은 실험적)\n- named 위젯값 재동기화, Qwen INT8 기본값 명시, LoRA 파일명 수정, 노드팩 id 교정\n\n**v1.3 변경점**\n- 1단계 프롬프트: 성별 중립 정체성 역할, 얼굴 참조의 그림체를 그대로 따르도록 수정, 오디오 섹션을 프롬프트 맨 끝으로 이동\n- 2단계: 정면 크롭 대신 전/측/후면 시트 전체를 캐릭터 참조로 사용\n- 스타일 LoRA를 선택 사항(바이패스)으로 표기, 테스트 입력값 제거\n\n---\n\n### 원본\n**기획·제작:** 너무바쁜베짱이 (2BZ)\n**YouTube:** [@toobusyAI](https://www.youtube.com/@toobusyAI)\n**원글:** [Reddit · MiniMax H3 as image editor](https://www.reddit.com/r/StableDiffusion/comments/1vr1i18/minimax_h3_as_image_editor_6_edits_in_one_shot_at/)\n\n### 수정판\n**수정제작:** sain2d\n**AI 협업:** Claude\n\n> 이 워크플로우는 원작자 **너무바쁜베짱이(2BZ)님의 동의 하에** 수정했습니다.\n\n---\n\n기반 모델과 커스텀 노드의 권리는 각 제작자에게 있습니다."
+        "text": "# 🎬 sain2d Modified Workflow\n\n**Version:** v1.3.2 · 2026-09-03\n\n**v1.3.2 changes**\n- Gemma wardrobe description (socks / shoes / garments) inserted into the Stage 1 prompt\n- Gemma translators are skipped when the ③ / ⑧ boxes are empty\n- Sigmas Source switch: PDD 8-step (default) or BasicScheduler 30-step fallback, feeding Stage 1 and Stage 2\n- Experimental direct pose input removed from the Stage 2 subgraph; 4-panel body-lock wording fixed\n- toobusy pinned to 0.4.10, `comfyui_mcp` metadata removed\n\n**v1.3.1 changes**\n- Stage 2 optional references get their `<Picture N>` numbers dynamically (H3 renumbers when a slot is OFF or rejected)\n- Face / outfit fallback switches, 3-view / 4-panel sheet layout switch (4-panel is experimental)\n- Named widget values re-synced, Qwen INT8 default documented, LoRA file name fixed, node pack ids corrected\n\n**v1.3 changes**\n- Stage 1 prompt: gender-neutral identity role, rendering style matched to the face reference, audio section moved to the end of the prompt\n- Stage 2: the full front / side / back sheet is used as the character reference instead of a front-view crop\n- Style LoRA marked optional (bypassed); leftover test inputs cleared\n\n---\n\n### Original\n**Created by:** 너무바쁜베짱이 / Toobusy (2BZ)\n**YouTube:** [@toobusyAI](https://www.youtube.com/@toobusyAI)\n**Source post:** [Reddit · MiniMax H3 as image editor](https://www.reddit.com/r/StableDiffusion/comments/1vr1i18/minimax_h3_as_image_editor_6_edits_in_one_shot_at/)\n\n### Modified version\n**Modified by:** sain2d\n**AI collaboration:** Claude\n\n> Modified **with the permission of the original author, 너무바쁜베짱이 (2BZ).**\n\n---\n\nAll base models and custom nodes remain the property of their respective creators."
       },
       "color": "#286878",
       "bgcolor": "#183f49"
@@ -4760,7 +4759,7 @@
       "mode": 0,
       "inputs": [],
       "outputs": [],
-      "title": "사용법 · 이미지별 역할",
+      "title": "How To Use · What Each Image Does",
       "properties": {
         "ue_properties": {
           "widget_ue_connectable": {},
@@ -4769,10 +4768,10 @@
         }
       },
       "widgets_values": [
-        "# 📷 사진 2장만 넣으면 됩니다\n\n- **왼쪽 · 얼굴 사진** → 이 사진에서는 **얼굴과 머리 모양만** 가져갑니다. 성별·나이·그림체(실사/애니/일러스트)도 이 사진을 기준으로 읽습니다.\n- **오른쪽 · 의상 사진** → 이 사진에서는 **입고 있는 것만** 가져갑니다.\n\n### ✂️ 배경 제거 → 옷 추출, 2단계 자동\n의상 사진은 먼저 **배경이 통째로 지워지고**, 그다음 **옷·신발·양말만** 오려냅니다.\n얼굴·머리·팔다리는 알아서 빠지니 **목 아래로 미리 자를 필요가 없습니다.**\n\n> ⚠️ **의상 사진에 옷 이외의 물건이 찍히지 않게 하세요.**\n> 바닥에 놓인 빨래·가방·신발 같은 게 같이 찍히면 그것도 \"옷\"으로 인식해 결과에 섞입니다.\n> 배경 제거가 대부분 걸러주지만, 인물에 붙어 있는 물건은 남을 수 있습니다.\n\n> ⚠️ **의상 사진에는 신발 두 짝과 팔 두 개가 모두 보여야 합니다.**\n> 오려낸 부분만 옮겨지므로, 한쪽 발이 가려져 있으면 시트에도 신발이 한 짝만 나옵니다.\n> 모자·선글라스·가방은 기본으로 빠집니다. 필요하면 **의상만 추출** 노드에서 `Hat` / `Sunglasses` / `Bag`을 켜세요.\n\n> ⚠️ **사진은 클수록 좋습니다.** 폭 1000px 이상을 권합니다.\n> 작은 사진은 양말·신발처럼 작은 부분이 뭉개집니다.\n\n### 🛟 추출이 실패하면\n미리보기 아래에 스위치 2개가 있습니다. **얼굴 소스 ON**은 SAM3 크롭 대신 원본 얼굴 사진을, **의상 소스 ON**은 의상 추출 대신 배경만 지운 전신 사진을 H3에 보냅니다. 미리보기는 항상 H3에 실제 입력되는 이미지를 보여줍니다.\n긴 머리·번 헤어·모자가 잘리면 SAM3 프롬프트를 `head`에서 `head and hair`(또는 `head and hat`)로 바꾸세요.\n\n### 👀 잘 됐는지 보는 법\n오른쪽 작은 그림 2개를 보세요. 회색 배경 위에 **얼굴만** / **옷만** 떠 있으면 성공입니다.\n옷이 덜 잘렸으면 가운데 **의상만 추출** 노드의 체크박스를 조정하세요.\n참고로 **양말은 `Left-shoe`/`Right-shoe` 항목으로 잡힙니다** — 양말 사진을 쓸 때도 이 두 개를 켜 두세요.\n\n### 👟 신발·양말·맨발을 바꾸고 싶다면\n프롬프트는 발에 대해 **아무 것도 강제하지 않습니다.** 사진에 있는 그대로 따라갑니다.\n바꾸고 싶으면 **③ 칸에 한국어로** 적으세요. ③ 입력이 최우선입니다.\n예: `흰 발목 양말, 신발 없음` / `검은 로퍼` / `맨발`\n\n몸매·분위기도 같은 칸에 적으면 됩니다.\n예: `날씬한 성인 여성 체형, 좁은 어깨, 가는 팔다리`"
+        "# 📷 You only need 2 photos\n\n- **Left · Face photo** → only the **face and hairstyle** are taken from it. Gender, age and rendering style (photo / anime / illustration) are read from this photo too.\n- **Right · Outfit photo** → only **what the person is wearing** is taken from it.\n\n### ✂️ Two automatic steps: remove background → extract clothes\nThe outfit photo first has its **background removed entirely**, then only the **clothes, shoes and socks** are cut out.\nFace, hair, arms and legs drop out on their own, so **you do not need to crop below the neck first.**\n\n> ⚠️ **Keep everything except the outfit out of the outfit photo.**\n> Laundry on the floor, bags, or shoes lying around get read as \"clothing\" and end up mixed into the result.\n> Background removal catches most of it, but anything touching the person can survive.\n\n> ⚠️ **Both shoes and both arms must be visible in the outfit photo.**\n> Only what survives the cut-out is transferred. If one foot is hidden, the sheet will also show only one shoe.\n> Hats, sunglasses and bags are dropped by default — tick `Hat` / `Sunglasses` / `Bag` on the **Extract Clothes Only** node if you want them.\n\n> ⚠️ **Bigger photos are better — aim for 1000px wide or more.**\n> In small photos, fine parts like socks and shoes break up.\n\n### 🧦 Socks and shoes\nSegFormer has no sock class, so socks survive the cut-out only when they are read as part of the shoe. Since v1.3.2 Gemma also writes a **WARDROBE DESCRIPTION** (garments, socks, shoes) from the cut-out and it is inserted into the Stage 1 prompt, so the feet no longer depend on a few grey pixels. Check it in **③ Wardrobe Description Check**; switch it off in ⑨ if it misreads the outfit.\n\n### 🛟 If the cut-out fails\nTwo switches sit under the previews. **Face Source ON** sends the raw face photo instead of the SAM3 crop; **Outfit Source ON** sends the background-removed full photo instead of the clothes cut-out. The previews always show what H3 actually receives.\nLong hair, buns or a hat cut off? Change the SAM3 prompt from `head` to `head and hair` (or `head and hat`).\n\n### 👀 How to check it worked\nLook at the two small previews on the right. If you see **only a head** / **only clothes** floating on grey, it worked.\nIf part of the outfit is missing, adjust the checkboxes on the **Extract Clothes Only** node.\nNote that **socks are picked up by `Left-shoe` / `Right-shoe`** — leave those two ON even for a socks-only photo.\n\n### 👟 To change shoes / socks / bare feet\nThe prompt forces **nothing** about feet. It simply follows the photo.\nTo change it, type into **③** — that input has the highest priority.\ne.g. `white ankle socks, no shoes` / `black loafers` / `barefoot`\n\nBody type and styling go in the same box.\ne.g. `slim adult female build, narrow shoulders, slender arms and legs`"
       ],
       "widgets_values_named": {
-        "text": "# 📷 사진 2장만 넣으면 됩니다\n\n- **왼쪽 · 얼굴 사진** → 이 사진에서는 **얼굴과 머리 모양만** 가져갑니다. 성별·나이·그림체(실사/애니/일러스트)도 이 사진을 기준으로 읽습니다.\n- **오른쪽 · 의상 사진** → 이 사진에서는 **입고 있는 것만** 가져갑니다.\n\n### ✂️ 배경 제거 → 옷 추출, 2단계 자동\n의상 사진은 먼저 **배경이 통째로 지워지고**, 그다음 **옷·신발·양말만** 오려냅니다.\n얼굴·머리·팔다리는 알아서 빠지니 **목 아래로 미리 자를 필요가 없습니다.**\n\n> ⚠️ **의상 사진에 옷 이외의 물건이 찍히지 않게 하세요.**\n> 바닥에 놓인 빨래·가방·신발 같은 게 같이 찍히면 그것도 \"옷\"으로 인식해 결과에 섞입니다.\n> 배경 제거가 대부분 걸러주지만, 인물에 붙어 있는 물건은 남을 수 있습니다.\n\n> ⚠️ **의상 사진에는 신발 두 짝과 팔 두 개가 모두 보여야 합니다.**\n> 오려낸 부분만 옮겨지므로, 한쪽 발이 가려져 있으면 시트에도 신발이 한 짝만 나옵니다.\n> 모자·선글라스·가방은 기본으로 빠집니다. 필요하면 **의상만 추출** 노드에서 `Hat` / `Sunglasses` / `Bag`을 켜세요.\n\n> ⚠️ **사진은 클수록 좋습니다.** 폭 1000px 이상을 권합니다.\n> 작은 사진은 양말·신발처럼 작은 부분이 뭉개집니다.\n\n### 🛟 추출이 실패하면\n미리보기 아래에 스위치 2개가 있습니다. **얼굴 소스 ON**은 SAM3 크롭 대신 원본 얼굴 사진을, **의상 소스 ON**은 의상 추출 대신 배경만 지운 전신 사진을 H3에 보냅니다. 미리보기는 항상 H3에 실제 입력되는 이미지를 보여줍니다.\n긴 머리·번 헤어·모자가 잘리면 SAM3 프롬프트를 `head`에서 `head and hair`(또는 `head and hat`)로 바꾸세요.\n\n### 👀 잘 됐는지 보는 법\n오른쪽 작은 그림 2개를 보세요. 회색 배경 위에 **얼굴만** / **옷만** 떠 있으면 성공입니다.\n옷이 덜 잘렸으면 가운데 **의상만 추출** 노드의 체크박스를 조정하세요.\n참고로 **양말은 `Left-shoe`/`Right-shoe` 항목으로 잡힙니다** — 양말 사진을 쓸 때도 이 두 개를 켜 두세요.\n\n### 👟 신발·양말·맨발을 바꾸고 싶다면\n프롬프트는 발에 대해 **아무 것도 강제하지 않습니다.** 사진에 있는 그대로 따라갑니다.\n바꾸고 싶으면 **③ 칸에 한국어로** 적으세요. ③ 입력이 최우선입니다.\n예: `흰 발목 양말, 신발 없음` / `검은 로퍼` / `맨발`\n\n몸매·분위기도 같은 칸에 적으면 됩니다.\n예: `날씬한 성인 여성 체형, 좁은 어깨, 가는 팔다리`"
+        "text": "# 📷 You only need 2 photos\n\n- **Left · Face photo** → only the **face and hairstyle** are taken from it. Gender, age and rendering style (photo / anime / illustration) are read from this photo too.\n- **Right · Outfit photo** → only **what the person is wearing** is taken from it.\n\n### ✂️ Two automatic steps: remove background → extract clothes\nThe outfit photo first has its **background removed entirely**, then only the **clothes, shoes and socks** are cut out.\nFace, hair, arms and legs drop out on their own, so **you do not need to crop below the neck first.**\n\n> ⚠️ **Keep everything except the outfit out of the outfit photo.**\n> Laundry on the floor, bags, or shoes lying around get read as \"clothing\" and end up mixed into the result.\n> Background removal catches most of it, but anything touching the person can survive.\n\n> ⚠️ **Both shoes and both arms must be visible in the outfit photo.**\n> Only what survives the cut-out is transferred. If one foot is hidden, the sheet will also show only one shoe.\n> Hats, sunglasses and bags are dropped by default — tick `Hat` / `Sunglasses` / `Bag` on the **Extract Clothes Only** node if you want them.\n\n> ⚠️ **Bigger photos are better — aim for 1000px wide or more.**\n> In small photos, fine parts like socks and shoes break up.\n\n### 🧦 Socks and shoes\nSegFormer has no sock class, so socks survive the cut-out only when they are read as part of the shoe. Since v1.3.2 Gemma also writes a **WARDROBE DESCRIPTION** (garments, socks, shoes) from the cut-out and it is inserted into the Stage 1 prompt, so the feet no longer depend on a few grey pixels. Check it in **③ Wardrobe Description Check**; switch it off in ⑨ if it misreads the outfit.\n\n### 🛟 If the cut-out fails\nTwo switches sit under the previews. **Face Source ON** sends the raw face photo instead of the SAM3 crop; **Outfit Source ON** sends the background-removed full photo instead of the clothes cut-out. The previews always show what H3 actually receives.\nLong hair, buns or a hat cut off? Change the SAM3 prompt from `head` to `head and hair` (or `head and hat`).\n\n### 👀 How to check it worked\nLook at the two small previews on the right. If you see **only a head** / **only clothes** floating on grey, it worked.\nIf part of the outfit is missing, adjust the checkboxes on the **Extract Clothes Only** node.\nNote that **socks are picked up by `Left-shoe` / `Right-shoe`** — leave those two ON even for a socks-only photo.\n\n### 👟 To change shoes / socks / bare feet\nThe prompt forces **nothing** about feet. It simply follows the photo.\nTo change it, type into **③** — that input has the highest priority.\ne.g. `white ankle socks, no shoes` / `black loafers` / `barefoot`\n\nBody type and styling go in the same box.\ne.g. `slim adult female build, narrow shoulders, slender arms and legs`"
       },
       "color": "#654b7c",
       "bgcolor": "#382b45"
@@ -4800,12 +4799,12 @@
           "widget": {
             "name": "string_b"
           },
-          "link": 259
+          "link": 377
         },
         {
           "name": "string_a",
           "type": "STRING",
-          "link": 307,
+          "link": 372,
           "widget": {
             "name": "string_a"
           }
@@ -4820,7 +4819,7 @@
           ]
         }
       ],
-      "title": "1단계 프롬프트 · 기본(3뷰/4패널) + 사용자 지시",
+      "title": "Stage 1 Prompt · Base (3-view / 4-panel) + User Direction",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -4876,7 +4875,7 @@
           "links": null
         }
       ],
-      "title": "1단계 필수 1 · 얼굴/정체성 이미지",
+      "title": "Stage 1 REQUIRED 1 · Face / Identity Image",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -5023,7 +5022,7 @@
           "links": null
         }
       ],
-      "title": "의상만 추출 (SegFormer clothes)",
+      "title": "Extract Clothes Only (SegFormer)",
       "properties": {
         "cnr_id": "comfyui-rmbg",
         "Node name for S&R": "ClothesSegment",
@@ -5126,7 +5125,7 @@
           "links": null
         }
       ],
-      "title": "1단계 필수 2 · 의상 (얼굴 없는 사진 권장)",
+      "title": "Stage 1 REQUIRED 2 · Outfit Image (face auto-removed)",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -5168,11 +5167,12 @@
           "name": "STRING",
           "type": "STRING",
           "links": [
-            256
+            256,
+            373
           ]
         }
       ],
-      "title": "1단계 추가 연출·체형 · 한국어 입력",
+      "title": "Stage 1 Extra Direction · Body Type (free text)",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -5234,7 +5234,7 @@
           ]
         }
       ],
-      "title": "1단계 프롬프트 + R2V 오디오 섹션 (최종)",
+      "title": "Stage 1 Prompt + R2V Audio Section (final)",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -5272,7 +5272,7 @@
           ]
         }
       ],
-      "title": "시트 구성 · OFF = 3뷰 전/측/후면 (기본) / ON = 4패널 클로즈업+전/측/후면 (실험적)",
+      "title": "Sheet Layout · OFF = 3-view front/side/back (default) / ON = 4-panel close-up + front/side/back (EXPERIMENTAL)",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -5311,17 +5311,17 @@
           ]
         }
       ],
-      "title": "1단계 기본 프롬프트 · 3뷰 (기본)",
+      "title": "Stage 1 Base Prompt · 3-View body (default)",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
         "Node name for S&R": "PrimitiveStringMultiline"
       },
       "widgets_values": [
-        "subject_definitions:\n<Subject 1> is the adult person seen in <Picture 1>. Their reference role is IDENTITY ONLY: face, facial geometry, eyes, nose, lips, skin tone, apparent age, apparent gender presentation and hairstyle, including hair length, colour, texture and parting. Read the gender presentation, apparent age, skin tone and visible facial features directly from <Picture 1> and keep them unchanged.\n\n<Subject 2> is the outfit shown in <Picture 2>. Its reference role is WARDROBE ONLY: garment shapes, cut, length, colours, patterns, materials, whatever is worn on the feet, and wearable accessories.\n\nsummary:\n[reference generation] Create one static character turnaround sheet showing <Subject 1> wearing the wardrobe from <Subject 2>. Present exactly three complete full-body views — front, strict right-side profile and back — on a neutral light-grey studio background, rendered in the same visual style as <Picture 1>.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1], [Shot 2], [Shot 3]): fully_preserved - the same person from <Picture 1> appears in every shot. Preserve the exact face, facial geometry, eyes, nose, lips, skin tone, apparent age, gender presentation and hairstyle.\n\nThe hairstyle comes exclusively from <Picture 1> and remains identical in all three shots: same length, cut, parting, colour and texture. Only its viewing direction changes. Do not transfer clothing, pose, framing, lighting or background from <Picture 1>.\n\n<Subject 2> (appears in [Shot 1], [Shot 2], [Shot 3]): attribute_transfer - transfer only the garments, colours, patterns, materials, whatever is worn on the feet, and wearable accessories from <Picture 2> onto <Subject 1>.\n\nDo not transfer the outfit donor’s face, hair, hairstyle, age, gender presentation, shoulder width, muscle mass, torso volume, height, limb thickness, body shape, pose or background. <Picture 2> is a wardrobe reference only. <Subject 1> wears the outfit but never inherits the outfit donor’s identity or body.\n\ndetailed_description:\nThe target is one still image, not a video. Match the rendering style of <Picture 1> exactly — photographic, painted, illustrated or anime — including its line quality, shading, colour treatment and level of detail; never convert an illustrated or anime reference into a photograph, and never convert a photograph into an illustration. Use a neutral light-grey seamless background with even soft lighting.\n\nArrange exactly three equal vertical views side by side from left to right. All three views must share one ground line, one subject scale, one camera distance, one camera height and one lighting setup.\n\n[Shot 1] Complete full-body front view in a relaxed A-pose, face looking directly toward the camera. Both feet point forward and are fully visible.\n\n[Shot 2] Complete full-body strict 90-degree right-side profile view. The head, torso, hips and feet all face directly toward the side of the frame. Both feet are fully visible in true side profile.\n\n[Shot 3] Complete full-body back view photographed from directly behind. The subject and both feet point away from the viewer, and both feet are fully visible from the rear. Never turn the feet back toward the camera and never reuse the front view.\n\nThe same hairstyle from <Picture 1> must remain visible in all three shots and change only according to the viewing direction. Show the complete head and both complete feet in every shot.\n\nKeep the face uncovered. Do not add a helmet or mask. Do not create an extra panel, action pose, separate product display, inset, duplicate cell, caption, label, logo or text.\n\nCANONICAL BODY LOCK — applies unless the user explicitly requests a different body build:\nAll three views are rotations of one unchanged adult body mesh.\n\nKeep identical height, head-to-body ratio, shoulder width, chest volume, waist width, hip width, arm length, leg length, limb thickness, hand size and foot size in all three views.\n\nUse the same relaxed A-pose, stance and weight distribution in every view. Only the viewing direction changes.\n\nUse a fixed orthographic-like 85–105 mm lens, identical camera height, camera distance, ground line and subject scale. Never redraw a wider, shorter, taller, heavier, slimmer or differently proportioned body between views.\n\nUSER STAGE 1 DIRECTION — HIGHEST PRIORITY:\nThe user instruction that follows outranks every default written above. Follow it literally and in full. It may override body build, skin tone, complexion, presentation, framing, styling, and anything worn, including what is or is not on the feet. Where it conflicts with any line above, the user instruction wins.\n\nThe only things it never changes are the <Subject 1> identity role (face and hair come from <Picture 1>) and the three-shot front / side / back layout.\n\nWhen a skin tone is specified, apply it consistently to every visible area of skin in all three shots.\n\nIf nothing follows this line, there is no user direction: keep every rule above exactly as written."
+        "summary:\n[reference generation] Create one static character turnaround sheet showing <Subject 1> wearing the wardrobe from <Subject 2>. Present exactly three complete full-body views — front, strict right-side profile and back — on a neutral light-grey studio background, rendered in the same visual style as <Picture 1>.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1], [Shot 2], [Shot 3]): fully_preserved - the same person from <Picture 1> appears in every shot. Preserve the exact face, facial geometry, eyes, nose, lips, skin tone, apparent age, gender presentation and hairstyle.\n\nThe hairstyle comes exclusively from <Picture 1> and remains identical in all three shots: same length, cut, parting, colour and texture. Only its viewing direction changes. Do not transfer clothing, pose, framing, lighting or background from <Picture 1>.\n\n<Subject 2> (appears in [Shot 1], [Shot 2], [Shot 3]): attribute_transfer - transfer only the garments, colours, patterns, materials, whatever is worn on the feet, and wearable accessories from <Picture 2> onto <Subject 1>.\n\nDo not transfer the outfit donor’s face, hair, hairstyle, age, gender presentation, shoulder width, muscle mass, torso volume, height, limb thickness, body shape, pose or background. <Picture 2> is a wardrobe reference only. <Subject 1> wears the outfit but never inherits the outfit donor’s identity or body.\n\ndetailed_description:\nThe target is one still image, not a video. Match the rendering style of <Picture 1> exactly — photographic, painted, illustrated or anime — including its line quality, shading, colour treatment and level of detail; never convert an illustrated or anime reference into a photograph, and never convert a photograph into an illustration. Use a neutral light-grey seamless background with even soft lighting.\n\nArrange exactly three equal vertical views side by side from left to right. All three views must share one ground line, one subject scale, one camera distance, one camera height and one lighting setup.\n\n[Shot 1] Complete full-body front view in a relaxed A-pose, face looking directly toward the camera. Both feet point forward and are fully visible.\n\n[Shot 2] Complete full-body strict 90-degree right-side profile view. The head, torso, hips and feet all face directly toward the side of the frame. Both feet are fully visible in true side profile.\n\n[Shot 3] Complete full-body back view photographed from directly behind. The subject and both feet point away from the viewer, and both feet are fully visible from the rear. Never turn the feet back toward the camera and never reuse the front view.\n\nThe same hairstyle from <Picture 1> must remain visible in all three shots and change only according to the viewing direction. Show the complete head and both complete feet in every shot.\n\nKeep the face uncovered. Do not add a helmet or mask. Do not create an extra panel, action pose, separate product display, inset, duplicate cell, caption, label, logo or text.\n\nCANONICAL BODY LOCK — applies unless the user explicitly requests a different body build:\nAll three views are rotations of one unchanged adult body mesh.\n\nKeep identical height, head-to-body ratio, shoulder width, chest volume, waist width, hip width, arm length, leg length, limb thickness, hand size and foot size in all three views.\n\nUse the same relaxed A-pose, stance and weight distribution in every view. Only the viewing direction changes.\n\nUse a fixed orthographic-like 85–105 mm lens, identical camera height, camera distance, ground line and subject scale. Never redraw a wider, shorter, taller, heavier, slimmer or differently proportioned body between views.\n\nUSER STAGE 1 DIRECTION — HIGHEST PRIORITY:\nThe user instruction that follows outranks every default written above. Follow it literally and in full. It may override body build, skin tone, complexion, presentation, framing, styling, and anything worn, including what is or is not on the feet. Where it conflicts with any line above, the user instruction wins.\n\nThe only things it never changes are the <Subject 1> identity role (face and hair come from <Picture 1>) and the three-shot front / side / back layout.\n\nWhen a skin tone is specified, apply it consistently to every visible area of skin in all three shots.\n\nIf nothing follows this line, there is no user direction: keep every rule above exactly as written."
       ],
       "widgets_values_named": {
-        "value": "subject_definitions:\n<Subject 1> is the adult person seen in <Picture 1>. Their reference role is IDENTITY ONLY: face, facial geometry, eyes, nose, lips, skin tone, apparent age, apparent gender presentation and hairstyle, including hair length, colour, texture and parting. Read the gender presentation, apparent age, skin tone and visible facial features directly from <Picture 1> and keep them unchanged.\n\n<Subject 2> is the outfit shown in <Picture 2>. Its reference role is WARDROBE ONLY: garment shapes, cut, length, colours, patterns, materials, whatever is worn on the feet, and wearable accessories.\n\nsummary:\n[reference generation] Create one static character turnaround sheet showing <Subject 1> wearing the wardrobe from <Subject 2>. Present exactly three complete full-body views — front, strict right-side profile and back — on a neutral light-grey studio background, rendered in the same visual style as <Picture 1>.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1], [Shot 2], [Shot 3]): fully_preserved - the same person from <Picture 1> appears in every shot. Preserve the exact face, facial geometry, eyes, nose, lips, skin tone, apparent age, gender presentation and hairstyle.\n\nThe hairstyle comes exclusively from <Picture 1> and remains identical in all three shots: same length, cut, parting, colour and texture. Only its viewing direction changes. Do not transfer clothing, pose, framing, lighting or background from <Picture 1>.\n\n<Subject 2> (appears in [Shot 1], [Shot 2], [Shot 3]): attribute_transfer - transfer only the garments, colours, patterns, materials, whatever is worn on the feet, and wearable accessories from <Picture 2> onto <Subject 1>.\n\nDo not transfer the outfit donor’s face, hair, hairstyle, age, gender presentation, shoulder width, muscle mass, torso volume, height, limb thickness, body shape, pose or background. <Picture 2> is a wardrobe reference only. <Subject 1> wears the outfit but never inherits the outfit donor’s identity or body.\n\ndetailed_description:\nThe target is one still image, not a video. Match the rendering style of <Picture 1> exactly — photographic, painted, illustrated or anime — including its line quality, shading, colour treatment and level of detail; never convert an illustrated or anime reference into a photograph, and never convert a photograph into an illustration. Use a neutral light-grey seamless background with even soft lighting.\n\nArrange exactly three equal vertical views side by side from left to right. All three views must share one ground line, one subject scale, one camera distance, one camera height and one lighting setup.\n\n[Shot 1] Complete full-body front view in a relaxed A-pose, face looking directly toward the camera. Both feet point forward and are fully visible.\n\n[Shot 2] Complete full-body strict 90-degree right-side profile view. The head, torso, hips and feet all face directly toward the side of the frame. Both feet are fully visible in true side profile.\n\n[Shot 3] Complete full-body back view photographed from directly behind. The subject and both feet point away from the viewer, and both feet are fully visible from the rear. Never turn the feet back toward the camera and never reuse the front view.\n\nThe same hairstyle from <Picture 1> must remain visible in all three shots and change only according to the viewing direction. Show the complete head and both complete feet in every shot.\n\nKeep the face uncovered. Do not add a helmet or mask. Do not create an extra panel, action pose, separate product display, inset, duplicate cell, caption, label, logo or text.\n\nCANONICAL BODY LOCK — applies unless the user explicitly requests a different body build:\nAll three views are rotations of one unchanged adult body mesh.\n\nKeep identical height, head-to-body ratio, shoulder width, chest volume, waist width, hip width, arm length, leg length, limb thickness, hand size and foot size in all three views.\n\nUse the same relaxed A-pose, stance and weight distribution in every view. Only the viewing direction changes.\n\nUse a fixed orthographic-like 85–105 mm lens, identical camera height, camera distance, ground line and subject scale. Never redraw a wider, shorter, taller, heavier, slimmer or differently proportioned body between views.\n\nUSER STAGE 1 DIRECTION — HIGHEST PRIORITY:\nThe user instruction that follows outranks every default written above. Follow it literally and in full. It may override body build, skin tone, complexion, presentation, framing, styling, and anything worn, including what is or is not on the feet. Where it conflicts with any line above, the user instruction wins.\n\nThe only things it never changes are the <Subject 1> identity role (face and hair come from <Picture 1>) and the three-shot front / side / back layout.\n\nWhen a skin tone is specified, apply it consistently to every visible area of skin in all three shots.\n\nIf nothing follows this line, there is no user direction: keep every rule above exactly as written."
+        "value": "summary:\n[reference generation] Create one static character turnaround sheet showing <Subject 1> wearing the wardrobe from <Subject 2>. Present exactly three complete full-body views — front, strict right-side profile and back — on a neutral light-grey studio background, rendered in the same visual style as <Picture 1>.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1], [Shot 2], [Shot 3]): fully_preserved - the same person from <Picture 1> appears in every shot. Preserve the exact face, facial geometry, eyes, nose, lips, skin tone, apparent age, gender presentation and hairstyle.\n\nThe hairstyle comes exclusively from <Picture 1> and remains identical in all three shots: same length, cut, parting, colour and texture. Only its viewing direction changes. Do not transfer clothing, pose, framing, lighting or background from <Picture 1>.\n\n<Subject 2> (appears in [Shot 1], [Shot 2], [Shot 3]): attribute_transfer - transfer only the garments, colours, patterns, materials, whatever is worn on the feet, and wearable accessories from <Picture 2> onto <Subject 1>.\n\nDo not transfer the outfit donor’s face, hair, hairstyle, age, gender presentation, shoulder width, muscle mass, torso volume, height, limb thickness, body shape, pose or background. <Picture 2> is a wardrobe reference only. <Subject 1> wears the outfit but never inherits the outfit donor’s identity or body.\n\ndetailed_description:\nThe target is one still image, not a video. Match the rendering style of <Picture 1> exactly — photographic, painted, illustrated or anime — including its line quality, shading, colour treatment and level of detail; never convert an illustrated or anime reference into a photograph, and never convert a photograph into an illustration. Use a neutral light-grey seamless background with even soft lighting.\n\nArrange exactly three equal vertical views side by side from left to right. All three views must share one ground line, one subject scale, one camera distance, one camera height and one lighting setup.\n\n[Shot 1] Complete full-body front view in a relaxed A-pose, face looking directly toward the camera. Both feet point forward and are fully visible.\n\n[Shot 2] Complete full-body strict 90-degree right-side profile view. The head, torso, hips and feet all face directly toward the side of the frame. Both feet are fully visible in true side profile.\n\n[Shot 3] Complete full-body back view photographed from directly behind. The subject and both feet point away from the viewer, and both feet are fully visible from the rear. Never turn the feet back toward the camera and never reuse the front view.\n\nThe same hairstyle from <Picture 1> must remain visible in all three shots and change only according to the viewing direction. Show the complete head and both complete feet in every shot.\n\nKeep the face uncovered. Do not add a helmet or mask. Do not create an extra panel, action pose, separate product display, inset, duplicate cell, caption, label, logo or text.\n\nCANONICAL BODY LOCK — applies unless the user explicitly requests a different body build:\nAll three views are rotations of one unchanged adult body mesh.\n\nKeep identical height, head-to-body ratio, shoulder width, chest volume, waist width, hip width, arm length, leg length, limb thickness, hand size and foot size in all three views.\n\nUse the same relaxed A-pose, stance and weight distribution in every view. Only the viewing direction changes.\n\nUse a fixed orthographic-like 85–105 mm lens, identical camera height, camera distance, ground line and subject scale. Never redraw a wider, shorter, taller, heavier, slimmer or differently proportioned body between views.\n\nUSER STAGE 1 DIRECTION — HIGHEST PRIORITY:\nThe user instruction that follows outranks every default written above. Follow it literally and in full. It may override body build, skin tone, complexion, presentation, framing, styling, and anything worn, including what is or is not on the feet. Where it conflicts with any line above, the user instruction wins.\n\nThe only things it never changes are the <Subject 1> identity role (face and hair come from <Picture 1>) and the three-shot front / side / back layout.\n\nWhen a skin tone is specified, apply it consistently to every visible area of skin in all three shots.\n\nIf nothing follows this line, there is no user direction: keep every rule above exactly as written."
       }
     },
     {
@@ -5348,17 +5348,17 @@
           ]
         }
       ],
-      "title": "1단계 기본 프롬프트 · 4패널 (실험적)",
+      "title": "Stage 1 Base Prompt · 4-Panel body (experimental)",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
         "Node name for S&R": "PrimitiveStringMultiline"
       },
       "widgets_values": [
-        "subject_definitions:\n<Subject 1> is the adult person seen in <Picture 1>. Their reference role is IDENTITY ONLY: face, facial geometry, eyes, nose, lips, skin tone, apparent age, apparent gender presentation and hairstyle, including hair length, colour, texture and parting. Read the gender presentation, apparent age, skin tone and visible facial features directly from <Picture 1> and keep them unchanged.\n\n<Subject 2> is the outfit shown in <Picture 2>. Its reference role is WARDROBE ONLY: garment shapes, cut, length, colours, patterns, materials, whatever is worn on the feet, and wearable accessories.\n\nsummary:\n[reference generation] Create one static character turnaround sheet showing <Subject 1> wearing the wardrobe from <Subject 2>. Present exactly four views — a chest-up front close-up, then complete full-body front, strict right-side profile and back views — on a neutral light-grey studio background, rendered in the same visual style as <Picture 1>.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1], [Shot 2], [Shot 3], [Shot 4]): fully_preserved - the same person from <Picture 1> appears in every shot. Preserve the exact face, facial geometry, eyes, nose, lips, skin tone, apparent age, gender presentation and hairstyle.\n\nThe hairstyle comes exclusively from <Picture 1> and remains identical in all four shots: same length, cut, parting, colour and texture. Only its viewing direction changes. Do not transfer clothing, pose, framing, lighting or background from <Picture 1>.\n\n<Subject 2> (appears in [Shot 1], [Shot 2], [Shot 3], [Shot 4]): attribute_transfer - transfer only the garments, colours, patterns, materials, whatever is worn on the feet, and wearable accessories from <Picture 2> onto <Subject 1>.\n\nDo not transfer the outfit donor’s face, hair, hairstyle, age, gender presentation, shoulder width, muscle mass, torso volume, height, limb thickness, body shape, pose or background. <Picture 2> is a wardrobe reference only. <Subject 1> wears the outfit but never inherits the outfit donor’s identity or body.\n\ndetailed_description:\nThe target is one still image, not a video. Match the rendering style of <Picture 1> exactly — photographic, painted, illustrated or anime — including its line quality, shading, colour treatment and level of detail; never convert an illustrated or anime reference into a photograph, and never convert a photograph into an illustration. Use a neutral light-grey seamless background with even soft lighting.\n\nArrange exactly four equal vertical views side by side from left to right. [Shot 2], [Shot 3] and [Shot 4] must share one ground line, one subject scale, one camera distance, one camera height and one lighting setup. [Shot 1] uses the same lighting with a closer camera.\n\n[Shot 1] Chest-up front close-up: head, complete hairstyle, face and shoulders fill the column, face looking directly toward the camera with a calm neutral expression.\n\n[Shot 2] Complete full-body front view in a relaxed A-pose, face looking directly toward the camera. Both feet point forward and are fully visible.\n\n[Shot 3] Complete full-body strict 90-degree right-side profile view. The head, torso, hips and feet all face directly toward the side of the frame. Both feet are fully visible in true side profile.\n\n[Shot 4] Complete full-body back view photographed from directly behind. The subject and both feet point away from the viewer, and both feet are fully visible from the rear. Never turn the feet back toward the camera and never reuse the front view.\n\nThe same hairstyle from <Picture 1> must remain visible in all four shots and change only according to the viewing direction. Show the complete head in every shot and both complete feet in [Shot 2], [Shot 3] and [Shot 4].\n\nKeep the face uncovered. Do not add a helmet or mask. Do not create an extra panel, action pose, separate product display, inset, duplicate cell, caption, label, logo or text.\n\nCANONICAL BODY LOCK — applies unless the user explicitly requests a different body build:\nThe three full-body views are rotations of one unchanged adult body mesh, and the close-up shows the same head at a closer camera distance.\n\nKeep identical height, head-to-body ratio, shoulder width, chest volume, waist width, hip width, arm length, leg length, limb thickness, hand size and foot size in all full-body views.\n\nUse the same relaxed A-pose, stance and weight distribution in every view. Only the viewing direction changes.\n\nUse a fixed orthographic-like 85–105 mm lens, identical camera height, camera distance, ground line and subject scale. Never redraw a wider, shorter, taller, heavier, slimmer or differently proportioned body between views.\n\nUSER STAGE 1 DIRECTION — HIGHEST PRIORITY:\nThe user instruction that follows outranks every default written above. Follow it literally and in full. It may override body build, skin tone, complexion, presentation, framing, styling, and anything worn, including what is or is not on the feet. Where it conflicts with any line above, the user instruction wins.\n\nThe only things it never changes are the <Subject 1> identity role (face and hair come from <Picture 1>) and the four-shot close-up / front / side / back layout.\n\nWhen a skin tone is specified, apply it consistently to every visible area of skin in all four shots.\n\nIf nothing follows this line, there is no user direction: keep every rule above exactly as written."
+        "summary:\n[reference generation] Create one static character turnaround sheet showing <Subject 1> wearing the wardrobe from <Subject 2>. Present exactly four views — a chest-up front close-up, then complete full-body front, strict right-side profile and back views — on a neutral light-grey studio background, rendered in the same visual style as <Picture 1>.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1], [Shot 2], [Shot 3], [Shot 4]): fully_preserved - the same person from <Picture 1> appears in every shot. Preserve the exact face, facial geometry, eyes, nose, lips, skin tone, apparent age, gender presentation and hairstyle.\n\nThe hairstyle comes exclusively from <Picture 1> and remains identical in all four shots: same length, cut, parting, colour and texture. Only its viewing direction changes. Do not transfer clothing, pose, framing, lighting or background from <Picture 1>.\n\n<Subject 2> (appears in [Shot 1], [Shot 2], [Shot 3], [Shot 4]): attribute_transfer - transfer only the garments, colours, patterns, materials, whatever is worn on the feet, and wearable accessories from <Picture 2> onto <Subject 1>.\n\nDo not transfer the outfit donor’s face, hair, hairstyle, age, gender presentation, shoulder width, muscle mass, torso volume, height, limb thickness, body shape, pose or background. <Picture 2> is a wardrobe reference only. <Subject 1> wears the outfit but never inherits the outfit donor’s identity or body.\n\ndetailed_description:\nThe target is one still image, not a video. Match the rendering style of <Picture 1> exactly — photographic, painted, illustrated or anime — including its line quality, shading, colour treatment and level of detail; never convert an illustrated or anime reference into a photograph, and never convert a photograph into an illustration. Use a neutral light-grey seamless background with even soft lighting.\n\nArrange exactly four equal vertical views side by side from left to right. [Shot 2], [Shot 3] and [Shot 4] must share one ground line, one subject scale, one camera distance, one camera height and one lighting setup. [Shot 1] uses the same lighting with a closer camera.\n\n[Shot 1] Chest-up front close-up: head, complete hairstyle, face and shoulders fill the column, face looking directly toward the camera with a calm neutral expression.\n\n[Shot 2] Complete full-body front view in a relaxed A-pose, face looking directly toward the camera. Both feet point forward and are fully visible.\n\n[Shot 3] Complete full-body strict 90-degree right-side profile view. The head, torso, hips and feet all face directly toward the side of the frame. Both feet are fully visible in true side profile.\n\n[Shot 4] Complete full-body back view photographed from directly behind. The subject and both feet point away from the viewer, and both feet are fully visible from the rear. Never turn the feet back toward the camera and never reuse the front view.\n\nThe same hairstyle from <Picture 1> must remain visible in all four shots and change only according to the viewing direction. Show the complete head in every shot and both complete feet in [Shot 2], [Shot 3] and [Shot 4].\n\nKeep the face uncovered. Do not add a helmet or mask. Do not create an extra panel, action pose, separate product display, inset, duplicate cell, caption, label, logo or text.\n\nCANONICAL BODY LOCK — applies unless the user explicitly requests a different body build:\nThe three full-body views are rotations of one unchanged adult body mesh, and the close-up shows the same head at a closer camera distance.\n\nKeep identical height, head-to-body ratio, shoulder width, chest volume, waist width, hip width, arm length, leg length, limb thickness, hand size and foot size in all full-body views.\n\nUse the same relaxed A-pose, stance and weight distribution in [Shot 2], [Shot 3] and [Shot 4]. Between those three shots only the viewing direction changes.\n\nFor [Shot 2], [Shot 3] and [Shot 4] use a fixed orthographic-like 85–105 mm lens, identical camera height, camera distance, ground line and subject scale. [Shot 1] keeps the same lens, lighting and head but uses a closer chest-up framing, so its subject scale is intentionally larger. Never redraw a wider, shorter, taller, heavier, slimmer or differently proportioned body between the full-body views.\n\nUSER STAGE 1 DIRECTION — HIGHEST PRIORITY:\nThe user instruction that follows outranks every default written above. Follow it literally and in full. It may override body build, skin tone, complexion, presentation, framing, styling, and anything worn, including what is or is not on the feet. Where it conflicts with any line above, the user instruction wins.\n\nThe only things it never changes are the <Subject 1> identity role (face and hair come from <Picture 1>) and the four-shot close-up / front / side / back layout.\n\nWhen a skin tone is specified, apply it consistently to every visible area of skin in all four shots.\n\nIf nothing follows this line, there is no user direction: keep every rule above exactly as written."
       ],
       "widgets_values_named": {
-        "value": "subject_definitions:\n<Subject 1> is the adult person seen in <Picture 1>. Their reference role is IDENTITY ONLY: face, facial geometry, eyes, nose, lips, skin tone, apparent age, apparent gender presentation and hairstyle, including hair length, colour, texture and parting. Read the gender presentation, apparent age, skin tone and visible facial features directly from <Picture 1> and keep them unchanged.\n\n<Subject 2> is the outfit shown in <Picture 2>. Its reference role is WARDROBE ONLY: garment shapes, cut, length, colours, patterns, materials, whatever is worn on the feet, and wearable accessories.\n\nsummary:\n[reference generation] Create one static character turnaround sheet showing <Subject 1> wearing the wardrobe from <Subject 2>. Present exactly four views — a chest-up front close-up, then complete full-body front, strict right-side profile and back views — on a neutral light-grey studio background, rendered in the same visual style as <Picture 1>.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1], [Shot 2], [Shot 3], [Shot 4]): fully_preserved - the same person from <Picture 1> appears in every shot. Preserve the exact face, facial geometry, eyes, nose, lips, skin tone, apparent age, gender presentation and hairstyle.\n\nThe hairstyle comes exclusively from <Picture 1> and remains identical in all four shots: same length, cut, parting, colour and texture. Only its viewing direction changes. Do not transfer clothing, pose, framing, lighting or background from <Picture 1>.\n\n<Subject 2> (appears in [Shot 1], [Shot 2], [Shot 3], [Shot 4]): attribute_transfer - transfer only the garments, colours, patterns, materials, whatever is worn on the feet, and wearable accessories from <Picture 2> onto <Subject 1>.\n\nDo not transfer the outfit donor’s face, hair, hairstyle, age, gender presentation, shoulder width, muscle mass, torso volume, height, limb thickness, body shape, pose or background. <Picture 2> is a wardrobe reference only. <Subject 1> wears the outfit but never inherits the outfit donor’s identity or body.\n\ndetailed_description:\nThe target is one still image, not a video. Match the rendering style of <Picture 1> exactly — photographic, painted, illustrated or anime — including its line quality, shading, colour treatment and level of detail; never convert an illustrated or anime reference into a photograph, and never convert a photograph into an illustration. Use a neutral light-grey seamless background with even soft lighting.\n\nArrange exactly four equal vertical views side by side from left to right. [Shot 2], [Shot 3] and [Shot 4] must share one ground line, one subject scale, one camera distance, one camera height and one lighting setup. [Shot 1] uses the same lighting with a closer camera.\n\n[Shot 1] Chest-up front close-up: head, complete hairstyle, face and shoulders fill the column, face looking directly toward the camera with a calm neutral expression.\n\n[Shot 2] Complete full-body front view in a relaxed A-pose, face looking directly toward the camera. Both feet point forward and are fully visible.\n\n[Shot 3] Complete full-body strict 90-degree right-side profile view. The head, torso, hips and feet all face directly toward the side of the frame. Both feet are fully visible in true side profile.\n\n[Shot 4] Complete full-body back view photographed from directly behind. The subject and both feet point away from the viewer, and both feet are fully visible from the rear. Never turn the feet back toward the camera and never reuse the front view.\n\nThe same hairstyle from <Picture 1> must remain visible in all four shots and change only according to the viewing direction. Show the complete head in every shot and both complete feet in [Shot 2], [Shot 3] and [Shot 4].\n\nKeep the face uncovered. Do not add a helmet or mask. Do not create an extra panel, action pose, separate product display, inset, duplicate cell, caption, label, logo or text.\n\nCANONICAL BODY LOCK — applies unless the user explicitly requests a different body build:\nThe three full-body views are rotations of one unchanged adult body mesh, and the close-up shows the same head at a closer camera distance.\n\nKeep identical height, head-to-body ratio, shoulder width, chest volume, waist width, hip width, arm length, leg length, limb thickness, hand size and foot size in all full-body views.\n\nUse the same relaxed A-pose, stance and weight distribution in every view. Only the viewing direction changes.\n\nUse a fixed orthographic-like 85–105 mm lens, identical camera height, camera distance, ground line and subject scale. Never redraw a wider, shorter, taller, heavier, slimmer or differently proportioned body between views.\n\nUSER STAGE 1 DIRECTION — HIGHEST PRIORITY:\nThe user instruction that follows outranks every default written above. Follow it literally and in full. It may override body build, skin tone, complexion, presentation, framing, styling, and anything worn, including what is or is not on the feet. Where it conflicts with any line above, the user instruction wins.\n\nThe only things it never changes are the <Subject 1> identity role (face and hair come from <Picture 1>) and the four-shot close-up / front / side / back layout.\n\nWhen a skin tone is specified, apply it consistently to every visible area of skin in all four shots.\n\nIf nothing follows this line, there is no user direction: keep every rule above exactly as written."
+        "value": "summary:\n[reference generation] Create one static character turnaround sheet showing <Subject 1> wearing the wardrobe from <Subject 2>. Present exactly four views — a chest-up front close-up, then complete full-body front, strict right-side profile and back views — on a neutral light-grey studio background, rendered in the same visual style as <Picture 1>.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1], [Shot 2], [Shot 3], [Shot 4]): fully_preserved - the same person from <Picture 1> appears in every shot. Preserve the exact face, facial geometry, eyes, nose, lips, skin tone, apparent age, gender presentation and hairstyle.\n\nThe hairstyle comes exclusively from <Picture 1> and remains identical in all four shots: same length, cut, parting, colour and texture. Only its viewing direction changes. Do not transfer clothing, pose, framing, lighting or background from <Picture 1>.\n\n<Subject 2> (appears in [Shot 1], [Shot 2], [Shot 3], [Shot 4]): attribute_transfer - transfer only the garments, colours, patterns, materials, whatever is worn on the feet, and wearable accessories from <Picture 2> onto <Subject 1>.\n\nDo not transfer the outfit donor’s face, hair, hairstyle, age, gender presentation, shoulder width, muscle mass, torso volume, height, limb thickness, body shape, pose or background. <Picture 2> is a wardrobe reference only. <Subject 1> wears the outfit but never inherits the outfit donor’s identity or body.\n\ndetailed_description:\nThe target is one still image, not a video. Match the rendering style of <Picture 1> exactly — photographic, painted, illustrated or anime — including its line quality, shading, colour treatment and level of detail; never convert an illustrated or anime reference into a photograph, and never convert a photograph into an illustration. Use a neutral light-grey seamless background with even soft lighting.\n\nArrange exactly four equal vertical views side by side from left to right. [Shot 2], [Shot 3] and [Shot 4] must share one ground line, one subject scale, one camera distance, one camera height and one lighting setup. [Shot 1] uses the same lighting with a closer camera.\n\n[Shot 1] Chest-up front close-up: head, complete hairstyle, face and shoulders fill the column, face looking directly toward the camera with a calm neutral expression.\n\n[Shot 2] Complete full-body front view in a relaxed A-pose, face looking directly toward the camera. Both feet point forward and are fully visible.\n\n[Shot 3] Complete full-body strict 90-degree right-side profile view. The head, torso, hips and feet all face directly toward the side of the frame. Both feet are fully visible in true side profile.\n\n[Shot 4] Complete full-body back view photographed from directly behind. The subject and both feet point away from the viewer, and both feet are fully visible from the rear. Never turn the feet back toward the camera and never reuse the front view.\n\nThe same hairstyle from <Picture 1> must remain visible in all four shots and change only according to the viewing direction. Show the complete head in every shot and both complete feet in [Shot 2], [Shot 3] and [Shot 4].\n\nKeep the face uncovered. Do not add a helmet or mask. Do not create an extra panel, action pose, separate product display, inset, duplicate cell, caption, label, logo or text.\n\nCANONICAL BODY LOCK — applies unless the user explicitly requests a different body build:\nThe three full-body views are rotations of one unchanged adult body mesh, and the close-up shows the same head at a closer camera distance.\n\nKeep identical height, head-to-body ratio, shoulder width, chest volume, waist width, hip width, arm length, leg length, limb thickness, hand size and foot size in all full-body views.\n\nUse the same relaxed A-pose, stance and weight distribution in [Shot 2], [Shot 3] and [Shot 4]. Between those three shots only the viewing direction changes.\n\nFor [Shot 2], [Shot 3] and [Shot 4] use a fixed orthographic-like 85–105 mm lens, identical camera height, camera distance, ground line and subject scale. [Shot 1] keeps the same lens, lighting and head but uses a closer chest-up framing, so its subject scale is intentionally larger. Never redraw a wider, shorter, taller, heavier, slimmer or differently proportioned body between the full-body views.\n\nUSER STAGE 1 DIRECTION — HIGHEST PRIORITY:\nThe user instruction that follows outranks every default written above. Follow it literally and in full. It may override body build, skin tone, complexion, presentation, framing, styling, and anything worn, including what is or is not on the feet. Where it conflicts with any line above, the user instruction wins.\n\nThe only things it never changes are the <Subject 1> identity role (face and hair come from <Picture 1>) and the four-shot close-up / front / side / back layout.\n\nWhen a skin tone is specified, apply it consistently to every visible area of skin in all four shots.\n\nIf nothing follows this line, there is no user direction: keep every rule above exactly as written."
       }
     },
     {
@@ -5397,11 +5397,11 @@
           "name": "output",
           "type": "STRING",
           "links": [
-            307
+            371
           ]
         }
       ],
-      "title": "시트 구성 선택",
+      "title": "Sheet Layout Select (body)",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -5438,7 +5438,7 @@
           ]
         }
       ],
-      "title": "얼굴 소스 · OFF = SAM3 머리 추출 (기본) / ON = 원본 얼굴 사진",
+      "title": "Face Source · OFF = SAM3 head cut-out (default) / ON = raw face photo",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -5494,7 +5494,7 @@
           ]
         }
       ],
-      "title": "얼굴 참조 선택",
+      "title": "Face Reference Select",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -5531,7 +5531,7 @@
           ]
         }
       ],
-      "title": "의상 소스 · OFF = 의상 추출 (기본) / ON = 배경 제거 전신 사진",
+      "title": "Outfit Source · OFF = clothes cut-out (default) / ON = background-removed full photo",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -5583,11 +5583,12 @@
           "type": "IMAGE",
           "links": [
             316,
-            317
+            317,
+            361
           ]
         }
       ],
-      "title": "의상 참조 선택",
+      "title": "Outfit Reference Select",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -5626,7 +5627,7 @@
           ]
         }
       ],
-      "title": "태그 상수 · <Picture 2>",
+      "title": "Tag Constant · <Picture 2>",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -5665,7 +5666,7 @@
           ]
         }
       ],
-      "title": "태그 상수 · <Picture 3>",
+      "title": "Tag Constant · <Picture 3>",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -5702,7 +5703,7 @@
           ]
         }
       ],
-      "title": "태그 상수 · <Picture 4>",
+      "title": "Tag Constant · <Picture 4>",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -5755,7 +5756,7 @@
           ]
         }
       ],
-      "title": "분석 게이트 · 선택 4 (OFF면 빈 문자열)",
+      "title": "Analysis Gate · Optional 4 (empty when OFF)",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -5803,7 +5804,7 @@
           ]
         }
       ],
-      "title": "그림 첨부됨? · 선택 4",
+      "title": "Picture Attached? · Optional 4",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -5865,7 +5866,7 @@
           ]
         }
       ],
-      "title": "Picture 태그 + 역할 · 선택 4",
+      "title": "Picture Tag + Role · Optional 4",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -5922,7 +5923,7 @@
           ]
         }
       ],
-      "title": "역할 문장 · 선택 4 (그림이 첨부된 경우에만 태그)",
+      "title": "Role Line · Optional 4 (tagged only when a picture is attached)",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -5975,7 +5976,7 @@
           ]
         }
       ],
-      "title": "분석 게이트 · 선택 5 (OFF면 빈 문자열)",
+      "title": "Analysis Gate · Optional 5 (empty when OFF)",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -6023,7 +6024,7 @@
           ]
         }
       ],
-      "title": "그림 첨부됨? · 선택 5",
+      "title": "Picture Attached? · Optional 5",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -6084,7 +6085,7 @@
           ]
         }
       ],
-      "title": "Picture 태그 · 선택 5 (소품 첨부 시 3, 아니면 2)",
+      "title": "Picture Tag · Optional 5 (3 if prop attached, else 2)",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -6138,7 +6139,7 @@
           ]
         }
       ],
-      "title": "Picture 태그 + 역할 · 선택 5",
+      "title": "Picture Tag + Role · Optional 5",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -6195,7 +6196,7 @@
           ]
         }
       ],
-      "title": "역할 문장 · 선택 5 (그림이 첨부된 경우에만 태그)",
+      "title": "Role Line · Optional 5 (tagged only when a picture is attached)",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -6248,7 +6249,7 @@
           ]
         }
       ],
-      "title": "분석 게이트 · 선택 6 (OFF면 빈 문자열)",
+      "title": "Analysis Gate · Optional 6 (empty when OFF)",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -6294,7 +6295,7 @@
           ]
         }
       ],
-      "title": "그림 첨부됨? · 선택 6",
+      "title": "Picture Attached? · Optional 6",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -6355,7 +6356,7 @@
           ]
         }
       ],
-      "title": "Picture 태그 · 선택 6, 소품 첨부 시 (배경 첨부 시 4, 아니면 3)",
+      "title": "Picture Tag · Optional 6 when prop attached (4 if env attached, else 3)",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -6408,7 +6409,7 @@
           ]
         }
       ],
-      "title": "Picture 태그 · 선택 6, 소품 미첨부 시 (배경 첨부 시 3, 아니면 2)",
+      "title": "Picture Tag · Optional 6 when prop not attached (3 if env attached, else 2)",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -6461,7 +6462,7 @@
           ]
         }
       ],
-      "title": "Picture 태그 · 선택 6",
+      "title": "Picture Tag · Optional 6",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -6515,7 +6516,7 @@
           ]
         }
       ],
-      "title": "Picture 태그 + 역할 · 선택 6",
+      "title": "Picture Tag + Role · Optional 6",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -6572,7 +6573,7 @@
           ]
         }
       ],
-      "title": "역할 문장 · 선택 6 (그림이 첨부된 경우에만 태그)",
+      "title": "Role Line · Optional 6 (tagged only when a picture is attached)",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.34.0",
@@ -6601,18 +6602,868 @@
       "mode": 0,
       "inputs": [],
       "outputs": [],
-      "title": "해상도 프리셋",
+      "title": "Resolution Presets",
       "properties": {
         "Node name for S&R": "MarkdownNote"
       },
       "widgets_values": [
-        "**Resolution Selector 프리셋**\n- Draft: `2` MP · 가장 빠름, 디테일 무름\n- Standard: `3` MP · T=1 이미지 VAE 검증 범위 안\n- High: `8` MP (기본) · 샘플 시트 설정, 구도는 선명하지만 머리카락·옷감이 다소 에어브러시처럼 뭉개짐\n\n2단계를 쓸 때는 `1:1 (Square)` 유지. 4패널 구성은 High 프리셋이 유리합니다."
+        "**Resolution Selector presets**\n- Draft: `2` MP · fastest, soft detail\n- Standard: `3` MP · inside the T=1 image VAE's validated range\n- High: `8` MP (default) · the sample sheet; sharper layout, some airbrushing on hair / fabric\n\nKeep `1:1 (Square)` when Stage 2 is used. 4-panel layout benefits from the High preset."
       ],
       "widgets_values_named": {
-        "text": "**Resolution Selector 프리셋**\n- Draft: `2` MP · 가장 빠름, 디테일 무름\n- Standard: `3` MP · T=1 이미지 VAE 검증 범위 안\n- High: `8` MP (기본) · 샘플 시트 설정, 구도는 선명하지만 머리카락·옷감이 다소 에어브러시처럼 뭉개짐\n\n2단계를 쓸 때는 `1:1 (Square)` 유지. 4패널 구성은 High 프리셋이 유리합니다."
+        "text": "**Resolution Selector presets**\n- Draft: `2` MP · fastest, soft detail\n- Standard: `3` MP · inside the T=1 image VAE's validated range\n- High: `8` MP (default) · the sample sheet; sharper layout, some airbrushing on hair / fabric\n\nKeep `1:1 (Square)` when Stage 2 is used. 4-panel layout benefits from the High preset."
       },
       "color": "#432",
       "bgcolor": "#653"
+    },
+    {
+      "id": 190,
+      "type": "TextGenerate",
+      "pos": [
+        40,
+        4540
+      ],
+      "size": [
+        400,
+        143
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 360
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": 361
+        },
+        {
+          "name": "video",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": null
+        },
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "shape": 7,
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "generated_text",
+          "type": "STRING",
+          "links": [
+            363
+          ]
+        }
+      ],
+      "title": "Gemma Vision · Wardrobe Description (socks / shoes / garments)",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "Node name for S&R": "TextGenerate"
+      },
+      "widgets_values": [
+        "Describe only the clothing in this image for another image model. The image is a clothing cut-out on a grey background; there may be no visible person. Output one paragraph that begins exactly with \"WARDROBE DESCRIPTION:\".\nList every garment from top to bottom with its type, colour, material, pattern, length and notable details (collar, tie, buttons, pleats, prints).\nThen state the footwear explicitly: socks (length and colour, or \"no socks visible\") and shoes (type and colour, or \"no shoes visible\"). If only one shoe or sock is visible, say the pair is identical.\nIgnore and never mention the person, face, hair, skin, body shape, pose, background, and image style. Do not add opinions or suggestions.",
+        256,
+        "off",
+        false,
+        true
+      ]
+    },
+    {
+      "id": 191,
+      "type": "PrimitiveBoolean",
+      "pos": [
+        460,
+        4540
+      ],
+      "size": [
+        300,
+        58
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "BOOLEAN",
+          "type": "BOOLEAN",
+          "links": [
+            366
+          ]
+        }
+      ],
+      "title": "Wardrobe Description · OFF = picture only / ON = picture + Gemma text (default ON)",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "Node name for S&R": "PrimitiveBoolean"
+      },
+      "widgets_values": [
+        true
+      ],
+      "widgets_values_named": {
+        "value": true
+      },
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 192,
+      "type": "StringConcatenate",
+      "pos": [
+        40,
+        4720
+      ],
+      "size": [
+        300,
+        70
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "string_a",
+          "type": "STRING",
+          "widget": {
+            "name": "string_a"
+          },
+          "link": 362
+        },
+        {
+          "name": "string_b",
+          "type": "STRING",
+          "widget": {
+            "name": "string_b"
+          },
+          "link": 363
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            365
+          ]
+        }
+      ],
+      "title": "Wardrobe Description · Prefix",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "Node name for S&R": "StringConcatenate"
+      },
+      "widgets_values": [
+        "",
+        "",
+        "WARDROBE DESCRIPTION (text derived from <Picture 2>; it complements the picture and names the socks and shoes explicitly; where text and picture disagree, the picture wins):\n"
+      ],
+      "widgets_values_named": {
+        "string_a": "",
+        "string_b": "",
+        "delimiter": "WARDROBE DESCRIPTION (text derived from <Picture 2>; it complements the picture and names the socks and shoes explicitly; where text and picture disagree, the picture wins):\n"
+      }
+    },
+    {
+      "id": 193,
+      "type": "ComfySwitchNode",
+      "pos": [
+        460,
+        4720
+      ],
+      "size": [
+        300,
+        78
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "on_false",
+          "type": "STRING",
+          "link": 364
+        },
+        {
+          "name": "on_true",
+          "type": "STRING",
+          "link": 365
+        },
+        {
+          "name": "switch",
+          "type": "BOOLEAN",
+          "link": 366
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "STRING",
+          "links": [
+            367,
+            369
+          ]
+        }
+      ],
+      "title": "Wardrobe Description Gate",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "Node name for S&R": "ComfySwitchNode"
+      },
+      "widgets_values": [
+        false
+      ],
+      "widgets_values_named": {
+        "switch": false
+      }
+    },
+    {
+      "id": 194,
+      "type": "PreviewAny",
+      "pos": [
+        603,
+        2090
+      ],
+      "size": [
+        520,
+        200
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "source",
+          "type": "*",
+          "link": 367
+        }
+      ],
+      "outputs": [],
+      "title": "Wardrobe Description Check",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "Node name for S&R": "PreviewAny"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 195,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        1580,
+        4180
+      ],
+      "size": [
+        391,
+        110
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            368
+          ]
+        }
+      ],
+      "title": "Stage 1 Base Prompt · Subject Definitions (shared head)",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "subject_definitions:\n<Subject 1> is the adult person seen in <Picture 1>. Their reference role is IDENTITY ONLY: face, facial geometry, eyes, nose, lips, skin tone, apparent age, apparent gender presentation and hairstyle, including hair length, colour, texture and parting. Read the gender presentation, apparent age, skin tone and visible facial features directly from <Picture 1> and keep them unchanged.\n\n<Subject 2> is the outfit shown in <Picture 2>. Its reference role is WARDROBE ONLY: garment shapes, cut, length, colours, patterns, materials, whatever is worn on the feet, and wearable accessories."
+      ],
+      "widgets_values_named": {
+        "value": "subject_definitions:\n<Subject 1> is the adult person seen in <Picture 1>. Their reference role is IDENTITY ONLY: face, facial geometry, eyes, nose, lips, skin tone, apparent age, apparent gender presentation and hairstyle, including hair length, colour, texture and parting. Read the gender presentation, apparent age, skin tone and visible facial features directly from <Picture 1> and keep them unchanged.\n\n<Subject 2> is the outfit shown in <Picture 2>. Its reference role is WARDROBE ONLY: garment shapes, cut, length, colours, patterns, materials, whatever is worn on the feet, and wearable accessories."
+      }
+    },
+    {
+      "id": 196,
+      "type": "StringConcatenate",
+      "pos": [
+        2000,
+        4180
+      ],
+      "size": [
+        391,
+        70
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "string_a",
+          "type": "STRING",
+          "widget": {
+            "name": "string_a"
+          },
+          "link": 368
+        },
+        {
+          "name": "string_b",
+          "type": "STRING",
+          "widget": {
+            "name": "string_b"
+          },
+          "link": 369
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            370
+          ]
+        }
+      ],
+      "title": "Stage 1 Prompt · Definitions + Wardrobe Description",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "Node name for S&R": "StringConcatenate"
+      },
+      "widgets_values": [
+        "",
+        "",
+        "\n\n"
+      ],
+      "widgets_values_named": {
+        "string_a": "",
+        "string_b": "",
+        "delimiter": "\n\n"
+      }
+    },
+    {
+      "id": 197,
+      "type": "StringConcatenate",
+      "pos": [
+        1160,
+        4330
+      ],
+      "size": [
+        391,
+        70
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "string_a",
+          "type": "STRING",
+          "widget": {
+            "name": "string_a"
+          },
+          "link": 370
+        },
+        {
+          "name": "string_b",
+          "type": "STRING",
+          "widget": {
+            "name": "string_b"
+          },
+          "link": 371
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            372
+          ]
+        }
+      ],
+      "title": "Stage 1 Prompt · + Layout Body",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "Node name for S&R": "StringConcatenate"
+      },
+      "widgets_values": [
+        "",
+        "",
+        "\n\n"
+      ],
+      "widgets_values_named": {
+        "string_a": "",
+        "string_b": "",
+        "delimiter": "\n\n"
+      }
+    },
+    {
+      "id": 198,
+      "type": "RegexMatch",
+      "pos": [
+        790,
+        4540
+      ],
+      "size": [
+        220,
+        130
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "string",
+          "type": "STRING",
+          "widget": {
+            "name": "string"
+          },
+          "link": 373
+        }
+      ],
+      "outputs": [
+        {
+          "name": "matches",
+          "type": "BOOLEAN",
+          "links": [
+            376
+          ]
+        }
+      ],
+      "title": "User Text Present? · Stage 1 Direction",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "Node name for S&R": "RegexMatch"
+      },
+      "widgets_values": [
+        "",
+        "\\S",
+        true,
+        false,
+        false
+      ],
+      "widgets_values_named": {
+        "string": "",
+        "regex_pattern": "\\S",
+        "case_insensitive": true,
+        "multiline": false,
+        "dotall": false
+      }
+    },
+    {
+      "id": 199,
+      "type": "ComfySwitchNode",
+      "pos": [
+        790,
+        4720
+      ],
+      "size": [
+        220,
+        78
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "on_false",
+          "type": "STRING",
+          "link": 374
+        },
+        {
+          "name": "on_true",
+          "type": "STRING",
+          "link": 375
+        },
+        {
+          "name": "switch",
+          "type": "BOOLEAN",
+          "link": 376
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "STRING",
+          "links": [
+            377,
+            378
+          ]
+        }
+      ],
+      "title": "Translation Gate · Stage 1 Direction (skips Gemma when the box is empty)",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "Node name for S&R": "ComfySwitchNode"
+      },
+      "widgets_values": [
+        false
+      ],
+      "widgets_values_named": {
+        "switch": false
+      }
+    },
+    {
+      "id": 200,
+      "type": "RegexMatch",
+      "pos": [
+        40,
+        4900
+      ],
+      "size": [
+        220,
+        130
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "string",
+          "type": "STRING",
+          "widget": {
+            "name": "string"
+          },
+          "link": 379
+        }
+      ],
+      "outputs": [
+        {
+          "name": "matches",
+          "type": "BOOLEAN",
+          "links": [
+            382
+          ]
+        }
+      ],
+      "title": "User Text Present? · Stage 2 Panel Request",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "Node name for S&R": "RegexMatch"
+      },
+      "widgets_values": [
+        "",
+        "\\S",
+        true,
+        false,
+        false
+      ],
+      "widgets_values_named": {
+        "string": "",
+        "regex_pattern": "\\S",
+        "case_insensitive": true,
+        "multiline": false,
+        "dotall": false
+      }
+    },
+    {
+      "id": 201,
+      "type": "ComfySwitchNode",
+      "pos": [
+        290,
+        4900
+      ],
+      "size": [
+        220,
+        78
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "on_false",
+          "type": "STRING",
+          "link": 380
+        },
+        {
+          "name": "on_true",
+          "type": "STRING",
+          "link": 381
+        },
+        {
+          "name": "switch",
+          "type": "BOOLEAN",
+          "link": 382
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "STRING",
+          "links": [
+            383,
+            384
+          ]
+        }
+      ],
+      "title": "Translation Gate · Stage 2 Panel Request (skips Gemma when the box is empty)",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "Node name for S&R": "ComfySwitchNode"
+      },
+      "widgets_values": [
+        false
+      ],
+      "widgets_values_named": {
+        "switch": false
+      }
+    },
+    {
+      "id": 202,
+      "type": "PrimitiveBoolean",
+      "pos": [
+        2090,
+        2010
+      ],
+      "size": [
+        370,
+        58
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "BOOLEAN",
+          "type": "BOOLEAN",
+          "links": [
+            387,
+            392,
+            396
+          ]
+        }
+      ],
+      "title": "Sigmas Source · OFF = PDD Acc 8-step (default) / ON = BasicScheduler 30-step fallback (no PDD file needed)",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "Node name for S&R": "PrimitiveBoolean"
+      },
+      "widgets_values": [
+        false
+      ],
+      "widgets_values_named": {
+        "value": false
+      },
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 203,
+      "type": "ComfySwitchNode",
+      "pos": [
+        2090,
+        2100
+      ],
+      "size": [
+        180,
+        78
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "on_false",
+          "type": "SIGMAS",
+          "link": 385
+        },
+        {
+          "name": "on_true",
+          "type": "SIGMAS",
+          "link": 386
+        },
+        {
+          "name": "switch",
+          "type": "BOOLEAN",
+          "link": 387
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "SIGMAS",
+          "links": [
+            388,
+            389
+          ]
+        }
+      ],
+      "title": "Sigmas Select",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "Node name for S&R": "ComfySwitchNode"
+      },
+      "widgets_values": [
+        false
+      ],
+      "widgets_values_named": {
+        "switch": false
+      }
+    },
+    {
+      "id": 204,
+      "type": "ComfySwitchNode",
+      "pos": [
+        2090,
+        2210
+      ],
+      "size": [
+        180,
+        78
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "on_false",
+          "type": "MODEL",
+          "link": 390
+        },
+        {
+          "name": "on_true",
+          "type": "MODEL",
+          "link": 391
+        },
+        {
+          "name": "switch",
+          "type": "BOOLEAN",
+          "link": 392
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "MODEL",
+          "links": [
+            393
+          ]
+        }
+      ],
+      "title": "Model Select (PDD patched / plain)",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "Node name for S&R": "ComfySwitchNode"
+      },
+      "widgets_values": [
+        false
+      ],
+      "widgets_values_named": {
+        "switch": false
+      }
+    },
+    {
+      "id": 205,
+      "type": "PrimitiveString",
+      "pos": [
+        2280,
+        2100
+      ],
+      "size": [
+        180,
+        58
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            395
+          ]
+        }
+      ],
+      "title": "PDD Info · fallback text",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "Node name for S&R": "PrimitiveString"
+      },
+      "widgets_values": [
+        "PDD Acc bypassed — BasicScheduler 30-step fallback in use"
+      ],
+      "widgets_values_named": {
+        "value": "PDD Acc bypassed — BasicScheduler 30-step fallback in use"
+      }
+    },
+    {
+      "id": 206,
+      "type": "ComfySwitchNode",
+      "pos": [
+        2280,
+        2210
+      ],
+      "size": [
+        180,
+        78
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "on_false",
+          "type": "STRING",
+          "link": 394
+        },
+        {
+          "name": "on_true",
+          "type": "STRING",
+          "link": 395
+        },
+        {
+          "name": "switch",
+          "type": "BOOLEAN",
+          "link": 396
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "STRING",
+          "links": [
+            397
+          ]
+        }
+      ],
+      "title": "PDD Info Select",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0",
+        "Node name for S&R": "ComfySwitchNode"
+      },
+      "widgets_values": [
+        false
+      ],
+      "widgets_values_named": {
+        "switch": false
+      }
     }
   ],
   "links": [
@@ -7089,22 +7940,6 @@
       "STRING"
     ],
     [
-      244,
-      129,
-      0,
-      119,
-      1,
-      "STRING"
-    ],
-    [
-      245,
-      129,
-      0,
-      130,
-      0,
-      "STRING"
-    ],
-    [
       246,
       132,
       0,
@@ -7201,22 +8036,6 @@
       "CLIP"
     ],
     [
-      259,
-      138,
-      0,
-      24,
-      0,
-      "STRING"
-    ],
-    [
-      260,
-      138,
-      0,
-      139,
-      0,
-      "STRING"
-    ],
-    [
       265,
       142,
       0,
@@ -7263,38 +8082,6 @@
       145,
       0,
       "MODEL"
-    ],
-    [
-      272,
-      145,
-      0,
-      136,
-      0,
-      "MODEL"
-    ],
-    [
-      273,
-      145,
-      1,
-      8,
-      3,
-      "SIGMAS"
-    ],
-    [
-      274,
-      145,
-      2,
-      146,
-      0,
-      "STRING"
-    ],
-    [
-      275,
-      145,
-      1,
-      109,
-      12,
-      "SIGMAS"
     ],
     [
       276,
@@ -7415,14 +8202,6 @@
       165,
       2,
       "BOOLEAN"
-    ],
-    [
-      307,
-      165,
-      0,
-      24,
-      1,
-      "STRING"
     ],
     [
       308,
@@ -7839,16 +8618,320 @@
       90,
       1,
       "STRING"
+    ],
+    [
+      360,
+      25,
+      0,
+      190,
+      0,
+      "CLIP"
+    ],
+    [
+      361,
+      169,
+      0,
+      190,
+      1,
+      "IMAGE"
+    ],
+    [
+      362,
+      147,
+      0,
+      192,
+      0,
+      "STRING"
+    ],
+    [
+      363,
+      190,
+      0,
+      192,
+      1,
+      "STRING"
+    ],
+    [
+      364,
+      147,
+      0,
+      193,
+      0,
+      "STRING"
+    ],
+    [
+      365,
+      192,
+      0,
+      193,
+      1,
+      "STRING"
+    ],
+    [
+      366,
+      191,
+      0,
+      193,
+      2,
+      "BOOLEAN"
+    ],
+    [
+      367,
+      193,
+      0,
+      194,
+      0,
+      "STRING"
+    ],
+    [
+      368,
+      195,
+      0,
+      196,
+      0,
+      "STRING"
+    ],
+    [
+      369,
+      193,
+      0,
+      196,
+      1,
+      "STRING"
+    ],
+    [
+      370,
+      196,
+      0,
+      197,
+      0,
+      "STRING"
+    ],
+    [
+      371,
+      165,
+      0,
+      197,
+      1,
+      "STRING"
+    ],
+    [
+      372,
+      197,
+      0,
+      24,
+      1,
+      "STRING"
+    ],
+    [
+      373,
+      23,
+      0,
+      198,
+      0,
+      "STRING"
+    ],
+    [
+      374,
+      147,
+      0,
+      199,
+      0,
+      "STRING"
+    ],
+    [
+      375,
+      138,
+      0,
+      199,
+      1,
+      "STRING"
+    ],
+    [
+      376,
+      198,
+      0,
+      199,
+      2,
+      "BOOLEAN"
+    ],
+    [
+      377,
+      199,
+      0,
+      24,
+      0,
+      "STRING"
+    ],
+    [
+      378,
+      199,
+      0,
+      139,
+      0,
+      "STRING"
+    ],
+    [
+      379,
+      43,
+      0,
+      200,
+      0,
+      "STRING"
+    ],
+    [
+      380,
+      147,
+      0,
+      201,
+      0,
+      "STRING"
+    ],
+    [
+      381,
+      129,
+      0,
+      201,
+      1,
+      "STRING"
+    ],
+    [
+      382,
+      200,
+      0,
+      201,
+      2,
+      "BOOLEAN"
+    ],
+    [
+      383,
+      201,
+      0,
+      119,
+      1,
+      "STRING"
+    ],
+    [
+      384,
+      201,
+      0,
+      130,
+      0,
+      "STRING"
+    ],
+    [
+      385,
+      145,
+      1,
+      203,
+      0,
+      "SIGMAS"
+    ],
+    [
+      386,
+      7,
+      0,
+      203,
+      1,
+      "SIGMAS"
+    ],
+    [
+      387,
+      202,
+      0,
+      203,
+      2,
+      "BOOLEAN"
+    ],
+    [
+      388,
+      203,
+      0,
+      8,
+      3,
+      "SIGMAS"
+    ],
+    [
+      389,
+      203,
+      0,
+      109,
+      12,
+      "SIGMAS"
+    ],
+    [
+      390,
+      145,
+      0,
+      204,
+      0,
+      "MODEL"
+    ],
+    [
+      391,
+      144,
+      0,
+      204,
+      1,
+      "MODEL"
+    ],
+    [
+      392,
+      202,
+      0,
+      204,
+      2,
+      "BOOLEAN"
+    ],
+    [
+      393,
+      204,
+      0,
+      136,
+      0,
+      "MODEL"
+    ],
+    [
+      394,
+      145,
+      2,
+      206,
+      0,
+      "STRING"
+    ],
+    [
+      395,
+      205,
+      0,
+      206,
+      1,
+      "STRING"
+    ],
+    [
+      396,
+      202,
+      0,
+      206,
+      2,
+      "BOOLEAN"
+    ],
+    [
+      397,
+      206,
+      0,
+      146,
+      0,
+      "STRING"
     ]
   ],
   "groups": [
     {
       "id": 1,
-      "title": "④ 1단계 실행 · 얼굴+의상 전/측/후면",
+      "title": "④ STAGE 1 RUN · Face + Outfit → Front / Side / Back",
       "bounding": [
         1240,
         1700,
-        1180,
+        1240,
         600
       ],
       "color": "#526273",
@@ -7856,7 +8939,7 @@
     },
     {
       "id": 3,
-      "title": "② 1단계 입력 · 얼굴/의상 추출 + 확인",
+      "title": "② STAGE 1 INPUT · Face / Outfit Auto-Extract + Check",
       "bounding": [
         1990,
         0,
@@ -7868,7 +8951,7 @@
     },
     {
       "id": 4,
-      "title": "⑦ 2단계 입력 · 포즈 + 소품/배경",
+      "title": "⑦ STAGE 2 INPUT · Pose + Props / Background",
       "bounding": [
         0,
         2320,
@@ -7880,19 +8963,19 @@
     },
     {
       "id": 5,
-      "title": "⑩ 자동 프롬프트 조립 · 건드리지 않음",
+      "title": "⑩ AUTO PROMPT ASSEMBLY · Do Not Touch",
       "bounding": [
         1120,
         3200,
         1320,
-        1150
+        1300
       ],
       "color": "#665080",
       "flags": {}
     },
     {
       "id": 7,
-      "title": "⑧ 선택 · 2단계 한국어 패널 요청",
+      "title": "⑧ OPTIONAL · Stage 2 Panel Requests",
       "bounding": [
         1660,
         2320,
@@ -7904,31 +8987,31 @@
     },
     {
       "id": 8,
-      "title": "③ 선택 · 1단계 추가 연출/체형 · 한국어 가능",
+      "title": "③ OPTIONAL · Stage 1 Extra Direction / Body Type",
       "bounding": [
         0,
         1700,
         1160,
-        480
+        600
       ],
       "color": "#9a6b32",
       "flags": {}
     },
     {
       "id": 11,
-      "title": "⑨ 자동 분석·한국어 번역 · 건드리지 않음",
+      "title": "⑨ AUTO ANALYSIS & TRANSLATION · Do Not Touch",
       "bounding": [
         0,
         3200,
         1040,
-        1300
+        1900
       ],
       "color": "#347f86",
       "flags": {}
     },
     {
       "id": 12,
-      "title": "① 모델 장착 · 모델체인(좌) / 인코더·VAE(우)",
+      "title": "① LOAD MODELS · Model Chain (left) / Encoders & VAE (right)",
       "bounding": [
         680,
         0,
@@ -7940,7 +9023,7 @@
     },
     {
       "id": 13,
-      "title": "STAGE2_SWITCH · ⑪ 2단계 선택 패널 / 최종 합성 (기본 OFF)",
+      "title": "STAGE2_SWITCH · ⑪ Stage 2 Panels / Final Composite (OFF by default)",
       "bounding": [
         2920,
         2320,
@@ -7952,7 +9035,7 @@
     },
     {
       "id": 14,
-      "title": "⑤ 1단계 결과 · 전/측/후면 확인",
+      "title": "⑤ STAGE 1 RESULT · Front / Side / Back",
       "bounding": [
         2500,
         1700,
@@ -7964,7 +9047,7 @@
     },
     {
       "id": 15,
-      "title": "⑬ 제작자 정보",
+      "title": "⑬ Credits",
       "bounding": [
         2520,
         3200,
@@ -7976,7 +9059,7 @@
     },
     {
       "id": 16,
-      "title": "⑥ 설명 읽기 · 2단계 실행 결정",
+      "title": "⑥ READ THIS · Decide Whether To Run Stage 2",
       "bounding": [
         3080,
         1700,
@@ -7988,7 +9071,7 @@
     },
     {
       "id": 18,
-      "title": "⓪ 처음 읽기 · 전체 사용 순서",
+      "title": "⓪ READ FIRST · How To Use This Workflow",
       "bounding": [
         0,
         0,
@@ -8000,7 +9083,7 @@
     },
     {
       "id": 19,
-      "title": "⑫ 2단계 결과 확인 · 선택 패널 / 최종 16:9",
+      "title": "⑫ STAGE 2 RESULT · Panels / Final 16:9",
       "bounding": [
         3670,
         2330,
@@ -8024,7 +9107,7 @@
         },
         "revision": 4,
         "config": {},
-        "name": "2단계 포즈 시트 생성기",
+        "name": "Stage 2 Pose Sheet Generator",
         "inputNode": {
           "id": -10,
           "bounding": [
@@ -8249,19 +9332,6 @@
               2382.08203125,
               1090
             ]
-          },
-          {
-            "id": "3e007721-d368-42bf-a9d0-77cd749b3ba9",
-            "name": "pose_or_extra_ref",
-            "type": "IMAGE",
-            "linkIds": [
-              219
-            ],
-            "label": "실험적 · 포즈 이미지 직접 입력 (미연결)",
-            "pos": [
-              2382.08203125,
-              1110
-            ]
           }
         ],
         "outputs": [
@@ -8361,7 +9431,7 @@
                 "name": "ref_images.ref_image_4",
                 "shape": 7,
                 "type": "IMAGE",
-                "link": 219
+                "link": null
               },
               {
                 "localized_name": "ref_image_5",
@@ -8438,7 +9508,7 @@
                 "links": null
               }
             ],
-            "title": "2단계 H3 · 포즈 3 + 소품/배경 1",
+            "title": "Stage 2 H3 · Pose 3 + Prop/Background 1",
             "properties": {
               "cnr_id": "comfy-core",
               "ver": "0.34.0",
@@ -8491,7 +9561,7 @@
                 ]
               }
             ],
-            "title": "2단계 Noise",
+            "title": "Stage 2 Noise",
             "properties": {
               "cnr_id": "comfy-core",
               "ver": "0.34.0",
@@ -8557,10 +9627,10 @@
                 ]
               }
             ],
-            "title": "2단계 Image Latent",
+            "title": "Stage 2 Image Latent",
             "properties": {
               "cnr_id": "toobusy",
-              "ver": "a7fefb0c32813dd00e0717b7bf98867d5ea8b0c8",
+              "ver": "bdbed64499d9351cf400c520e8824e33ad9b9702",
               "Node name for S&R": "ToobusyMiniMaxH3ImageLatent",
               "ue_properties": {
                 "widget_ue_connectable": {},
@@ -8618,7 +9688,7 @@
                 ]
               }
             ],
-            "title": "2단계 Guider",
+            "title": "Stage 2 Guider",
             "properties": {
               "cnr_id": "comfy-core",
               "ver": "0.34.0",
@@ -8694,7 +9764,7 @@
                 "links": null
               }
             ],
-            "title": "2단계 Sampler",
+            "title": "Stage 2 Sampler",
             "properties": {
               "cnr_id": "comfy-core",
               "ver": "0.34.0",
@@ -8748,7 +9818,7 @@
                 ]
               }
             ],
-            "title": "2단계 Decode",
+            "title": "Stage 2 Decode",
             "properties": {
               "cnr_id": "comfy-core",
               "ver": "0.34.0",
@@ -8790,7 +9860,7 @@
                 "links": null
               }
             ],
-            "title": "2단계 완성 프롬프트 확인",
+            "title": "Stage 2 Final Prompt Check",
             "properties": {
               "cnr_id": "comfy-core",
               "ver": "0.34.0",
@@ -8843,7 +9913,7 @@
                 "links": null
               }
             ],
-            "title": "2단계 3+1 저장",
+            "title": "Save Stage 2 Panels (3+1)",
             "properties": {
               "cnr_id": "comfy-core",
               "ver": "0.34.0",
@@ -8899,7 +9969,7 @@
                 ]
               }
             ],
-            "title": "최종 합성 · 1단계 왼쪽 + 2단계 오른쪽",
+            "title": "Final Composite · Stage 1 left + Stage 2 right",
             "properties": {
               "cnr_id": "comfyui-kjnodes",
               "Node name for S&R": "ImageConcanate",
@@ -8958,7 +10028,7 @@
                 "links": null
               }
             ],
-            "title": "최종 2단계 캐릭터 시트 저장",
+            "title": "Save Final Character Sheet",
             "properties": {
               "cnr_id": "comfy-core",
               "ver": "0.34.0",
@@ -9034,7 +10104,7 @@
                 "links": null
               }
             ],
-            "title": "16:9 여백 · 높이 ÷ 16",
+            "title": "16:9 Padding · Height ÷ 16",
             "properties": {
               "cnr_id": "comfyui-custom-scripts",
               "ue_properties": {
@@ -9109,7 +10179,7 @@
                 "links": null
               }
             ],
-            "title": "최종 16:9 캔버스 여백",
+            "title": "Final 16:9 Canvas Padding",
             "properties": {
               "cnr_id": "comfy-core",
               "ver": "0.34.0",
@@ -9387,14 +10457,6 @@
             "type": "IMAGE"
           },
           {
-            "id": 219,
-            "origin_id": -10,
-            "origin_slot": 15,
-            "target_id": 99,
-            "target_slot": 7,
-            "type": "IMAGE"
-          },
-          {
             "id": 236,
             "origin_id": 104,
             "origin_slot": 0,
@@ -9435,10 +10497,6 @@
         658.3333333333335
       ]
     },
-    "comfyui_mcp": {
-      "workflow_uuid": "21755577-aa80-4000-afc0-8b1b56e4dfcd",
-      "workflow_path": "workflows/260903_H3_character_sheet(sain2d_modified)_v1.3.1_KOR.json"
-    },
     "toobusy_layout_contract": {
       "effective_height": "collapsed ? 30 : size[1] + 30",
       "group_side_padding": 40,
@@ -9463,14 +10521,15 @@
     "VHS_KeepIntermediate": true,
     "ue_links": [],
     "links_added_by_ue": [],
-    "workflow_name": "260903_H3_character_sheet(sain2d_modified)_v1.3.1_KOR",
+    "workflow_name": "260903_H3_character_sheet(sain2d_modified)_v1.3.2_ENG",
     "sain2d_workflow": {
-      "version": "v1.3.1",
+      "version": "v1.3.2",
       "date": "2026-09-03",
       "modified_by": "sain2d",
       "ai_collaboration": "Claude",
       "based_on": "너무바쁜베짱이 (2BZ) · H3 캐릭터시트 간편제작기 3+3 v1.0",
-      "repo": "https://github.com/ssain3d-lgtm/H3_Character_Sheet_Creator_Workflow"
+      "repo": "https://github.com/ssain3d-lgtm/H3_Character_Sheet_Creator_Workflow",
+      "toobusy_commit": "bdbed64499d9351cf400c520e8824e33ad9b9702"
     }
   },
   "version": 0.4

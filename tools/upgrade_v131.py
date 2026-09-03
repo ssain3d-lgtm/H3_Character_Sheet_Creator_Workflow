@@ -254,8 +254,7 @@ def build(src, dst):
         "repo": "https://github.com/ssain3d-lgtm/H3_Character_Sheet_Creator_Workflow",
     }
     d["extra"]["workflow_name"] = dst.rsplit(".", 1)[0]
-    if "comfyui_mcp" in d["extra"]:
-        d["extra"]["comfyui_mcp"]["workflow_path"] = "workflows/" + dst
+    d["extra"].pop("comfyui_mcp", None)  # editor-local metadata, never shipped
     d["revision"] = d.get("revision", 0) + 1
 
     PACKS = {

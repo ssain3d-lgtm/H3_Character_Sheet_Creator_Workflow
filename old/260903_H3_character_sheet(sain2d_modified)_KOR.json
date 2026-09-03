@@ -7647,10 +7647,6 @@
         -557.8952667909731
       ]
     },
-    "comfyui_mcp": {
-      "workflow_uuid": "04fc1434-1b26-4bc4-890f-c22b0981d8b5",
-      "workflow_path": "workflows/260903_H3_character_sheet(sain2d_modified)_KOR.json"
-    },
     "toobusy_layout_contract": {
       "effective_height": "collapsed ? 30 : size[1] + 30",
       "group_side_padding": 40,

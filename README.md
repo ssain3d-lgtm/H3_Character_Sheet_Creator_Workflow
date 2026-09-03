@@ -23,13 +23,27 @@ The **identity** (facial features, hair) comes from the face reference and **onl
 
 | File | Description |
 |---|---|
-| `260903_H3_character_sheet(sain2d_modified)_v1.3.1_KOR.json` | **v1.3.1** workflow (Korean UI) — generated from the ENG file |
-| `260903_H3_character_sheet(sain2d_modified)_v1.3.1_ENG.json` | **v1.3.1** workflow (English UI) — canonical file |
-| `old/` | v1.2 (2026-09-01) and v1.3 (2026-09-03) workflows, kept for reference |
-| `tools/` | `validate_workflow.py` (static checks run by CI), `build_kor.py` + `kor_overlay.json` (KOR generator), `upgrade_v131.py` (the v1.3 → v1.3.1 transform) |
+| `260903_H3_character_sheet(sain2d_modified)_v1.3.2_KOR.json` | **v1.3.2** workflow (Korean UI) — generated from the ENG file |
+| `260903_H3_character_sheet(sain2d_modified)_v1.3.2_ENG.json` | **v1.3.2** workflow (English UI) — canonical file |
+| `old/` | v1.2, v1.3 and v1.3.1 workflows, kept for reference |
+| `tools/` | `validate_workflow.py` (static checks run by CI), `build_kor.py` + `kor_overlay.json` (KOR generator), `upgrade_v131.py` / `upgrade_v132.py` (the version transforms) |
+| `TESTING.md` | Static CI results and the manual ComfyUI runtime test log, kept separate |
 | `asset/` | Sample reference images and output (demonstration only; rights to the sample artwork stay with their owners) |
 
 To reproduce the example, copy `asset/face_ref.png` and `asset/clothes_ref.png` into your ComfyUI `input/` folder; the Stage 1 loaders point to those names by default.
+
+## What changed in v1.3.2 (2026-09-03)
+
+Release hardening after a second review of v1.3.1, plus two fixes for outfits / socks / shoes drifting away from the reference.
+
+- **Why feet drifted.** SegFormer has no sock class, its mask is computed on a 1024×1024 squash, and the prompt never named the footwear, so socks and shoes rode on a few grey pixels. On top of that the Gemma translator ran on an empty ③ box and its output landed under the highest-priority user direction, which is allowed to change "anything worn".
+- **Gemma wardrobe description.** Gemma now reads the outfit cut-out and writes `WARDROBE DESCRIPTION:` (garments, socks, shoes) which is inserted after the subject definitions. Switch in ⑨, preview in ③. Default ON.
+- **Empty-input gates.** ③ and ⑧ translators are skipped (lazy switch) when the box is empty; the prompt gets an empty string instead of whatever Gemma would improvise.
+- **Sigmas Source switch.** OFF = PDD Acc 8-step (default), ON = active BasicScheduler at 30 steps with the un-patched model, feeding both the Stage 1 sampler and the Stage 2 subgraph. Lets Stage 1 run without the PDD file.
+- **Stable path only.** The experimental `pose_or_extra_ref` subgraph input is gone. The 4-panel body-lock text now locks camera distance / scale for Shots 2–4 only.
+- **Pins and metadata.** toobusy pinned to 0.4.10, commit `bdbed644` (the 0.4.10 fix stops an optional FlashVSR import from taking the H3 helpers down). `extra.comfyui_mcp` removed from every shipped and archived JSON. Tracked bytecode removed, `.gitignore` added.
+- **Validation.** `tools/validate_workflow.py` now also checks: `comfyui_mcp` absence (root and `old/`), unique node / link ids, subgraph interface vs instance node, Stage 2 recipe, the Sigmas / Model selector wiring, LoRA file names, SemanticReference routing = `auto`, toobusy pin, all root ENG/KOR pairs, and it **simulates the Stage 2 role assembly for 27 cases** (each optional slot OFF / ON-safe / ON-rejected) against H3's reference compaction — using the real toobusy class in CI.
+- **Runtime evidence is tracked separately** in `TESTING.md`. Nothing in v1.3.2 has been run in ComfyUI yet; the static checks pass.
 
 ## What changed in v1.3.1 (2026-09-03)
 
@@ -43,8 +57,6 @@ Hotfix after an external review of v1.3. Adult characters only: the prompt fixes
 - **Housekeeping.** `ethnicity` removed from the prompt, attention / scheduler / LoRA nodes relabelled, subgraph renamed `Stage 2 Pose Sheet Generator`, `pose_or_extra_ref` marked experimental, node pack ids corrected (`comfyui-rmbg`, `comfyui-kjnodes`, `comfyui-custom-scripts`, `toobusy`, `rgthree-comfy`, PDD via `aux_id`), v1.3.1 metadata added under `extra.sain2d_workflow`.
 - **KOR is generated, not hand-edited.** `tools/build_kor.py` overlays Korean titles / notes on the ENG file; CI rebuilds it and fails on any difference.
 - **CI.** `.github/workflows/validate.yml` runs `tools/validate_workflow.py`: link integrity, named/positional widget parity, KOR/ENG functional parity, forbidden leftovers, PDD recipe (euler / 8 steps / shift 12·3 / BasicGuider), picture-tag gates, model names consistent across loaders, note and README.
-
-Still not executed in ComfyUI by the author: all v1.3.1 changes are static-graph edits. Before calling it verified, run Stage 2 with the prop / environment / accessory switches in all 8 combinations and check the `Stage 2 Final Prompt Check` preview shows the expected `<Picture N>` tags.
 
 ## What changed in v1.3 (2026-09-03)
 
@@ -91,7 +103,7 @@ Everything else is ComfyUI core (**0.34 or newer** — the MiniMax H3, TextGener
 |---|---|---|
 | [ComfyUI-RMBG](https://github.com/1038lab/ComfyUI-RMBG) (1038lab) | `RMBG`, `SAM3Segment`, `ClothesSegment` | Stage 1 face / outfit cut-out |
 | [rgthree-comfy](https://github.com/rgthree/rgthree-comfy) | `Fast Groups Muter` | Stage 2 ON/OFF switch |
-| [toobusy](https://github.com/nicekriss/toobusy) (nicekriss) · **0.4.9 or newer** | `ToobusyMiniMaxH3ImageLatent`, `ToobusyMiniMaxH3SemanticReference` | H3 T=1 image latent, optional-reference gates |
+| [toobusy](https://github.com/nicekriss/toobusy) (nicekriss) · **0.4.10, commit `bdbed644`** (statically verified build; 0.4.9 adds the nodes, 0.4.10 fixes an optional-dependency import that could block them) | `ToobusyMiniMaxH3ImageLatent`, `ToobusyMiniMaxH3SemanticReference` | H3 T=1 image latent, optional-reference gates |
 | [ComfyUI-MiniMax-H3-PDD-Acc](https://github.com/Jalen-Brunson/ComfyUI-MiniMax-H3-PDD-Acc) (Jalen-Brunson) | `MiniMaxH3PDDAccApply` | 8-step accelerator. LoRA file goes in `models/pdd_acc/`, download from [alibaba-pai/MiniMax-H3-Acc-LoRAs](https://huggingface.co/alibaba-pai/MiniMax-H3-Acc-LoRAs) |
 | [ComfyUI-KJNodes](https://github.com/kijai/ComfyUI-KJNodes) (kijai) | `ImageConcanate` | Stage 2 final composite only |
 | [ComfyUI-Custom-Scripts](https://github.com/pythongosssss/ComfyUI-Custom-Scripts) (pysssss) | `MathExpression` | Stage 2 final composite only |
@@ -113,14 +125,14 @@ Yes, that is what Stage 2 does. Drop the pose image into `Stage 2 Pose Reference
 - H3 Ref2VA has no ControlNet, so this is prompt-guided pose transfer, not pixel-exact. If it drifts, type a correction into `Stage 2 Pose Request · Manual Override`; that text outranks the automatic analysis.
 - One pose reference per run, applied to Panel 1. Panels 2–4 are defined by text in group ⑧ (e.g. `Panel 2: crouching, weapon in both hands`).
 - For a sprite sheet with many poses, run Stage 2 once per pose. Seeds are fixed and the same Stage 1 sheet is the reference every time, so the character stays consistent across runs. Assemble the frames outside ComfyUI. This makes stills, not pixel-registered animation frames.
-- The Stage 2 subgraph has an unused `pose_or_extra_ref` input if you want to try feeding the pose image to H3 directly. It ships disconnected because identity bleed from the pose photo is a real risk.
+- Feeding the pose image to H3 directly is deliberately not wired: identity bleed from the pose photo is a real risk, and the experimental input was removed in v1.3.2.
 
 **Nodes show up red / Manager wants to install something odd.**
 - Update ComfyUI first. `MiniMaxH3ReferenceToVideo`, `TextGenerate`, `Switch`, `Resolution Selector` and subgraphs are core nodes that need 0.34 or newer; a "missing node" on those is a version problem, not a missing pack.
 - Install the six packs in the table above (Manager → Install Missing Custom Nodes).
 - Nodes 2.0 (the new Vue node renderer, `Comfy.VueNodes.Enabled`) is optional. The workflow was built and laid out on the classic canvas; if a custom node's widgets look wrong or a switch does not toggle, turn Nodes 2.0 off in Settings → Lite Graph and reload.
 - The SAM3 and SegFormer weights for the cut-out nodes download themselves on the first Queue.
-- The PDD accelerator LoRA goes in `models/pdd_acc/` (see the table). Without it you can still run Stage 1: bypass `PDD Acc Apply`, un-bypass the `BasicScheduler` next to it, set about 25–30 steps and feed its sigmas to the Stage 1 sampler.
+- The PDD accelerator LoRA goes in `models/pdd_acc/` (see the table). Without it, flip **Sigmas Source** in ④ to ON: the PDD node is skipped and a 30-step BasicScheduler runs for both stages.
 
 ---
 
@@ -147,13 +159,27 @@ Yes, that is what Stage 2 does. Drop the pose image into `Stage 2 Pose Reference
 
 | 파일 | 설명 |
 |---|---|
-| `260903_H3_character_sheet(sain2d_modified)_v1.3.1_KOR.json` | **v1.3.1** 워크플로우 (한글 UI) — ENG 파일에서 생성 |
-| `260903_H3_character_sheet(sain2d_modified)_v1.3.1_ENG.json` | **v1.3.1** 워크플로우 (영문 UI) — 원본 파일 |
-| `old/` | v1.2 (2026-09-01), v1.3 (2026-09-03) 워크플로우, 참고용 보관 |
-| `tools/` | `validate_workflow.py` (CI 정적 검사), `build_kor.py` + `kor_overlay.json` (KOR 생성기), `upgrade_v131.py` (v1.3 → v1.3.1 변환) |
+| `260903_H3_character_sheet(sain2d_modified)_v1.3.2_KOR.json` | **v1.3.2** 워크플로우 (한글 UI) — ENG 파일에서 생성 |
+| `260903_H3_character_sheet(sain2d_modified)_v1.3.2_ENG.json` | **v1.3.2** 워크플로우 (영문 UI) — 원본 파일 |
+| `old/` | v1.2, v1.3, v1.3.1 워크플로우, 참고용 보관 |
+| `tools/` | `validate_workflow.py` (CI 정적 검사), `build_kor.py` + `kor_overlay.json` (KOR 생성기), `upgrade_v131.py` / `upgrade_v132.py` (버전 변환) |
+| `TESTING.md` | 정적 CI 결과와 수동 ComfyUI 실행 테스트 기록을 분리해 관리 |
 | `asset/` | 예시 참조 이미지 및 결과물 (시연용이며 예시 그림의 권리는 원저작자에게 있습니다) |
 
 예시를 재현하려면 `asset/face_ref.png`, `asset/clothes_ref.png`를 ComfyUI `input/` 폴더에 복사하세요. 1단계 로더가 기본으로 이 파일명을 가리킵니다.
+
+## v1.3.2 변경점 (2026-09-03)
+
+v1.3.1 2차 리뷰 반영 릴리스 강화와, 의상·양말·신발이 참조와 달라지는 문제 수정 2건.
+
+- **발 부분이 달라지던 이유.** SegFormer에 양말 클래스가 없고, 마스크를 1024×1024로 찌그러뜨려 계산하며, 프롬프트가 신발을 텍스트로 지정하지 않아 양말·신발이 회색 위 몇 픽셀에만 의존했습니다. 또 ③ 칸이 비어도 Gemma 번역이 실행되어 그 출력이 "입은 것 전부"를 바꿀 수 있는 최우선 사용자 지시 아래에 붙었습니다.
+- **Gemma 의상 설명.** Gemma가 의상 추출 결과를 읽어 `WARDROBE DESCRIPTION:`(옷·양말·신발)을 쓰고, 주체 정의 뒤에 삽입합니다. 스위치는 ⑨, 미리보기는 ③. 기본 ON.
+- **빈 입력 게이트.** ③·⑧ 칸이 비어 있으면 번역 노드를 건너뛰고(lazy 스위치) 빈 문자열을 붙입니다.
+- **시그마 소스 스위치.** OFF = PDD 가속 8스텝(기본), ON = 패치 없는 모델 + BasicScheduler 30스텝. 1단계 샘플러와 2단계 서브그래프가 같은 스위치를 씁니다. PDD 파일 없이도 1단계 실행 가능.
+- **안정 경로만 유지.** 실험적 `pose_or_extra_ref` 서브그래프 입력 제거. 4패널 체형 고정 문구는 카메라 거리·스케일 고정을 Shot 2~4에만 적용하도록 수정.
+- **고정과 메타데이터.** toobusy를 0.4.10, 커밋 `bdbed644`로 고정(0.4.10에서 선택 의존성 FlashVSR import가 H3 노드까지 막던 문제 수정). 배포·보관 JSON 전부에서 `extra.comfyui_mcp` 제거. 추적되던 바이트코드 삭제, `.gitignore` 추가.
+- **검증 확장.** `tools/validate_workflow.py`가 추가로 검사: `comfyui_mcp` 부재(루트와 `old/`), 노드·링크 id 유일성, 서브그래프 인터페이스와 인스턴스 노드 일치, 2단계 레시피, 시그마/모델 선택기 배선, LoRA 파일명, SemanticReference routing = `auto`, toobusy 고정, 루트의 모든 ENG/KOR 쌍. 그리고 **2단계 역할 조립을 27가지 경우**(선택 슬롯별 OFF / ON-안전 / ON-거부)로 시뮬레이션해 H3의 참조 압축과 대조합니다. CI에서는 실제 toobusy 클래스를 사용.
+- **실행 증거는 `TESTING.md`에 분리 기록.** v1.3.2는 아직 ComfyUI에서 실행하지 않았고, 정적 검사만 통과한 상태입니다.
 
 ## v1.3.1 변경점 (2026-09-03)
 
@@ -167,8 +193,6 @@ v1.3 외부 리뷰 반영 핫픽스. 성인 캐릭터 전용이며 프롬프트�
 - **정리.** 프롬프트에서 `ethnicity` 제거, attention/scheduler/LoRA 노드 제목 수정, 서브그래프 이름을 `Stage 2 Pose Sheet Generator`로, `pose_or_extra_ref`는 실험적으로 표기, 노드팩 id 교정(`comfyui-rmbg`, `comfyui-kjnodes`, `comfyui-custom-scripts`, `toobusy`, `rgthree-comfy`, PDD는 `aux_id`), `extra.sain2d_workflow`에 v1.3.1 메타데이터 추가.
 - **KOR는 수작업이 아니라 생성.** `tools/build_kor.py`가 ENG 파일에 한글 제목·노트를 덮어씌우며, CI가 재생성해 차이가 있으면 실패합니다.
 - **CI.** `.github/workflows/validate.yml`이 `tools/validate_workflow.py`를 실행: 링크 무결성, named/positional 위젯 일치, KOR/ENG 기능 동등성, 금지 잔재, PDD 레시피(euler / 8스텝 / shift 12·3 / BasicGuider), Picture 태그 게이트, 로더·노트·README 모델명 일치.
-
-작성자가 ComfyUI에서 아직 실행하지 않은 상태입니다. v1.3.1 변경은 모두 정적 그래프 수정이므로, 검증 완료로 보려면 소품/배경/액세서리 스위치 8개 조합으로 2단계를 돌려 `2단계 최종 프롬프트 확인` 미리보기에 기대한 `<Picture N>` 태그가 나오는지 확인해야 합니다.
 
 ## v1.3 변경점 (2026-09-03)
 
@@ -215,7 +239,7 @@ LoRA   h3-realism-people-t2v-i2v-r2v.safetensors (trigger: r34l1sm, 강도 1.0) 
 |---|---|---|
 | [ComfyUI-RMBG](https://github.com/1038lab/ComfyUI-RMBG) (1038lab) | `RMBG`, `SAM3Segment`, `ClothesSegment` | 1단계 얼굴/의상 추출 |
 | [rgthree-comfy](https://github.com/rgthree/rgthree-comfy) | `Fast Groups Muter` | 2단계 ON/OFF 스위치 |
-| [toobusy](https://github.com/nicekriss/toobusy) (nicekriss) · **0.4.9 이상** | `ToobusyMiniMaxH3ImageLatent`, `ToobusyMiniMaxH3SemanticReference` | H3 T=1 이미지 latent, 선택 참조 게이트 |
+| [toobusy](https://github.com/nicekriss/toobusy) (nicekriss) · **0.4.10, 커밋 `bdbed644`** (정적 검증 기준 빌드; 0.4.9에서 노드 추가, 0.4.10에서 선택 의존성 import 문제 수정) | `ToobusyMiniMaxH3ImageLatent`, `ToobusyMiniMaxH3SemanticReference` | H3 T=1 이미지 latent, 선택 참조 게이트 |
 | [ComfyUI-MiniMax-H3-PDD-Acc](https://github.com/Jalen-Brunson/ComfyUI-MiniMax-H3-PDD-Acc) (Jalen-Brunson) | `MiniMaxH3PDDAccApply` | 8-step 가속기. LoRA 파일은 `models/pdd_acc/`에, 다운로드는 [alibaba-pai/MiniMax-H3-Acc-LoRAs](https://huggingface.co/alibaba-pai/MiniMax-H3-Acc-LoRAs) |
 | [ComfyUI-KJNodes](https://github.com/kijai/ComfyUI-KJNodes) (kijai) | `ImageConcanate` | 2단계 최종 합성 전용 |
 | [ComfyUI-Custom-Scripts](https://github.com/pythongosssss/ComfyUI-Custom-Scripts) (pysssss) | `MathExpression` | 2단계 최종 합성 전용 |
@@ -237,11 +261,11 @@ v1.3.1에서 JSON 안의 노드팩 id를 교정했습니다(`comfyui-rmbg`, `com
 - H3 Ref2VA에는 ControlNet이 없어서 프롬프트 기반 포즈 전달입니다. 픽셀 단위로 맞지는 않습니다. 틀어지면 `2단계 포즈 요청 · 수동 덮어쓰기` 칸에 수정 문구를 적으세요. 그 텍스트가 자동 분석보다 우선합니다.
 - 실행 1회에 포즈 참조 1개, 패널 1에 적용됩니다. 패널 2~4는 ⑧ 그룹에 텍스트로 지정합니다 (예: `패널 2: 웅크린 자세, 양손으로 무기`).
 - 포즈가 많은 스프라이트 시트는 포즈마다 2단계를 한 번씩 돌리세요. 시드가 고정이고 매번 같은 1단계 시트를 참조하므로 실행 간 캐릭터가 유지됩니다. 프레임 조립은 ComfyUI 밖에서 하세요. 정지 이미지를 만드는 도구이지 픽셀 정렬된 애니메이션 프레임을 만들지는 않습니다.
-- 포즈 이미지를 H3에 직접 넣어 보고 싶다면 2단계 서브그래프의 비어 있는 `pose_or_extra_ref` 입력을 쓰면 됩니다. 포즈 사진의 정체성이 섞일 위험이 있어 기본은 연결하지 않았습니다.
+- 포즈 이미지를 H3에 직접 넣는 경로는 일부러 연결하지 않았습니다. 포즈 사진의 정체성이 섞일 위험이 커서 실험적 입력을 v1.3.2에서 제거했습니다.
 
 **노드가 빨갛게 뜨거나 Manager가 이상한 팩을 설치하려고 합니다.**
 - ComfyUI부터 업데이트하세요. `MiniMaxH3ReferenceToVideo`, `TextGenerate`, `Switch`, `Resolution Selector`, 서브그래프는 0.34 이상이 필요한 코어 노드입니다. 이 노드들의 "missing node"는 버전 문제이지 팩 누락이 아닙니다.
 - 위 표의 팩 6개를 설치하세요 (Manager → Install Missing Custom Nodes).
 - Nodes 2.0(새 Vue 노드 렌더러, `Comfy.VueNodes.Enabled`)은 선택 사항입니다. 이 워크플로우는 기존 캔버스에서 만들고 배치했으므로, 커스텀 노드 위젯이 이상하게 보이거나 스위치가 안 바뀌면 설정 → Lite Graph에서 Nodes 2.0을 끄고 다시 로드하세요.
 - 추출 노드용 SAM3·SegFormer 가중치는 첫 Queue 때 자동으로 받습니다.
-- PDD 가속기 LoRA는 `models/pdd_acc/`에 넣습니다 (표 참고). 없어도 1단계는 돌릴 수 있습니다. `PDD Acc Apply`를 바이패스하고 옆의 `BasicScheduler` 바이패스를 풀어 25~30 스텝으로 맞춘 뒤 sigmas를 1단계 샘플러에 연결하세요.
+- PDD 가속기 LoRA는 `models/pdd_acc/`에 넣습니다 (표 참고). 없으면 ④의 **시그마 소스**를 ON으로 바꾸세요. PDD 노드를 건너뛰고 두 단계 모두 30스텝 BasicScheduler로 돌아갑니다.
