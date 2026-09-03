@@ -63,7 +63,7 @@ CLIP   qwen3vl_32b_minimax_h3_int8_convrot.safetensors
        gemma4_e4b_it_fp8_scaled.safetensors
 VAE    minimax_h3_t1_image_vae_step1597.safetensors
        minimax_h3_audio_vae_fp32.safetensors
-Accel  MiniMax-H3-Ref2VA-Acc-8Step.safetensors  (PDD Acc Apply node)
+Accel  MiniMax-H3-Ref2VA-Acc-8Step.safetensors  → models/pdd_acc/  (PDD Acc Apply node)
 
 Optional (bypassed by default)
 LoRA   any H3 style LoRA, e.g. h3-realism-people-t2v-i2v-r2v (trigger: r34l1sm) — photo references only
@@ -75,11 +75,12 @@ Everything else is ComfyUI core (**0.34 or newer** — the MiniMax H3, TextGener
 
 | Node pack | Nodes used | Where |
 |---|---|---|
-| ComfyUI-RMBG (1038lab) | `RMBG`, `SAM3Segment`, `ClothesSegment` | Stage 1 face / outfit cut-out |
-| rgthree-comfy | `Fast Groups Muter` | Stage 2 ON/OFF switch |
-| Toobusy H3 node pack (2BZ) | `ToobusyMiniMaxH3ImageLatent`, `ToobusyMiniMaxH3SemanticReference`, `MiniMaxH3PDDAccApply` | H3 latent, optional-reference gates, 8-step accelerator |
-| ComfyUI-KJNodes | `ImageConcanate` | Stage 2 final composite only |
-| ComfyUI-Custom-Scripts (pysssss) | `MathExpression` | Stage 2 final composite only |
+| [ComfyUI-RMBG](https://github.com/1038lab/ComfyUI-RMBG) (1038lab) | `RMBG`, `SAM3Segment`, `ClothesSegment` | Stage 1 face / outfit cut-out |
+| [rgthree-comfy](https://github.com/rgthree/rgthree-comfy) | `Fast Groups Muter` | Stage 2 ON/OFF switch |
+| [toobusy](https://github.com/nicekriss/toobusy) (nicekriss) | `ToobusyMiniMaxH3ImageLatent`, `ToobusyMiniMaxH3SemanticReference` | H3 T=1 image latent, optional-reference gates |
+| [ComfyUI-MiniMax-H3-PDD-Acc](https://github.com/Jalen-Brunson/ComfyUI-MiniMax-H3-PDD-Acc) (Jalen-Brunson) | `MiniMaxH3PDDAccApply` | 8-step accelerator. LoRA file goes in `models/pdd_acc/`, download from [alibaba-pai/MiniMax-H3-Acc-LoRAs](https://huggingface.co/alibaba-pai/MiniMax-H3-Acc-LoRAs) |
+| [ComfyUI-KJNodes](https://github.com/kijai/ComfyUI-KJNodes) (kijai) | `ImageConcanate` | Stage 2 final composite only |
+| [ComfyUI-Custom-Scripts](https://github.com/pythongosssss/ComfyUI-Custom-Scripts) (pysssss) | `MathExpression` | Stage 2 final composite only |
 
 Note: the JSON tags a few of these nodes with the pack id `comfyui-workflow-encrypt`. That is a leftover label from the original author's setup, not a real dependency — ignore it if ComfyUI-Manager offers to install it, and install the packs above instead.
 
@@ -154,7 +155,7 @@ CLIP   qwen3vl_32b_minimax_h3_int8_convrot.safetensors
        gemma4_e4b_it_fp8_scaled.safetensors
 VAE    minimax_h3_t1_image_vae_step1597.safetensors
        minimax_h3_audio_vae_fp32.safetensors
-Accel  MiniMax-H3-Ref2VA-Acc-8Step.safetensors  (PDD Acc Apply 노드)
+Accel  MiniMax-H3-Ref2VA-Acc-8Step.safetensors  → models/pdd_acc/  (PDD Acc Apply 노드)
 
 선택 (기본 바이패스)
 LoRA   H3 스타일 LoRA, 예: h3-realism-people-t2v-i2v-r2v (trigger: r34l1sm) — 실사 참조 전용
@@ -166,11 +167,12 @@ LoRA   H3 스타일 LoRA, 예: h3-realism-people-t2v-i2v-r2v (trigger: r34l1sm) 
 
 | 노드팩 | 사용 노드 | 위치 |
 |---|---|---|
-| ComfyUI-RMBG (1038lab) | `RMBG`, `SAM3Segment`, `ClothesSegment` | 1단계 얼굴/의상 추출 |
-| rgthree-comfy | `Fast Groups Muter` | 2단계 ON/OFF 스위치 |
-| Toobusy H3 노드팩 (2BZ) | `ToobusyMiniMaxH3ImageLatent`, `ToobusyMiniMaxH3SemanticReference`, `MiniMaxH3PDDAccApply` | H3 latent, 선택 참조 게이트, 8-step 가속기 |
-| ComfyUI-KJNodes | `ImageConcanate` | 2단계 최종 합성 전용 |
-| ComfyUI-Custom-Scripts (pysssss) | `MathExpression` | 2단계 최종 합성 전용 |
+| [ComfyUI-RMBG](https://github.com/1038lab/ComfyUI-RMBG) (1038lab) | `RMBG`, `SAM3Segment`, `ClothesSegment` | 1단계 얼굴/의상 추출 |
+| [rgthree-comfy](https://github.com/rgthree/rgthree-comfy) | `Fast Groups Muter` | 2단계 ON/OFF 스위치 |
+| [toobusy](https://github.com/nicekriss/toobusy) (nicekriss) | `ToobusyMiniMaxH3ImageLatent`, `ToobusyMiniMaxH3SemanticReference` | H3 T=1 이미지 latent, 선택 참조 게이트 |
+| [ComfyUI-MiniMax-H3-PDD-Acc](https://github.com/Jalen-Brunson/ComfyUI-MiniMax-H3-PDD-Acc) (Jalen-Brunson) | `MiniMaxH3PDDAccApply` | 8-step 가속기. LoRA 파일은 `models/pdd_acc/`에, 다운로드는 [alibaba-pai/MiniMax-H3-Acc-LoRAs](https://huggingface.co/alibaba-pai/MiniMax-H3-Acc-LoRAs) |
+| [ComfyUI-KJNodes](https://github.com/kijai/ComfyUI-KJNodes) (kijai) | `ImageConcanate` | 2단계 최종 합성 전용 |
+| [ComfyUI-Custom-Scripts](https://github.com/pythongosssss/ComfyUI-Custom-Scripts) (pysssss) | `MathExpression` | 2단계 최종 합성 전용 |
 
 참고: JSON에 일부 노드가 `comfyui-workflow-encrypt` 팩 id로 표기되어 있는데, 원작자 환경에서 남은 라벨일 뿐 실제 의존성이 아닙니다. ComfyUI-Manager가 설치를 권해도 무시하고 위 팩들을 설치하세요.
 
