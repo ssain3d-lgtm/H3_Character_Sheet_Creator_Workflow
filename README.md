@@ -26,7 +26,7 @@ The **identity** (facial features, hair) comes from the face reference and **onl
 | `260903_H3_character_sheet(sain2d_modified)_v1.3.2_KOR.json` | **v1.3.2** workflow (Korean UI) — generated from the ENG file |
 | `260903_H3_character_sheet(sain2d_modified)_v1.3.2_ENG.json` | **v1.3.2** workflow (English UI) — canonical file |
 | `old/` | v1.2, v1.3 and v1.3.1 workflows, kept for reference |
-| `tools/` | `validate_workflow.py` (static checks run by CI), `build_kor.py` + `kor_overlay.json` (KOR generator), `upgrade_v131.py` / `upgrade_v132.py` (the version transforms) |
+| `tools/` | `validate_workflow.py` (static checks run by CI), `build_kor.py` + `kor_overlay.json` (KOR generator), `upgrade_v131.py` / `upgrade_v132.py` (the version transforms), `tidy_layout.py` (deterministic node layout: one row per flow depth inside each group, groups re-stacked without overlap), `render_layout.py` (PNG preview of the layout, needs Pillow) |
 | `TESTING.md` | Static CI results and the manual ComfyUI runtime test log, kept separate |
 | `asset/` | Sample reference images and output (demonstration only; rights to the sample artwork stay with their owners) |
 
@@ -162,7 +162,7 @@ Yes, that is what Stage 2 does. Drop the pose image into `Stage 2 Pose Reference
 | `260903_H3_character_sheet(sain2d_modified)_v1.3.2_KOR.json` | **v1.3.2** 워크플로우 (한글 UI) — ENG 파일에서 생성 |
 | `260903_H3_character_sheet(sain2d_modified)_v1.3.2_ENG.json` | **v1.3.2** 워크플로우 (영문 UI) — 원본 파일 |
 | `old/` | v1.2, v1.3, v1.3.1 워크플로우, 참고용 보관 |
-| `tools/` | `validate_workflow.py` (CI 정적 검사), `build_kor.py` + `kor_overlay.json` (KOR 생성기), `upgrade_v131.py` / `upgrade_v132.py` (버전 변환) |
+| `tools/` | `validate_workflow.py` (CI 정적 검사), `build_kor.py` + `kor_overlay.json` (KOR 생성기), `upgrade_v131.py` / `upgrade_v132.py` (버전 변환), `tidy_layout.py` (결정적 노드 정렬: 그룹 안에서 흐름 깊이별 한 행, 그룹은 겹침 없이 재배치), `render_layout.py` (레이아웃 PNG 미리보기, Pillow 필요) |
 | `TESTING.md` | 정적 CI 결과와 수동 ComfyUI 실행 테스트 기록을 분리해 관리 |
 | `asset/` | 예시 참조 이미지 및 결과물 (시연용이며 예시 그림의 권리는 원저작자에게 있습니다) |
 
